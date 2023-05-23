@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Strike Lord';
+    src: url('../res/fonts/Strikelord/Strikelord.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../res/fonts/Lora/Lora-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,135 @@
+main {
+    height: 100vh;
+    background: url('../res/images/drawing_darkened.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 85vh;
+    font-family: 'Strike Lord';
+}
+
+span {
+    display: inline-block;
+    transform: scale(.9, 1.2);
+}
+
+#logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12%;
+}
+
+#title1 {
+    font-size: 6rem;
+    animation: fade-in-1 .8s ease-out;
+}
+
+#title2 {
+    font-size: 4rem;
+    animation: fade-in-2 .8s ease-out;
+    letter-spacing: 10px;
+}
+
+.jouer {
+    position: relative;
+    margin-top: 8%;
+    padding: 20px 32px;
+    border: 0 transparent;
+    border-radius: 32px;
+    background: #d5d5d5;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #4e6450;
+    transition: 0.3s ease-in-out;
+    animation: fade-in-slow 2s ease-out;
+    overflow: hidden;
+    will-change: transform;
+}
+
+.jouer:before {
+    content: "";
+    display: block;
+    background: #4e6450;
+    position: absolute;
+    width: 200%;
+    height: 500%;
+    border-radius: 100%;
+    transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
+    transform: translate(-120%, -50%);
+}
+
+.jouer .text {
+    color: #4e6450;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: inline;
+    transition: 0.25s ease-in;
+    transition-delay: 0.1s;
+}
+
+.jouer:hover .text {
+    color: white;
+}
+
+.jouer:hover:before {
+    transform: translate(-45%, -34%) translateZ(0);
+}
+
+@keyframes fade-in-1 {
+    0% {
+        opacity: 0;
+        font-size: 5.7rem;
+    }
+
+    20% {
+        opacity: 0;
+        font-size: 4.7rem;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 6rem;
+    }
+}
+
+@keyframes fade-in-2 {
+    0% {
+        opacity: 0;
+        font-size: 3.7rem;
+    }
+
+    20% {
+        opacity: 0;
+        font-size: 3.2rem;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 4rem;
+    }
+}
+
+@keyframes fade-in-slow {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
