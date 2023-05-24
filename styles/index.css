@@ -11,8 +11,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    height: 85vh;
+    justify-content: center;
+    padding-bottom: 50px;
+    height: 100vh;
     font-family: 'Strike Lord';
 }
 
@@ -23,7 +24,7 @@ span {
 
 #logo {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 12%;
@@ -41,8 +42,8 @@ span {
 }
 
 .jouer {
-    position: relative;
-    margin-top: 8%;
+    position: absolute;
+    margin-top: 30%;
     padding: 20px 32px;
     border: 0 transparent;
     border-radius: 32px;
