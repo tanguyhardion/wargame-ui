@@ -13,3 +13,97 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.main-button {
+    position: absolute;
+    margin-top: 30%;
+    padding: 20px 32px;
+    border: 0 transparent;
+    border-radius: 32px;
+    background: #eee;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #4e6450;
+    transition: 0.3s ease-in-out;
+    animation: fade-in-slow 2s ease-out;
+    overflow: hidden;
+    will-change: transform;
+}
+
+.main-button:before {
+    content: "";
+    display: block;
+    background: #4e6450;
+    position: absolute;
+    width: 200%;
+    height: 500%;
+    border-radius: 100%;
+    transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
+    transform: translate(-120%, -50%);
+}
+
+.main-button .text {
+    color: #4e6450;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: inline;
+    transition: 0.25s ease-in;
+    transition-delay: 0.1s;
+}
+
+.main-button:hover .text {
+    color: white;
+}
+
+.main-button:hover:before {
+    transform: translate(-45%, -34%) translateZ(0);
+}
+
+@keyframes fade-in-1 {
+    0% {
+        opacity: 0;
+        font-size: 5.7rem;
+    }
+
+    20% {
+        opacity: 0;
+        font-size: 4.7rem;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 6rem;
+    }
+}
+
+@keyframes fade-in-2 {
+    0% {
+        opacity: 0;
+        font-size: 3.7rem;
+    }
+
+    20% {
+        opacity: 0;
+        font-size: 3.2rem;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 4rem;
+    }
+}
+
+@keyframes fade-in-slow {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
