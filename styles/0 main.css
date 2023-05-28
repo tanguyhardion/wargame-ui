@@ -115,3 +115,21 @@
     transform: translate(-50%, -50%);
     width: 60px;
 }
+
+#back {
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+}
+
+.Titre {
+    color: #eee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    line-height: 1.5;
+    position: relative;
+    left: 5%;
+}

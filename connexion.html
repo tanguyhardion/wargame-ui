@@ -6,44 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/0 main.css">
-    <link rel="stylesheet" href="./styles/6 inscription.css">
+    <link rel="stylesheet" href="./styles/connexion.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
         integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./scripts/6 inscription.js" defer></script>
+    <script src="./scripts/connexion.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
 
 <body>
-
     <main>
         <a href="parametres.html" title="Paramètres"> <img id="settings" type="image/svg+xml" src="./res/images/parametre.png"/></a>
-        <a href="connexion.html" title="Connexion"> <img id="back" type="image/svg+xml" src="./res/images/back.jpg"/></a>
-        <h3 class="Titre"> INSCRIPTION</h3>
+        <object id="logo" type="image/svg+xml" data="./res/svg/logo.svg"></object>
         <br />
         <br />
 
         <div class="container center">
-
-
             <input type="text" id="login" name="login" value="Login">
-            <br />
-            <input type="text" id="email" name="email" value="Email">
             <br />
             <input type="text" id="mdp" name="mdp" value="Mot de passe">
             <br />
-            <a class="envoyer main-button" href="">
-                <div class="text">Envoyer</div>
+            <a class="connexion main-button" href="">
+                <div class="text">Connexion</div>
             </a>
 
+            <a class="mdpoublie" href="mdpOublie.html">
+                <div class="txt">Mot de passe oublié?</div>
+            </a>
             <br />
-            <a class="compte" href="connexion.html">
-                <div class="txt">Déja un compte? Connexion</div>
+            <a class="inscription" href="6 inscription.html">
+                <div class="txt">Inscription</div>
             </a>
 
+            <dialog id="dialog">
+                <h3> Continuer en tant qu'invité</h3>
+                <p>Veuillez choisir un pseudo:</p>
+                <input type="text" id="pseudo" name="pseudo" value="Pseudo">
+                <button id="ok" onclick="href='PagePrincipale.html'">OK</button>
+                <button id="annuler">Annuler</button>
+                
+            </dialog>
 
+            <p id ="invite" class="txt">Continuer en tant qu'invité</p>
+           
 
 
 
