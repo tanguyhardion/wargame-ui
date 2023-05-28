@@ -31,6 +31,7 @@ span {
 }
 
 #title1 {
+    position: relative;
     font-size: 6rem;
     animation: fade-in-1 .8s ease-out;
 }
@@ -40,3 +41,4 @@ span {
     animation: fade-in-2 .8s ease-out;
     letter-spacing: 10px;
 }
+
