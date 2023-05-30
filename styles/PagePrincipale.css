@@ -1,90 +1,66 @@
-main {
-    height: 100vh;
-    background-image: url('../res/images/drawing_darkened.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+.profile {
+    display: flex;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-family: 'Varela Round', sans-serif;
 }
 
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+#profile-picture {
+    width: 120px;
+    height: 120px;
+    border: 4px solid black;
 }
 
-.containerPerso {
-
-    left: 10%;
-    background: red;
+.profile-info {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    padding-bottom: 150px;
-    height: 20vh;
-    width: 40vh;
-    font-family: 'Strike Lord';
+    justify-content: space-evenly;
+    margin-left: 15px;
+    height: 120px;
 }
 
-.containerOptions {
-    left: 10%;
+.score {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.score span {
+    margin-top: 3px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.history {
+    justify-self: flex-start;
+    align-self: flex-start;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.column {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    padding-bottom: 150px;
-    height: 20vh;
-    width: 40vh;
-    font-family: 'Strike Lord';
 }
 
-#wifi {
-    position: absolute;
-    top: 8%;
-    right: 4%;
-    transform: translate(-50%, -50%);
-    width: 60px;
+.left {
+    width: 20%;
 }
 
-#couronne {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 60px;
+.center {
+    width: 60%;
 }
 
-.containerHistorique {
-    left: 10%;
-    opacity: 0.4;
-    background: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding-bottom: 30px;
-    height: 40vh;
-    width: 30vh;
-    font-family: 'Strike Lord';
-}
-
-
-.containerCenter {
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 50px;
-    height: 40vh;
-    width: 50vh;
-    font-family: 'Strike Lord';
-}
-
-
-.containerAmis {
-
-    left: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding-bottom: 30px;
-    height: 40vh;
-    width: 30vh;
-    font-family: 'Strike Lord';
+.right {
+    width: 20%;
 }

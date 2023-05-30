@@ -24,8 +24,7 @@ main {
     position: absolute;
     margin-top: 30%;
     padding: 20px 32px;
-    border: 0 transparent;
-    border-radius: 32px;
+    border-radius: 48px;
     background: #eee;
     font-size: 2rem;
     text-decoration: none;
@@ -56,6 +55,11 @@ main {
     display: inline;
     transition: 0.25s ease-in;
     transition-delay: 0.1s;
+}
+
+.main-button:hover {
+    box-shadow: inset -20px 30px 20px -10px #4e6450, inset 20px -30px 20px -10px #4e6450;
+    transition-delay: .2s;
 }
 
 .main-button:hover .text {
