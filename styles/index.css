@@ -21,13 +21,18 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     font-family: 'Strike Lord';
 }
 
 span {
     display: inline-block;
     transform: scale(.9, 1.2);
+}
+
+.jouer {
+    position: absolute;
+    margin-top: 30%;
 }
 
 #logo {
@@ -39,13 +44,12 @@ span {
 }
 
 #title1 {
-    position: relative;
-    font-size: 6rem;
+    font-size: 13vh;
     animation: fade-in-1 .8s ease-out;
 }
 
 #title2 {
-    font-size: 4rem;
+    font-size: 9vh;
     animation: fade-in-2 .8s ease-out;
     letter-spacing: 10px;
 }
@@ -53,34 +57,34 @@ span {
 @keyframes fade-in-1 {
     0% {
         opacity: 0;
-        font-size: 5.7rem;
+        font-size: 10vh;
     }
 
     20% {
         opacity: 0;
-        font-size: 4.7rem;
+        font-size: 11vh;
     }
 
     100% {
         opacity: 1;
-        font-size: 6rem;
+        font-size: 13vh;
     }
 }
 
 @keyframes fade-in-2 {
     0% {
         opacity: 0;
-        font-size: 3.7rem;
+        font-size: 6vh;
     }
 
     20% {
         opacity: 0;
-        font-size: 3.2rem;
+        font-size: 7vh;
     }
 
     100% {
         opacity: 1;
-        font-size: 4rem;
+        font-size: 9vh;
     }
 }
 
