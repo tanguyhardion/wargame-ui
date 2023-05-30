@@ -1,0 +1,90 @@
+main {
+    height: 100vh;
+    background-image: url('../res/images/drawing_darkened.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.containerPerso {
+
+    left: 10%;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-bottom: 150px;
+    height: 20vh;
+    width: 40vh;
+    font-family: 'Strike Lord';
+}
+
+.containerOptions {
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-bottom: 150px;
+    height: 20vh;
+    width: 40vh;
+    font-family: 'Strike Lord';
+}
+
+#wifi {
+    position: absolute;
+    top: 8%;
+    right: 4%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+}
+
+#couronne {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 60px;
+}
+
+.containerHistorique {
+    left: 10%;
+    opacity: 0.4;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-bottom: 30px;
+    height: 40vh;
+    width: 30vh;
+    font-family: 'Strike Lord';
+}
+
+
+.containerCenter {
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+    height: 40vh;
+    width: 50vh;
+    font-family: 'Strike Lord';
+}
+
+
+.containerAmis {
+
+    left: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-bottom: 30px;
+    height: 40vh;
+    width: 30vh;
+    font-family: 'Strike Lord';
+}
