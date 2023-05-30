@@ -21,8 +21,6 @@ main {
 }
 
 .main-button {
-    position: absolute;
-    margin-top: 30%;
     padding: 20px 32px;
     border-radius: 48px;
     background: #eee;
@@ -83,7 +81,7 @@ main {
     width: 50px;
 }
 
-.titre {
+.Titre {
     color: #eee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
@@ -91,4 +89,14 @@ main {
     line-height: 1.5;
     position: absolute;
     left: 7%;
+}
+
+@media (min-width: 500px) {
+    body {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }
