@@ -1,46 +1,43 @@
-main {
-    height: 100vh;
-    background-image: url('../res/images/drawing_darkened.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
 #question {
-    position: absolute;
-    top: 8%;
-    right: 1%;
-    transform: translate(-50%, -50%);
-    width: 60px;
+  position: absolute;
+  top: 8%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+  width: 60px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 50px;
-    height: 100vh;
-    font-family: 'Strike Lord';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 50px;
+  height: 100vh;
+  font-family: 'Strike Lord';
 }
 
 .vertical-menu {
-    width: 200px; /* Set a width if you like */
-  }
-  
-  .vertical-menu a {
-    color: whitesmoke; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
-  }
-  
-  .vertical-menu a:hover {
-    background-color: #ccc; /* Dark grey background on mouse-over */
-  }
-  
-  .vertical-menu a.active {
-    background-color: black; 
-    color: whitesmoke;
-    
-  }
+  width: 200px;
+  /* Set a width if you like */
+}
+
+.vertical-menu a {
+  color: whitesmoke;
+  /* Black text color */
+  display: block;
+  /* Make the links appear below each other */
+  padding: 12px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+  /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: black;
+  color: whitesmoke;
+
+}

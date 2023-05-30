@@ -70,54 +70,6 @@ main {
     transform: translate(-45%, -34%) translateZ(0);
 }
 
-@keyframes fade-in-1 {
-    0% {
-        opacity: 0;
-        font-size: 5.7rem;
-    }
-
-    20% {
-        opacity: 0;
-        font-size: 4.7rem;
-    }
-
-    100% {
-        opacity: 1;
-        font-size: 6rem;
-    }
-}
-
-@keyframes fade-in-2 {
-    0% {
-        opacity: 0;
-        font-size: 3.7rem;
-    }
-
-    20% {
-        opacity: 0;
-        font-size: 3.2rem;
-    }
-
-    100% {
-        opacity: 1;
-        font-size: 4rem;
-    }
-}
-
-@keyframes fade-in-slow {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 #settings {
     position: absolute;
     top: 8%;
@@ -128,18 +80,15 @@ main {
 
 #back {
     position: absolute;
-    top: 3%;
-    left: 2%;
-    transform: translate(-50%, -50%);
     width: 50px;
 }
 
-.Titre {
+.titre {
     color: #eee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     text-decoration: none;
     line-height: 1.5;
-    position: relative;
+    position: absolute;
     left: 7%;
 }

@@ -7,15 +7,6 @@
     font-family: 'Strike Lord';
 }
 
-main {
-    height: 100vh;
-    background-image: url('../res/images/drawing_darkened.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
 .center {
     align-items: center;
 }
