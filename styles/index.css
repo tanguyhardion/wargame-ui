@@ -49,3 +49,51 @@ span {
     animation: fade-in-2 .8s ease-out;
     letter-spacing: 10px;
 }
+
+@keyframes fade-in-1 {
+    0% {
+        opacity: 0;
+        font-size: 5.7rem;
+    }
+
+    20% {
+        opacity: 0;
+        font-size: 4.7rem;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 6rem;
+    }
+}
+
+@keyframes fade-in-2 {
+    0% {
+        opacity: 0;
+        font-size: 3.7rem;
+    }
+
+    20% {
+        opacity: 0;
+        font-size: 3.2rem;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 4rem;
+    }
+}
+
+@keyframes fade-in-slow {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

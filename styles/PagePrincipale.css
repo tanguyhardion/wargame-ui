@@ -40,13 +40,7 @@
     height: 100%;
 }
 
-.history {
-    justify-self: flex-start;
-    align-self: flex-start;
-    background-color: red;
-    width: 100px;
-    height: 100px;
-}
+.history {}
 
 .column {
     display: flex;
