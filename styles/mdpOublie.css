@@ -18,3 +18,13 @@
     transform: translate(-50%, -50%);
     width: 300px;
 }
+
+#loginMail {
+    position: relative;
+    margin-top: 15%;
+}
+
+.envoyer{
+    position: relative;
+    margin-top: 5%;
+}

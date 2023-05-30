@@ -1,11 +1,7 @@
-const dialog = connexion.html.getElementById('dialog');
-const invite = connexion.html.getElementById('invite');
-const annuler = connexion.html.getElementById('annuler');
-
-invite.addEventListener('click', function () {
-    dialog.setAttribute('open', true);
+vex.dialog.prompt({
+    message: 'Veuillez choisir un pseudo :',
+    placeholder: 'Pseudo',
+    callback: function (value) {
+        console.log(value)
+    }
 })
-
-annuler.addEventListener('click', function () {
-    dialog.removeAttribute('open')
-});
