@@ -13,4 +13,4 @@ VANTA.FOG({
 })
 
 
-new Vivus('logo', { duration: 100 });
+new Vivus('logo', { duration: 150 });
