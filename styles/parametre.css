@@ -11,33 +11,74 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 50px;
-  height: 100vh;
+  height: 100%;
   font-family: 'Strike Lord';
 }
 
 .vertical-menu {
-  width: 200px;
-  /* Set a width if you like */
+  width: 15%;
+  position: relative;
+  top: 30%;
 }
 
 .vertical-menu a {
   color: whitesmoke;
-  /* Black text color */
   display: block;
-  /* Make the links appear below each other */
   padding: 12px;
-  /* Add some padding */
   text-decoration: none;
-  /* Remove underline from links */
 }
 
 .vertical-menu a:hover {
   background-color: #ccc;
-  /* Dark grey background on mouse-over */
 }
 
 .vertical-menu a.active {
   background-color: black;
   color: whitesmoke;
+}
 
+.input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+  font-family: 'Strike Lord';
+}
+
+.center{
+  align-items: center;
+}
+
+.appliquer{
+  align-items: right;
+  position: relative;
+  top: 2%;
+}
+
+
+.parent{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;    
+}
+
+#profile{
+ order: 1;
+ width: 100%;
+ height: auto;
+ position: relative;
+  margin-top: 5%;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:120px;
+}
+
+#plus{
+  order: 2;
+  position: absolute;
+  bottom: 25%;
+  right: 45%;
+  transform: translate(-50%, -50%);
+  width: 25px;
 }

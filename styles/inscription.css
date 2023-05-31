@@ -36,28 +36,27 @@
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:100px;
+    width:120px;
 }
 
 #plus{
     order: 2;
     position: absolute;
-    margin-top: 5%;
     bottom: 25%;
-    right: 0;
+    right: 0%;
     transform: translate(-50%, -50%);
     width: 25px;
 }
 
-.email{
+#email{
     position: relative;
-    margin-top: 2%;
+    margin-top: 1%;
     text-decoration: none;
 }
 
-.mdp{
+#mdp{
     position: relative;
-    margin-top: 2%;
+    margin-top: 1%;
     text-decoration: none;
 }
 
@@ -71,3 +70,4 @@
     margin-top: 2%;
     text-decoration: none;
 }
+
