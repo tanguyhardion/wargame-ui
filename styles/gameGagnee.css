@@ -1,0 +1,119 @@
+.entoure{
+    background-color: antiquewhite;
+
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    line-height: 1.5;
+    position: absolute;
+    left: 3%;
+}
+
+
+
+.score {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.score span {
+    margin-top: 3px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    width: 20%;
+}
+
+.center {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+
+}
+
+.right {
+    position: absolute;
+    width: 15%;
+    right: 20%;
+    top: 40%;
+}
+
+.img{
+
+}
+
+#lost{ 
+   position: absolute;
+    bottom: 0%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width:300px;
+}
+
+.lost-info{
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.GI{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width:300px;
+}
+
+#perso span{
+    margin-top: 3px;
+    left: 150%;
+
+}
+
+.perdue{
+    font-size: 2rem;
+}
+
+#smiley{
+    position: relative;
+    left: 120%;
+    transform: translate(-50%, -50%);
+    width:80px;
+}
+
+.infos{
+
+}
+
+.valeurs{
+    position: absolute;
+    width: 15%;
+    right: 10%;
+    top: 40%;
+}
+
+.quitter{
+    position: absolute;
+    top: 85%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+}
