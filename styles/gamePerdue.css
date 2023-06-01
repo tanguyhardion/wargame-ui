@@ -46,15 +46,14 @@
     position: absolute;
     top: 15%;
     left: 50%;
-  
-    align-items: center;
+
 }
 
 .right {
     position: absolute;
-    width: 20%;
+    width: 15%;
     right: 20%;
-    top: 35%;
+    top: 40%;
 }
 
 .img{
@@ -84,9 +83,9 @@
     width:300px;
 }
 
-.GI span{
+#perso span{
     margin-top: 3px;
-    left: 80%;
+    left: 150%;
 
 }
 
@@ -95,7 +94,10 @@
 }
 
 #smiley{
-
+    position: relative;
+    left: 120%;
+    transform: translate(-50%, -50%);
+    width:80px;
 }
 
 .infos{
@@ -103,13 +105,15 @@
 }
 
 .valeurs{
-
-}
-
-#barres{
-
+    position: absolute;
+    width: 15%;
+    right: 10%;
+    top: 40%;
 }
 
 .quitter{
-
+    position: absolute;
+    top: 85%;
+    right: 10%;
+    transform: translate(-50%, -50%);
 }
