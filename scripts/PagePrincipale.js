@@ -1,1 +1,1 @@
-new Vivus('logo', { duration: 100 });
+const scroll = new LocomotiveScroll();

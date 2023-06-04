@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/PagePrincipale.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.3/smooth-scrollbar.js"
-        integrity="sha512-DZ7ZGShKdZmH76fW0k2ennnVsDQkohQR2DvxvsPr5z1hxo3odoSggvMBDG8EenZFyj7Ao3A+tY7JmCDFXDtjmQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" defer></script>
     <script src="./scripts/PagePrincipale.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
@@ -17,7 +15,7 @@
 <body>
     <main>
         <a href="parametres.html" title="Paramètres"> <img id="settings" type="image/svg+xml"
-            src="./res/images/parametre.png" /></a>
+                src="./res/images/parametre.png" /></a>
 
         <div class="wrapper">
             <div class="column left">
@@ -34,41 +32,97 @@
                 </div>
 
                 <div class="history">
-                    <h3 class="hist">Historique</h3>
+                    <div class="match defeat">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>JoueurProDu93</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>-17</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match victory">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>ShieldGamer</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>+24</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match victory">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>Hulk8</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>+20</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match defeat">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>SteelNinja</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>-14</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match victory">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>Warrior-41</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>+18</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match defeat">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>Demonologist</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>-12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match defeat">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>Tommy05</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>-15</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
-
-
             </div>
+
             <div class="column center">
-                <object id="logo" type="image/svg+xml" data="./res/svg/logo.svg"></object>
-                <a class="jouer main-button" href="">
-                    <div class="text">Jouer</div>
-                </a>
 
             </div>
+
             <div class="column right">
 
-
-                <img id="wifi" src="./res/images/wifi.png" alt="wifi">
-
-                <div class="friends">
-                    <h3 class="amis">Amis</h3>
-                </div>
-
-
-
             </div>
 
-
-
-            <div class="comments">
+            <!-- <div class="comments">
                 <img class="discussion" src="./res/images/discut.png" alt="discussion">
                         <span>Utilisateur78465: Ce jeu est super!</span>
-            </div>
-
-
+            </div> -->
         </div>
     </main>
 </body>

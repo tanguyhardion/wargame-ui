@@ -1,22 +1,27 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
 .profile {
     display: flex;
     padding: 20px;
     letter-spacing: 1px;
-    font-family: 'Varela Round', sans-serif;
 }
 
 #profile-picture {
     width: 120px;
     height: 120px;
     border: 4px solid black;
+    border-radius: 10px;
+    filter: brightness(.9);
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: 15px;
     height: 120px;
+    margin-left: 15px;
 }
 
 .score {
@@ -57,83 +62,42 @@
     width: 30%;
 }
 
-#logo {
-    position: relative;
-    top: 30%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-}
-
-.jouer{
-    position: absolute;
-    width: 200px;
-    left: 45%;
-    top: 60%;
- 
-}
-
 .history {
+    display: flex;
+    flex-direction: column;
     height: 60%;
-    width: 100%;
     margin: 20px;
-    background-color: whitesmoke;
+    min-width: 280px;
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 15px;
+    background-color: rgba(120, 120, 120, .8);
 }
 
-.hist{
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3rem;
-    text-decoration: none;
-    line-height: 1.5;
-    position: absolute;
-    left: 5%;
+
+.match {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 20px;
 }
 
-.friends{
-    height: 60%;
-    width: 70%;
-    background-color: whitesmoke;
+.match-icon {
+    width: 75px;
+    height: 75px;
 }
 
-.amis{
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3rem;
-    text-decoration: none;
-    line-height: 1.5;
-    position: absolute;
-    right: 20%;
-    top:25%;
+.match.victory .match-icon {
+    background: url("../res/images/swords_full.png") no-repeat;
+    background-size: 100%;
 }
 
-#wifi{
-    position: absolute;
-    top: 8%;
-    right: 8%;
-    transform: translate(-50%, -50%);
-    width: 60px;
+.match.defeat .match-icon {
+    background: url("../res/images/swords_outline.png") no-repeat;
+    background-size: 100%;
 }
 
-.comments{
-    position: absolute;
-    top: 95%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    height: 5%;
-    background-color: rgb(87, 79, 79);
-}
-
-.discussion{
-    position: absolute;
-    bottom: 8%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-}
-
-.discussion span{
-    margin-top: 3px;
-    left: 3%;
-    font-style: italic;
+.match-info {
+    display: flex;
+    flex-direction: column;
 }
