@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/introjs.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/PagePrincipale.css">
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
+    <script src="https://unpkg.com/intro.js/intro.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+        integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="./scripts/PagePrincipale.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
@@ -16,10 +24,11 @@
     <main>
         <a href="parametres.html" title="Paramètres"> <img id="settings" type="image/svg+xml"
                 src="./res/images/parametre.png" /></a>
+        <img id="wifi" src="./res/images/wifi.png" alt="wifi_status">
 
         <div class="wrapper">
             <div class="column left">
-                <div class="profile">
+                <div class="profile" data-title="Votre profil" data-intro="Ici sont toutes vos informations">
                     <img id="profile-picture" src="./res/images/profile-placeholder.jpg" alt="profile_picture">
                     <div class="profile-info">
                         <span>Utilisateur78465</span>
@@ -31,7 +40,7 @@
                     </div>
                 </div>
 
-                <div class="history">
+                <div class="menu history" data-title="Votre historique" data-intro="Vos anciens combats">
                     <div class="match defeat">
                         <div class="match-icon"></div>
                         <div class="match-info">
@@ -112,11 +121,96 @@
             </div>
 
             <div class="column center">
-
+                <div class="center-container" data-title="Le plus important"
+                    data-intro="Clique sur Jouer pour lancer un combat !" data-step="10">
+                    <object id="logo" type="image/svg+xml" data="./res/svg/logo.svg"></object>
+                    <a id="start-game" class="main-button jouer" href="">
+                        <div class="text">Jouer</div>
+                    </a>
+                </div>
             </div>
 
             <div class="column right">
+                <div class="menu friends" data-title="Vos amis" data-intro="La liste de vos amis">
+                    <div class="friends-header">
 
+                    </div>
+
+                    <div class="friend">
+                        <img class="friend-pfp" src="./res/images/profile-placeholder.jpg" alt="friend_profile_picture">
+                        <div class="friend-info">
+                            <span>TheFlyingBat</span>
+                            <div class="score">
+                                <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>10</span>
+                            </div>
+                            <div class="friend-status">
+                                <img class="status-icon online" src="./res/images/online.png" alt="online_status">
+                                <span>En ligne</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend">
+                        <img class="friend-pfp" src="./res/images/profile-placeholder.jpg" alt="friend_profile_picture">
+                        <div class="friend-info">
+                            <span>Julien64</span>
+                            <div class="score">
+                                <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>214</span>
+                            </div>
+                            <div class="friend-status">
+                                <img class="status-icon offline" src="./res/images/offline.png" alt="online_status">
+                                <span>Hors ligne</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend">
+                        <img class="friend-pfp" src="./res/images/profile-placeholder.jpg" alt="friend_profile_picture">
+                        <div class="friend-info">
+                            <span>Caligula</span>
+                            <div class="score">
+                                <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>45</span>
+                            </div>
+                            <div class="friend-status">
+                                <img class="status-icon offline" src="./res/images/offline.png" alt="online_status">
+                                <span>Hors ligne</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend">
+                        <img class="friend-pfp" src="./res/images/profile-placeholder.jpg" alt="friend_profile_picture">
+                        <div class="friend-info">
+                            <span>Barack-2</span>
+                            <div class="score">
+                                <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>77</span>
+                            </div>
+                            <div class="friend-status">
+                                <img class="status-icon offline" src="./res/images/offline.png" alt="online_status">
+                                <span>Hors ligne</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend">
+                        <img class="friend-pfp" src="./res/images/profile-placeholder.jpg" alt="friend_profile_picture">
+                        <div class="friend-info">
+                            <span>User7456</span>
+                            <div class="score">
+                                <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>129</span>
+                            </div>
+                            <div class="friend-status">
+                                <img class="status-icon offline" src="./res/images/offline.png" alt="online_status">
+                                <span>Hors ligne</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- <div class="comments">
