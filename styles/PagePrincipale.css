@@ -133,6 +133,19 @@ body {
     flex-direction: column;
 }
 
+.chat {
+    background: rgb(110, 110, 110);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 20px;
+}
+
+.chat span {
+    margin-left: 10px;
+}
+
 .column.center {
     display: flex;
     justify-content: center;
