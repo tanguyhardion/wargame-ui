@@ -28,7 +28,6 @@ main {
     text-decoration: none;
     color: #4e6450;
     transition: 0.3s ease-in-out;
-    animation: fade-in-slow 2s ease-out;
     overflow: hidden;
     will-change: transform;
 }

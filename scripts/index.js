@@ -13,4 +13,12 @@ VANTA.FOG({
 })
 
 
-new Vivus('logo', { duration: 150 });
+const vivus = new Vivus('logo', { duration: 150 });
+
+$('.main-button.jouer').click((e) => {
+    e.preventDefault();
+    $('.transition').addClass('active');
+    vivus.play(-1, () => {
+        window.location.href = 'connexion.html';
+    });
+});
