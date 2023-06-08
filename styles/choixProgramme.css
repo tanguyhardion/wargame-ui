@@ -19,4 +19,22 @@ body {
 .splide img {
     width: 100%;
     padding: 15px;
+    transition: filter .2s;
+}
+
+.current-program {
+    border: 2px solid #eee !important;
+    border-radius: 20px;
+}
+
+img {
+    filter: brightness(50%);
+}
+
+img:hover {
+    filter: brightness(100%);
+}
+
+.current-program img {
+    filter: brightness(100%);
 }
