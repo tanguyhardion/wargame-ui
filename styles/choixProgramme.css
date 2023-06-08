@@ -1,4 +1,22 @@
-.tProg {
-    font-size: 4rem;
-    letter-spacing: 10px;
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 50px;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+.splide img {
+    width: 100%;
+    padding: 15px;
 }

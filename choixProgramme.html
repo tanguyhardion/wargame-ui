@@ -6,34 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/inscription.css">
-    <script src="./scripts/inscription.js" defer></script>
+    <link rel="stylesheet" href="./styles/choixProgramme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script src="./scripts/choixProgramme.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
 
 <body>
     <main>
-        <a href="parametres.html" title="Paramètres">
-            <img id="settings" type="image/svg+xml" src="./res/images/parametre.png">
-        </a>
-
-        <a href="PagePrincipale.html" title="Page principale">
-            <img id="back" type="image/svg+xml" src="./res/images/back.jpg">
-        </a>
-
-        <h3 class="Titre">Choix du programme </h3>
-
-        <div class="container center">
-            <h1 class="tProg">Choisis le programme pour lequel tu combattras</h1>
-            <img src="./res/images/GI.png">
-            <p>GI</p>
-
-            <a class="suivant main-button" href="">
-                <div class="text">Suivant</div>
-            </a>
-
+        <div class="container">
+            <h1 class="title">Choix du programme</h1>
+            <div class="splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide"><img src="./res/images/programmes/ISI.png" alt="isi_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/RT.png" alt="rt_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/MTE.png" alt="mte_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/A2I.png" alt="a2i_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/GM.png" alt="gm_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/GI.png" alt="gi_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/MM.png" alt="mm_logo"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
 </body>
 
