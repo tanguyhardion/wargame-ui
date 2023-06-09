@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/connexion.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
+
     <script src="./scripts/connexion.js" defer></script>
 
     <script src="vex.js"></script>
@@ -29,9 +32,7 @@
 
             <input type="text" id="mdp" name="mdp" placeholder="Mot de passe">
 
-            <a class="connexion main-button" href="">
-                <div class="text">Connexion</div>
-            </a>
+            <div id="connexion" class="connexion main-button text">Connexion</div>
 
 
             <a class="mdpoublie" href="mdpOublie.html">
@@ -41,18 +42,6 @@
             <a class="inscription" href="inscription.html">
                 <div class="txt">Inscription</div>
             </a>
-
-
-            <dialog id="dialog">
-                <h3> Continuer en tant qu'invité</h3>
-                <p>Veuillez choisir un pseudo:</p>
-                <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo">
-                <button id="ok" onclick="href='PagePrincipale.html'">OK</button>
-                <button id="annuler">Annuler</button>
-
-            </dialog>
-
-
 
             <p id="invite" class="txt">Continuer en tant qu'invité</p>
 
