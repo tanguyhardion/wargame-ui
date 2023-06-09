@@ -11,16 +11,15 @@ body {
 .column {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .left {
-    align-items: center;
-    justify-content: space-around;
     width: 25%;
+    justify-content: space-around;
 }
 
 .center {
-    align-items: center;
     width: 50%;
 }
 
@@ -32,9 +31,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    margin-top: 30%;
+    width: 95%;
     height: fit-content;
+    margin-top: 30%;
     border-radius: 10px;
     background: rgb(220, 220, 220);
 }
@@ -54,16 +53,21 @@ body {
 }
 
 .soldats-container img {
-    width: 60px;
-    padding: 10px;
+    width: 50px;
+    margin: 7px;
+    cursor: pointer;
+    filter: brightness(.7);
+}
+
+.soldats-container img.selected {
+    filter: brightness(1);
+    transform: scale(1.3);
 }
 
 .icon-button {
     display: flex;
     align-items: center;
-    cursor: pointer;
     justify-content: center;
-    gap: 5px;
     width: fit-content;
     height: fit-content;
     padding: 15px 20px;
@@ -71,6 +75,8 @@ body {
     background: rgb(220, 220, 220);
     color: black;
     transition: .2s;
+    cursor: pointer;
+    gap: 5px;
 }
 
 .icon-button:hover {
@@ -83,6 +89,7 @@ body {
     align-items: center;
     padding-top: 30px;
     gap: 10px;
+    overflow: hidden;
 }
 
 .soldat .name {
@@ -90,7 +97,7 @@ body {
 }
 
 .soldat img {
-    margin-left: 30px;
+    transition: transform .3s ease-in, filter .25s ease-in;
 }
 
 .soldat .health-bar {
@@ -107,22 +114,24 @@ body {
 }
 
 .arrow-container {
-    position: absolute;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: absolute;
     top: 50%;
-    background: #ccc;
     width: 30px;
     height: 30px;
     border: 0;
-    opacity: .7;
     border-radius: 50%;
+    background: #ccc;
+    opacity: .7;
+    cursor: pointer;
 }
 
 .arrow {
-    border: solid black;
     width: 12px;
     height: 12px;
+    border: solid black;
     border-width: 3px 3px 0 0;
 }
 
@@ -131,15 +140,139 @@ body {
 }
 
 .arrow-container.right {
-    right: 38%;
+    right: 40%;
 }
 
 .arrow-container.left .arrow {
-    transform: rotate(-135deg);
     margin: 0 0 0 5px;
+    transform: rotate(-135deg);
 }
 
 .arrow-container.right .arrow {
+    margin: 0 5px 0 0;
     transform: rotate(45deg);
-    margin: 0 0 0 8px;
+}
+
+.points {
+    display: flex;
+    align-items: center;
+    margin-top: 20vh;
+    margin-left: auto;
+}
+
+.points-container {
+    align-items: center;
+    margin: 0 10px;
+    color: black;
+}
+
+.points-left {
+    background: rgb(220, 220, 220);
+    padding: 10px;
+    border-radius: 18px;
+    margin-right: 20px;
+}
+
+.attributes {
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+    font-size: 18px;
+}
+
+.attributes-names,
+.attributes-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.attributes-names {
+    gap: 50px;
+    font-weight: 16px;
+}
+
+.attributes-list {
+    gap: 20px;
+    align-items: center;
+    width: 120px;
+}
+
+.select {
+    position: relative;
+    width: 80px;
+    height: 50px;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    transition: .5s;
+}
+
+.select:hover {
+    width: 120px;
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.select .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    z-index: 1;
+    transform: translateY(-50%) rotate(135deg);
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s;
+}
+
+.select:hover .next {
+    opacity: 1;
+}
+
+.select .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    z-index: 1;
+    transform: translateY(-50%) rotate(315deg);
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s;
+}
+
+.select:hover .prev {
+    opacity: 1;
+}
+
+.select div input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 46px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.select div input:focus {
+    outline: none;
+    border: none;
+}
+
+.select div input::-webkit-outer-spin-button,
+.select div input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

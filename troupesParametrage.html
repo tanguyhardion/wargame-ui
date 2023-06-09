@@ -39,18 +39,70 @@
                 <div class="title">Paramétrage des troupes</div>
                 <div class="soldat">
                     <div class="arrow-container left">
-                        <div class="arrow"></div>
+                        <div class="arrow left"></div>
+                    </div>
+                    <div class="arrow-container right">
+                        <div class="arrow right"></div>
                     </div>
                     <div class="name">Soldat</div>
                     <img src="./res/images/soldats/soldat.png" alt="">
-                    <div class="health-bar"><span>Points de vie</span></div>
-                    <div class="arrow-container right">
-                        <div class="arrow"></div>
-                    </div>
+                    <div class="health-bar"><span>30 PV</span></div>
                 </div>
             </div>
 
             <div class="column right">
+                <div class="points">
+                    <span>Points restants</span>
+                    <div class="points-container">
+                        <span class="points-left">400</span>
+                    </div>
+                </div>
+                <div class="attributes">
+                    <div class="attributes-names">
+                        <span>Force</span>
+                        <span>Dextérité</span>
+                        <span>Résistance</span>
+                        <span>Constitution</span>
+                        <span>Initiative</span>
+                    </div>
+                    <div class="attributes-list">
+                        <div class="select force">
+                            <span class="next"></span>
+                            <span class="prev"></span>
+                            <div>
+                                <input name="force" type="number" value="0" min="0" max="10">
+                            </div>
+                        </div>
+                        <div class="select dexterite">
+                            <span class="next"></span>
+                            <span class="prev"></span>
+                            <div>
+                                <input name="dexterite" type="number" value="0" min="0" max="10">
+                            </div>
+                        </div>
+                        <div class="select resistance">
+                            <span class="next"></span>
+                            <span class="prev"></span>
+                            <div>
+                                <input name="resistance" type="number" value="0" min="0" max="10">
+                            </div>
+                        </div>
+                        <div class="select constitution">
+                            <span class="next"></span>
+                            <span class="prev"></span>
+                            <div>
+                                <input name="constitution" type="number" value="0" min="0" max="10">
+                            </div>
+                        </div>
+                        <div class="select initiative">
+                            <span class="next"></span>
+                            <span class="prev"></span>
+                            <div>
+                                <input name="initiative" type="number" value="0" min="0" max="10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
