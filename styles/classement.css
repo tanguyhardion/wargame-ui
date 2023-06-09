@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.tableau {
+    margin: 10%;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableau th,
+.tableau td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: #4e6450;
+}
+
+.tableau th {
+    background-color: #ccc;
+}
+
+.tableau tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tableau tr:hover {
+    background-color: #002b01;
+}
+
+.menu::-webkit-scrollbar {
+    width: 10px;
+}
+
+.menu::-webkit-scrollbar-track {
+    margin: 12px 0;
+    background: transparen t;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #2a2a2a;
+}
+
+.menu::-webkit-scrollbar-thumb:hover {
+    background: #343434;
+}
