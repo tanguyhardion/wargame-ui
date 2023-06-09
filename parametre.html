@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/parametre.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
+
     <script src="./scripts/parametre.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
@@ -16,17 +20,17 @@
         
          <a href="" title="Questions"> <img id="question" type="image/svg+xml"
                 src="./res/images/interrogation.png" /></a>
-        <a href="" title=""> <img id="back" type="image/svg+xml"
+        <a href="" title="Retour"> <img id="back" type="image/svg+xml"
                 src="./res/images/back.jpg" /></a>
         <h3 class="Titre"> PARAMETRES</h3>      
 
             <div class="container">
 
                 <div class="vertical-menu">
-                    <a href="#" class="active">Compte</a>
-                    <a href="parametreAudio.html">Audio</a>
-                    <a href="parametreAccessibilite.html">Accessibilité</a>
-                    <a href="parametresLangues.html">Langues</a>
+                    <div class="active">Compte</div>
+                    <div id="audio">Audio</div>
+                    <div id="accessibilite">Accessibilité</div>
+                    <div id="langue">Langues</div>
                 </div>
 
             
@@ -48,9 +52,9 @@
 
                 
 
-            <a class="appliquer main-button" href="">
-                <div class="text">Appliquer</div>
-            </a>
+            
+                <div id="appliquer" class="appliquer main-button text">Appliquer</div>
+            
         </div>
         </div>
     </main>
