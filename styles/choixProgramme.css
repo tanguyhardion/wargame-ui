@@ -10,8 +10,7 @@ body {
     align-items: center;
 }
 
-.container h1 {
-    font-size: 50px;
+.title {
     margin-top: 10vh;
     margin-bottom: 15vh;
 }

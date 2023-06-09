@@ -14,9 +14,9 @@ body {
 }
 
 .left {
+    align-items: center;
+    justify-content: space-around;
     width: 25%;
-    align-items: flex-end;
-    justify-content: center;
 }
 
 .center {
@@ -33,66 +33,48 @@ body {
     flex-direction: column;
     align-items: center;
     width: 90%;
+    margin-top: 30%;
     height: fit-content;
-    background: rgb(221, 221, 221);
     border-radius: 10px;
+    background: rgb(220, 220, 220);
 }
 
 .troupes span {
     margin-top: 15px;
-    color: black;
-    font-weight: bold;
     font-size: 20px;
+    font-weight: bold;
+    color: black;
 }
 
 .soldats-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 20px;
 }
 
 .soldats-container img {
-    padding: 10px;
     width: 60px;
+    padding: 10px;
 }
 
-.title {
+.icon-button {
     display: flex;
     align-items: center;
+    cursor: pointer;
     justify-content: center;
-    position: relative;
+    gap: 5px;
     width: fit-content;
-    height: 90px;
-    margin: 5vh;
-    padding: 0 30px;
-    background: #4e6450;
-    font-size: 35px;
-    color: white;
+    height: fit-content;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: rgb(220, 220, 220);
+    color: black;
+    transition: .2s;
 }
 
-.title::before {
-    content: "";
-    position: absolute;
-    right: -45px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 45px solid transparent;
-    border-left: 45px solid #4e6450;
-    border-top: 45px solid transparent;
-}
-
-.title::after {
-    content: "";
-    position: absolute;
-    left: -45px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 45px solid transparent;
-    border-right: 45px solid #4e6450;
-    border-top: 45px solid transparent;
+.icon-button:hover {
+    background: rgb(180, 180, 180);
 }
 
 .soldat {
@@ -122,4 +104,42 @@ body {
     border: 4px solid white;
     border-radius: 22px;
     background: linear-gradient(to bottom, #769a3e, #5a7c37);
+}
+
+.arrow-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    background: #ccc;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    opacity: .7;
+    border-radius: 50%;
+}
+
+.arrow {
+    border: solid black;
+    width: 12px;
+    height: 12px;
+    border-width: 3px 3px 0 0;
+}
+
+.arrow-container.left {
+    left: 40%;
+}
+
+.arrow-container.right {
+    right: 38%;
+}
+
+.arrow-container.left .arrow {
+    transform: rotate(-135deg);
+    margin: 0 0 0 5px;
+}
+
+.arrow-container.right .arrow {
+    transform: rotate(45deg);
+    margin: 0 0 0 8px;
 }

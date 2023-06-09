@@ -89,3 +89,42 @@ main {
     position: absolute;
     left: 7%;
 }
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    height: 90px;
+    margin: 5vh;
+    padding: 0 30px;
+    background: #4e6450;
+    font-size: 35px;
+    color: white;
+    border-radius: 2px;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    right: -44px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 45px solid transparent;
+    border-left: 45px solid #4e6450;
+    border-top: 45px solid transparent;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    left: -44px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 45px solid transparent;
+    border-right: 45px solid #4e6450;
+    border-top: 45px solid transparent;
+}
