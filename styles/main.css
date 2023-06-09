@@ -96,11 +96,11 @@ main {
     justify-content: center;
     position: relative;
     width: fit-content;
-    height: 90px;
+    height: 12vh;
     margin: 5vh;
     padding: 0 30px;
     background: #4e6450;
-    font-size: 35px;
+    font-size: calc(2vh + 1vw);
     color: white;
     border-radius: 2px;
 }
@@ -108,23 +108,36 @@ main {
 .title::before {
     content: "";
     position: absolute;
-    right: -44px;
+    right: -5.9vh;
     bottom: 0;
     width: 0;
     height: 0;
-    border-bottom: 45px solid transparent;
-    border-left: 45px solid #4e6450;
-    border-top: 45px solid transparent;
+    border-bottom: 6vh solid transparent;
+    border-left: 6vh solid #4e6450;
+    border-top: 6vh solid transparent;
 }
 
 .title::after {
     content: "";
     position: absolute;
-    left: -44px;
+    left: -5.9vh;
     bottom: 0;
     width: 0;
     height: 0;
-    border-bottom: 45px solid transparent;
-    border-right: 45px solid #4e6450;
-    border-top: 45px solid transparent;
+    border-bottom: 6vh solid transparent;
+    border-right: 6vh solid #4e6450;
+    border-top: 6vh solid transparent;
+}
+
+@media screen and (max-height: 565px) {
+
+    .title::before,
+    .title::after {
+        border: none;
+    }
+
+    .title {
+        border-radius: 24px;
+        padding: 30px;
+    }
 }
