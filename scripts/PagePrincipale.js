@@ -15,7 +15,7 @@ Swal.fire({
 
 $('#start-game').click((e) => {
     e.preventDefault();
-    const vivus = new Vivus('logo', { duration: 100 });
+    const vivus = new Vivus('logo', { duration: 70 });
     vivus.finish().play(-1, () => {
         window.location.href = 'choixProgramme.html';
     });
