@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/PagePrincipale.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
     <script src="https://unpkg.com/intro.js/intro.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
@@ -20,8 +21,8 @@
     <title>La bataille des programmes</title>
 </head>
 
-<body>
-    <main>
+<body data-barba="wrapper">
+    <main data-barba="container">
         <a href="parametres.html" title="Paramètres"> <img id="settings" type="image/svg+xml"
                 src="./res/images/parametre.png" /></a>
         <img id="wifi" src="./res/images/wifi.png" alt="wifi_status">
@@ -129,7 +130,7 @@
                 <div class="center-container" data-title="Le plus important"
                     data-intro="Clique sur Jouer pour lancer un combat !" data-step="10">
                     <object id="logo" type="image/svg+xml" data="./res/svg/logo.svg"></object>
-                    <a id="start-game" class="main-button jouer" href="">
+                    <a id="start-game" class="main-button jouer" href="choixProgramme.html">
                         <div class="text">Jouer</div>
                     </a>
                 </div>

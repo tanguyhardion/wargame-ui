@@ -17,6 +17,22 @@ $('#start-game').click((e) => {
     e.preventDefault();
     const vivus = new Vivus('logo', { duration: 100 });
     vivus.finish().play(-1, () => {
-        window.location.href = 'PagePrincipale.html';
+        window.location.href = 'choixProgramme.html';
     });
+});
+
+barba.init({
+    transitions: [{
+        name: 'opacity-transition',
+        leave(data) {
+            return gsap.to(data.current.container, {
+                opacity: 0
+            });
+        },
+        enter(data) {
+            return gsap.from(data.next.container, {
+                opacity: 0
+            });
+        }
+    }]
 });
