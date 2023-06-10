@@ -9,51 +9,34 @@
     <link rel="stylesheet" href="./styles/connexion.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
-
     <script src="./scripts/connexion.js" defer></script>
-
-    <script src="vex.js"></script>
-    <link href="vex.css" rel="stylesheet"><br>
-    <link href="vex-theme-default.css" rel="stylesheet">
     <title>La bataille des programmes</title>
 </head>
 
 <body>
     <main>
-        <a href="parametres.html" title="Paramètres"> <img id="settings" type="image/svg+xml"
-                src="./res/images/parametre.png" /></a>
-
-        <object id="logo" type="image/svg+xml" data="./res/svg/logo.svg"></object>
-
-
-        <div class="container center">
-            <input type="text" id="login" name="login" placeholder="Login">
-
-
-            <input type="text" id="mdp" name="mdp" placeholder="Mot de passe">
-
-            <div id="connexion" class="connexion main-button text">Connexion</div>
-
-
-            <a class="mdpoublie" href="mdpOublie.html">
-                <div class="txt">Mot de passe oublié?</div>
+        <div class="container">
+            <object id="logo" type="image/svg+xml" data="./res/svg/logo.svg"></object>
+            <div class="fields">
+                <div class="input-effect">
+                    <input class="effect" type="text">
+                    <label>Nom d'utilisateur</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="input-effect">
+                    <input class="effect" type="password">
+                    <label>Mot de passe</label>
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+            <a class="main-button connexion" href="PagePrincipale.html">
+                <div class="text">Connexion</div>
             </a>
-
-            <a class="inscription" href="inscription.html">
-                <div class="txt">Inscription</div>
-            </a>
-
-            <p id="invite" class="txt">Continuer en tant qu'invité</p>
-
+            <div class="navigation">
+                <p>Pas encore de compte ? <a href="inscription.html"><b>Inscription</b></a></p>
+                <p>Continuer en tant qu'inivté</p>
+            </div>
         </div>
-
-
-
-
-
-
-
-
     </main>
 </body>
 
