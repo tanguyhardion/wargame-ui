@@ -1,12 +1,12 @@
 for (var i = 0; i < 15; i++) {
-    $('.troupes-container').first().append('<img src="./res/images/soldats/casque_soldat.png" alt="helmet_logo" draggable="true">');
+    $('.troupes-container').first().append('<img src="./res/images/soldats/casque_soldat.png" title="Force: 2, Dextérité:3, Résistance: 1, Constitution: 4, Initiative: 2, IA: Aléatoire" draggable="true">');
 }
 
 for (var i = 0; i < 4; i++) {
-    $('.troupes-container').first().append('<img src="./res/images/soldats/casque_elite.png" alt="helmet_logo" draggable="true">');
+    $('.troupes-container').first().append('<img src="./res/images/soldats/casque_elite.png" title="Force: 2, Dextérité:2, Résistance: 1, Constitution: 6, Initiative: 1, IA: Aléatoire" draggable="true">');
 }
 
-$('.troupes-container').first().append('<img src="./res/images/soldats/casque_maitre.png" alt="helmet_logo" draggable="true">');
+$('.troupes-container').first().append('<img src="./res/images/soldats/casque_maitre.png" title="Force: 3, Dextérité:2, Résistance: 5, Constitution: 10, Initiative: 2, IA: Aléatoire" draggable="true">');
 
 $('.troupes-container img').draggable({
     revert: true
