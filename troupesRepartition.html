@@ -7,15 +7,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/troupesRepartition.css">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
     <script src="./scripts/troupesRepartition.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
 
 <body>
     <main>
+        <div class="row top">
+            <div class="title">Répartition des troupes</div>
+        </div>
 
+        <div class="row bottom">
+
+            <div class="column left">
+                <div class="troupes">
+                    <span>Vos troupes</span>
+                    <div class="troupes-container">
+                        <!-- content added in JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="column center">
+
+            </div>
+
+            <div class="column right">
+                <div class="zone">
+                    <span>BDE</span>
+                    <div class="zone-container">
+                    </div>
+                </div>
+                <div class="zone">
+                    <span>Bibliothèque</span>
+                    <div class="zone-container">
+                    </div>
+                </div>
+                <div class="zone">
+                    <span>Halles Indutrielles</span>
+                    <div class="zone-container">
+                    </div>
+                </div>
+                <div class="zone">
+                    <span>Halle Sportive</span>
+                    <div class="zone-container">
+                    </div>
+                </div>
+                <div class="zone">
+                    <span>Quartier Administratif</span>
+                    <div class="zone-container">
+                    </div>
+                </div>
+                <div class="zone reservistes">
+                    <span>Réservistes</span>
+                    <div class="zone-container">
+                    </div>
+                </div>
+
+                <div class="btn-container">
+                    <button class="next-button">
+                        <span class="text">Suivant</span>
+                        <div class="icon-container">
+                            <div class="icon icon--left">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="icon icon--right">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <svg style="display: none;">
+                        <symbol id="arrow-right" viewBox="0 0 20 10">
+                            <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+                        </symbol>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
     </main>
 </body>
 
