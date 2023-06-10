@@ -26,3 +26,32 @@ $('.zone.reservistes > div').on('DOMSubtreeModified', (event, ui) => {
     const reservistes = $('.zone.reservistes > div').children().length;
     $('.zone.reservistes > span').text(`Réservistes (${reservistes} / 5)`);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const showPopup = localStorage.getItem('showPopup') !== 'false';
+  
+    if (showPopup) {
+      Swal.fire({
+        title: 'Information',
+        html: 'Vous devez répartir 15 combattants sur les 5 zones de combat et choisir 5 réservistes qui n\'iront pas combattre tout de suite mais pourront être déployés plus tard. Les combattants peuvent être glissés-déposés dans la zone souhaitée.',
+        icon: 'info',
+        showCancelButton: false,
+        showCloseButton: false,
+        confirmButtonText: 'OK',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        showCheckbox: true,
+        inputPlaceholder: 'Ne plus afficher ce message',
+        input: 'checkbox',
+        inputValue: 0,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          const isChecked = result.value;
+          if (isChecked) {
+            localStorage.setItem('showPopup', 'false');
+          }
+        }
+      });
+    }
+  });
+  
