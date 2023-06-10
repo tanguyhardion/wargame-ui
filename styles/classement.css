@@ -1,11 +1,17 @@
 .container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
     display: flex;
     justify-content: center;
     overflow-x: auto;
+    
+    
 }
 
 .tableau {
-    margin: 10%;
+    margin: 5%;
     border-collapse: collapse;
     width: 100%;
 }
@@ -29,6 +35,16 @@
 .tableau tr:hover {
     background-color: #002b01;
 }
+
+.menu {
+    height: 70%;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(78, 100, 80);
+    overflow-y: auto;
+}
+
 
 .menu::-webkit-scrollbar {
     width: 10px;

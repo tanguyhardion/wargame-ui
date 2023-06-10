@@ -25,6 +25,7 @@ body {
 
 .right {
     width: 25%;
+    transform: translate(-20%, -10%);
 }
 
 .troupes {
@@ -186,6 +187,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: flex-start;
 }
 
 .attributes-names {
@@ -279,6 +281,29 @@ body {
 }
 
 .btn-container {
-    margin-top: 75px;
+    margin-top: 40px;
     margin-left: 100px;
 }
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    transform: translate(-20%, -10%);
+  }
+
+  .btn {
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+  }

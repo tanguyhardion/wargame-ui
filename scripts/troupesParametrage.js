@@ -113,3 +113,63 @@ $('.icon-button').click(() => {
         confirmButtonColor: '#4e6450'
     });
 });
+
+document.getElementById('force').addEventListener('click', (e) => {
+    e.preventDefault();
+    Swal.fire({
+        title: 'Amélioration Force',
+        text: 'Chaque point de force augmente la capacité d\'un combattant à infliger des dégâts de 10%.',
+        icon: 'info',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#4e6450',
+        cancelButtonColor: '#808080'
+    });
+});
+
+document.getElementById('dexterite').addEventListener('click', (e) => {
+    e.preventDefault();
+    Swal.fire({
+        title: 'Amélioration Dextérité',
+        text: 'Chaque point de dextérité augmente la capacité d\'un combattant à esquiver et à mieux viser son ennemi de 3%. Cela augmente aussi la capacité d\'un combattant à réussir un soin sur un autre combattant de 6%.',
+        icon: 'info',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#4e6450',
+        cancelButtonColor: '#808080'
+    });
+});
+
+document.getElementById('resistance').addEventListener('click', (e) => {
+    e.preventDefault();
+    Swal.fire({
+        title: 'Amélioration Résistance',
+        text: 'Chaque point de résistance diminue les dégâts reçus par le combattant de 5%.',
+        icon: 'info',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#4e6450',
+        cancelButtonColor: '#808080'
+    });
+});
+
+document.getElementById('constitution').addEventListener('click', (e) => {
+    e.preventDefault();
+    Swal.fire({
+        title: 'Amélioration Constitution',
+        text: 'Chaque point de constitution augmente de 1 point les points de vie d\'un combattant.',
+        icon: 'info',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#4e6450',
+        cancelButtonColor: '#808080'
+    });
+});
+
+document.getElementById('initiative').addEventListener('click', (e) => {
+    e.preventDefault();
+    Swal.fire({
+        title: 'Amélioration Initiative',
+        text: 'Les points d\'initiative sont comparés entre les combattants à chaque bataille. Lorsque des combattants s\'affrontent, c\'est celui qui a le plus de points d\'initiative qui commence. Celui qui a le moins de points d\'initiative portera le dernier coup (s\'il est encore en vie).',
+        icon: 'info',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#4e6450',
+        cancelButtonColor: '#808080'
+    });
+});
