@@ -11,9 +11,13 @@ $('.soldats-container').append('<img src="./res/images/soldats/casque_general.pn
 $('.soldats-container img')[0].classList.add('selected');
 
 $('.soldats-container img').on('click', (element) => {
-    $(element.target).toggleClass('selected');
-    $(element.target).siblings().removeClass('selected');
+    const target = $(element.target);
+    if (!target.hasClass('selected')) {
+        target.toggleClass('selected');
+        target.siblings().removeClass('selected');
+    }
 });
+
 
 $('.arrow-container').on('click', (element) => {
     let side = $(element.target).attr('class').split(' ')[1];
@@ -41,6 +45,7 @@ $('.next').on('click', (element) => {
     let value = parseInt(input.val());
     if (value < 10) {
         input.val(value + 1);
+        $('.points-left').text(parseInt($('.points-left').text()) - 1);
     }
 });
 
@@ -50,6 +55,7 @@ $('.prev').on('click', (element) => {
     let value = parseInt(input.val());
     if (value > 0) {
         input.val(value - 1);
+        $('.points-left').text(parseInt($('.points-left').text()) + 1);
     }
 });
 

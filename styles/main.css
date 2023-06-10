@@ -35,21 +35,21 @@ main {
 .main-button:before {
     content: "";
     display: block;
-    background: #4e6450;
     position: absolute;
     width: 200%;
     height: 500%;
     border-radius: 100%;
-    transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
+    background: #4e6450;
     transform: translate(-120%, -50%);
+    transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .main-button .text {
-    color: #4e6450;
-    position: relative;
-    height: 100%;
-    width: 100%;
     display: inline;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #4e6450;
     transition: 0.25s ease-in;
     transition-delay: 0.1s;
 }
@@ -99,10 +99,10 @@ main {
     height: 12vh;
     margin: 5vh;
     padding: 0 30px;
+    border-radius: 2px;
     background: #4e6450;
     font-size: calc(2vh + 1vw);
     color: white;
-    border-radius: 2px;
 }
 
 .title::before {
@@ -140,4 +140,89 @@ main {
         border-radius: 24px;
         padding: 30px;
     }
+
+}
+
+.next-button {
+    border: 0;
+    position: relative;
+    min-width: 180px;
+    min-height: 60px;
+    border-radius: 60px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.next-button .text,
+.next-button .icon-container {
+    position: relative;
+    z-index: 2;
+}
+
+.next-button .icon-container {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    transition: transform 500ms ease;
+}
+
+.next-button .icon-container .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    transition: transform 500ms ease, opacity 250ms ease;
+}
+
+.next-button .icon-container .icon--left {
+    transform: translateX(-200%);
+    opacity: 0;
+}
+
+.next-button .icon-container .icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+}
+
+.next-button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #4e6450;
+    border-radius: 60px;
+    z-index: 1;
+    transition: transform 500ms ease;
+}
+
+.next-button:hover::after {
+    transform: translateX(65%);
+}
+
+.next-button:hover .icon-container {
+    transform: translateX(70%);
+}
+
+.next-button:hover .icon-container .icon--left {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.next-button:hover .icon-container .icon--right {
+    transform: translateX(200%);
+    opacity: 0;
 }
