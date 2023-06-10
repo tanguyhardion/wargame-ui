@@ -1,6 +1,6 @@
 body {
-    font-family: 'Varela Round', sans-serif;
     max-height: 100vh;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .wrapper {
@@ -23,15 +23,15 @@ body {
 }
 
 .right {
-    width: 25%;
-    justify-content: center;
     align-items: flex-end;
+    justify-content: center;
+    width: 25%;
 }
 
 #wifi {
     position: absolute;
-    top: 37px;
     right: 125px;
+    top: 37px;
     width: 42px;
     height: 42px;
     filter: invert(1);
@@ -136,12 +136,12 @@ body {
 }
 
 .chat {
-    background: rgb(110, 110, 110);
-    border-radius: 5px;
-    padding: 5px;
     display: flex;
     align-items: center;
     margin: 20px 0 0 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgb(110, 110, 110);
     cursor: pointer;
 }
 
@@ -151,17 +151,17 @@ body {
 
 .column.center {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .center-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 100px;
-    padding-bottom: 100px;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    gap: 100px;
 }
 
 #logo {
@@ -174,8 +174,8 @@ body {
 }
 
 .friends {
-    height: 60%;
     width: 300px;
+    height: 60%;
 }
 
 .friend {
@@ -230,8 +230,42 @@ body {
 
 .chat-wrapper {
     display: flex;
-    font-size: 16px;
+    flex-direction: column;
+    border-radius: 20px;
     background: rgb(235, 235, 235);
+    font-size: 16px;
+}
+
+.chat-row {
+    display: flex;
+    width: 100%;
+}
+
+.chat-row.top {
+    height: 5%;
+}
+
+.chat-row.bottom {
+    height: 95%;
+}
+
+.chat-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 25px;
+}
+
+.chat-info #close-btn {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.chat-info #chat-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
 }
 
 .chat-column {
@@ -247,7 +281,7 @@ body {
 
 .chat-column.right {
     width: 80%;
-    height: 95%;
+    height: 100%;
     gap: 20px;
 }
 
@@ -255,7 +289,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 80%;
     gap: 20px;
     overflow-y: auto;
 }
@@ -263,38 +296,42 @@ body {
 .chat-field {
     display: flex;
     align-items: center;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
 }
 
 .chat-field input {
-    background: none;
+    width: 75%;
+    height: fit-content;
+    padding: 15px;
     border: 0;
     border: 2px solid black;
     border-radius: 5px;
-    padding: 15px;
-    height: fit-content;
-    width: 65%;
+    background: none;
 }
 
 .message,
 .user-message {
     display: flex;
+    align-items: center;
     width: fit-content;
     height: fit-content;
-    align-items: center;
     gap: 15px;
 }
 
 .user-message {
-    margin-left: auto;
     display: flex;
+    margin-left: auto;
+}
+
+.user-message img {
+    border-radius: 50%;
 }
 
 .message .text,
 .user-message .text {
-    background: #cbcbcb;
     padding: 10px;
+    background: #cbcbcb;
 }
 
 .message .text {
@@ -338,4 +375,12 @@ body {
 
 .icon-button:hover {
     background: rgb(180, 180, 180);
+}
+
+.ui-draggable-handle {
+    background: rgb(170, 170, 170);
+    border-radius: 10px 10px 0 0;
+    width: 80%;
+    margin: 0 auto;
+    cursor: grab;
 }

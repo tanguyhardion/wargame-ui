@@ -21,7 +21,7 @@ $('#start-game').click((e) => {
     });
 });
 
-$("#dialog").dialog({
+$('#dialog').dialog({
     autoOpen: false,
     width: 800,
     height: 500,
@@ -30,15 +30,19 @@ $("#dialog").dialog({
         $('.ui-dialog-titlebar-close', ui.dialog | ui).hide();
     },
     show: {
-        effect: "fade",
+        effect: 'fade',
         duration: 300
     },
     hide: {
-        effect: "fade",
+        effect: 'fade',
         duration: 300
     }
 });
 
-$(".chat").on("click", function () {
-    $("#dialog").dialog("open");
+$('.chat').on('click', function () {
+    $('#dialog').dialog('open');
+});
+
+$('#close-btn').on('click', () => {
+    $('#dialog').dialog('close');
 });
