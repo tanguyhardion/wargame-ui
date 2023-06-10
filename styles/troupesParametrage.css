@@ -57,7 +57,7 @@ body {
     width: 50px;
     margin: 7px;
     cursor: pointer;
-    filter: brightness(.7);
+    filter: brightness(.5);
 }
 
 .soldats-container img.selected {
