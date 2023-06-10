@@ -14,8 +14,8 @@ body {
     width: 300px;
 }
 
-input[type="text"],
-input[type="password"] {
+.input-effect input[type="text"],
+.input-effect input[type="password"] {
     width: 100%;
     color: white;
     box-sizing: border-box;
