@@ -9,11 +9,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
     <!-- IntroJS -->
     <link rel="stylesheet" href="https://unpkg.com/intro.js/introjs.css">
+    <!-- ModalJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shlok-Jain/ModalJS@latest/index.css">
+    <!-- Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/PagePrincipale.css">
+
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
     <!-- SWAL2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
     <!-- IntroJS -->
@@ -22,11 +29,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
         integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <!-- ModalJS -->
+    <script src="https://cdn.jsdelivr.net/gh/Shlok-Jain/ModalJS@latest/index.js" defer></script>
     <script src="./scripts/PagePrincipale.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
 
-<body data-barba="wrapper">
+<body>
     <main>
         <a href="parametres.html" title="Paramètres"> <img id="settings" type="image/svg+xml"
                 src="./res/images/parametre.png" /></a>
@@ -44,8 +53,8 @@
                         </div>
                         <a href="classement.html">
                             <img class="icon" title="Classements" src="./res/images/stats.png" alt="stats_logo">
-                          </a>
-                          
+                        </a>
+
                     </div>
                 </div>
 
@@ -128,7 +137,7 @@
                     </div>
                 </div>
 
-                <div class="chat">
+                <div class="chat" data-title="Le chat" data-intro="Pour vous vanter de vos victoires">
                     <img class="icon" src="./res/images/chat.png" alt="chat_icon">
                     <span><b>JoueurProDu93 :</b> Haha j'ai gagné !</span>
                 </div>
@@ -223,6 +232,59 @@
                                 <span>Hors ligne</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dialog" class="chat-wrapper">
+            <div class="chat-column left">
+
+            </div>
+            <div class="chat-column right">
+                <div class="messages">
+                    <div class="message">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4140/4140037.png" alt="user_logo">
+                        <div class="content">
+                            <span>Julien64</span>
+                            <span class="text">J'aime beaucoup cette interface</span>
+                        </div>
+                    </div>
+                    <div class="user-message">
+                        <div class="message">
+                            <span class="text">Moi aussi !</span>
+                            <img src="https://cdn-icons-png.flaticon.com/128/4140/4140037.png" alt="user_logo">
+                        </div>
+                    </div>
+                    <div class="message">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4140/4140037.png" alt="user_logo">
+                        <div class="content">
+                            <span>Julien64</span>
+                            <span class="text">HTML, CSS et JS sont les meilleurs</span>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4140/4140037.png" alt="user_logo">
+                        <div class="content">
+                            <span>Julien64</span>
+                            <span class="text">J'en suis convaincu</span>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4140/4140037.png" alt="user_logo">
+                        <div class="content">
+                            <span>Caligula</span>
+                            <span class="text">C'est vrai</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-field">
+                    <input type="text" placeholder="Tapes un message...">
+                    <div class="icon-button">
+                        <span>Envoyer</span>
+                        <span class="material-symbols-outlined">
+                            send
+                        </span>
                     </div>
                 </div>
             </div>

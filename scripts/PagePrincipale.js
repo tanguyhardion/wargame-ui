@@ -20,3 +20,25 @@ $('#start-game').click((e) => {
         window.location.href = 'choixProgramme.html';
     });
 });
+
+$("#dialog").dialog({
+    autoOpen: false,
+    width: 800,
+    height: 500,
+    modal: true,
+    open: (event, ui) => {
+        $('.ui-dialog-titlebar-close', ui.dialog | ui).hide();
+    },
+    show: {
+        effect: "fade",
+        duration: 300
+    },
+    hide: {
+        effect: "fade",
+        duration: 300
+    }
+});
+
+$(".chat").on("click", function () {
+    $("#dialog").dialog("open");
+});
