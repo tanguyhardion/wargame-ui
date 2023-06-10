@@ -11,34 +11,40 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 50px;
-  height: 100%;
+  height: 100vh;
   font-family: 'Strike Lord';
 }
 
 .vertical-menu {
-  width: 15%;
-  position: relative;
-  top: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+  width: 200px;
+  margin-top: 10%;
 }
 
 .vertical-menu a {
-  color: whitesmoke;
   display: block;
-  padding: 12px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: black;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .vertical-menu a:hover {
-  background-color: #ccc;
+  background-color: #ddd;
 }
 
-.vertical-menu a.active {
-  background-color: black;
-  color: whitesmoke;
+.vertical-menu .active {
+  background-color: #4e6454;
+  color: white;
 }
 
 .input{
   display: flex;
+  top: -30%;
   flex-direction: column;
   justify-content: center;
   height: 50%;
@@ -55,20 +61,16 @@
   top: 2%;
 }
 
-
 .parent{
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;    
+  position: relative; 
 }
 
 #profile{
  order: 1;
  width: 100%;
  height: auto;
- position: relative;
-  margin-top: 5%;
-  top: 5%;
+ position: absolute;
+  margin-top: -130px;
   left: 50%;
   transform: translate(-50%, -50%);
   width:120px;
@@ -77,8 +79,8 @@
 #plus{
   order: 2;
   position: absolute;
-  bottom: 25%;
-  right: 45%;
+  margin-top: -80px;
+  left: 54%;
   transform: translate(-50%, -50%);
   width: 25px;
 }

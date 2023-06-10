@@ -18,3 +18,4 @@ splide.on('inactive', (slide) => {
 });
 
 splide.mount();
+

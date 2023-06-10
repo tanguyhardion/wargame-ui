@@ -37,3 +37,48 @@ img:hover {
 .current-program img {
     filter: brightness(100%);
 }
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: rgb(220, 220, 220);
+    color: black;
+    transition: .2s;
+    cursor: pointer;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.icon-button:hover {
+    background: rgb(180, 180, 180);
+}
+
+.icon-btn{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: #4e6454;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.icon-button:hover {
+    background: #d2f8db;
+}
+
+.icon-btn span {
+    color: white;
+    text-decoration: none !important;
+}
