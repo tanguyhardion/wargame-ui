@@ -11,7 +11,7 @@ body {
 }
 
 #logo {
-    width: 300px;
+    width: calc(50vh - 100px);
 }
 
 .input-effect input[type="text"],
@@ -76,6 +76,14 @@ body {
 }
 
 .effect:focus~label {
+    left: 10px;
+    top: -16px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.effect:focus~label,
+.effect:not(:placeholder-shown)~label {
     left: 10px;
     top: -16px;
     font-size: 12px;

@@ -7,45 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/inscription.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
     <script src="./scripts/inscription.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
 
 <body>
-
     <main>
-        <a href="parametres.html" title="Paramètres"> <img id="settings" type="image/svg+xml"
-                src="./res/images/parametre.png" /></a>
-        <a href="connexion.html" title="Connexion"> <img id="back" type="image/svg+xml"
-                src="./res/images/back.jpg" /></a>
-        <h3 class="Titre"> INSCRIPTION</h3>
-        
-      
-
-        <div class="container center">
-
-            <div class="parent">
-                <img id="profile" src="./res/images/profile-placeholder.jpg">
-                <img id="plus" src="./res/images/ajouter.png">
+        <div class="container">
+            <object id="logo" type="image/svg+xml" data="./res/svg/logo.svg"></object>
+            <div class="fields">
+                <div class="input-effect">
+                    <input class="effect" type="text" placeholder=" ">
+                    <label>Nom d'utilisateur</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="input-effect">
+                    <input class="effect" type="password" placeholder=" ">
+                    <label>Mot de passe</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="input-effect">
+                    <input class="effect" type="password" placeholder=" ">
+                    <label>Répéter le mot de passe</label>
+                    <span class="focus-border"></span>
+                </div>
             </div>
-
-            <input type="text" id="login" name="login" placeholder="Login">
-            
-            <input type="text" id="email" name="email" placeholder="Email">
-           
-            <input type="text" id="mdp" name="mdp" placeholder="Mot de passe">
-            
-            <a class="envoyer main-button" href="">
-                <div class="text">Envoyer</div>
+            <a class="main-button inscription" href="PagePrincipale.html">
+                <div class="text">Inscription</div>
             </a>
-
-          
-            <a class="compte" href="connexion.html">
-                <div class="txt">Déja un compte? Connexion</div>
-            </a>
-
+            <div class="navigation">
+                <p>Déjà un compte ? <a href="connexion.html"><b>Connexion</b></a></p>
+                <p id="invite">Continuer en tant qu'inivté</p>
+            </div>
         </div>
-
     </main>
 </body>
 
