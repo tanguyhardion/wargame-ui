@@ -38,11 +38,19 @@ document.querySelectorAll('.troupes-container img').forEach((element) => {
 });
 
 $('.troupes-container.redeployables img').draggable({
-    revert: true
+    containment: 'document',
+    helper: 'clone',
+    opacity: 0.70,
+    zIndex: 10000,
+    appendTo: "body"
 });
 
 $('.troupes-container.reservistes img').draggable({
-    revert: true
+    containment: 'document',
+    helper: 'clone',
+    opacity: 0.70,
+    zIndex: 10000,
+    appendTo: "body"
 });
 
 $('.troupes-container.vostroupes').droppable({

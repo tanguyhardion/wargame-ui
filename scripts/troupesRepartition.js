@@ -24,6 +24,14 @@ document.querySelectorAll('.troupes-container img').forEach((element) => {
 });
 
 $('.troupes-container img').draggable({
+    containment: 'document',
+    helper: 'clone',
+    opacity: 0.70,
+    zIndex: 10000,
+    appendTo: "body"
+});
+
+$('.zone-container img').draggable({
     revert: true
 });
 
@@ -37,8 +45,8 @@ $('.zone').droppable({
 });
 
 $('.zone.reservistes > div').on('DOMSubtreeModified', (event, ui) => {
-    const reservistes = $('.zone.reservistes > div').children().length;
-    $('.zone.reservistes > span').text(`Réservistes(${reservistes} / 5)`);
+    const reservistes = $('.zone.reservistes .zone-container').children().filter('img').length;
+    $('.zone.reservistes > span').text(`Réservistes (${reservistes} / 5)`);
 });
 
 $('.next-button').on('click', () => {

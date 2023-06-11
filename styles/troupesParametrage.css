@@ -107,10 +107,10 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 36px;
+    height: 24px;
     margin: 10px 0;
     padding: 5px;
-    border: 4px solid white;
+    border: 1px solid white;
     border-radius: 22px;
     background: linear-gradient(to bottom, #769a3e, #5a7c37);
 }
@@ -179,15 +179,15 @@ body {
     display: flex;
     margin-top: 50px;
     gap: 50px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .attributes-names,
 .attributes-list {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    align-self: flex-start;
 }
 
 .attributes-names {
@@ -199,6 +199,7 @@ body {
     gap: 20px;
     align-items: center;
     width: 120px;
+    height: fit-content;
 }
 
 .select {
@@ -281,18 +282,18 @@ body {
 }
 
 .btn-container {
-    margin-top: 40px;
-    margin-left: 100px;
+    position: absolute;
+    top: 95%;
+    right: 10%;
 }
 
 .btn-group {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    transform: translate(-20%, -10%);
-  }
+    margin-top: 40px;
+    gap: 2px;
+}
 
-  .btn {
+.btn {
     padding: 10px 20px;
     border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 4px;
@@ -301,9 +302,14 @@ body {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
+}
 
-  .btn:hover {
+.btn.active {
+    background-color: rgba(255, 255, 255, .5) !important;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.btn:hover {
     background-color: rgba(255, 255, 255, .2);
-    color: #fff;
-  }
+}

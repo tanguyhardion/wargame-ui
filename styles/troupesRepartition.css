@@ -108,6 +108,24 @@ body {
     color: white;
 }
 
+.ui-droppable-active {
+    border: 2px dashed black;
+}
+
+.ui-droppable-hover {
+    background: rgb(120, 120, 120);
+    transition: .2s;
+}
+
+.reservistes.ui-droppable-hover {
+    background: rgb(54, 68, 55);
+    transition: .2s;
+}
+
+.ui-draggable-dragging {
+    width: 100px;
+}
+
 .btn-container {
     margin-left: auto;
     margin-right: 40px;

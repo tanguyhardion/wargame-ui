@@ -14,7 +14,20 @@
     <!-- Material Icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
+    <!-- TalkifyJS -->
+    <link rel="stylesheet" href="https://rawgit.com/Hagsten/Talkify/master/dist/styles/talkify-playlist.css">
+    <link rel="stylesheet" href="https://rawgit.com/Hagsten/Talkify/master/dist/styles/talkify-common.css">
+    <link rel="stylesheet" href="https://rawgit.com/Hagsten/Talkify/master/dist/styles/colors.css">
+    <link rel="stylesheet" href="https://rawgit.com/Hagsten/Talkify/master/dist/styles/modern-control-center/main.css">
+    <link rel="stylesheet"
+        href="https://rawgit.com/Hagsten/Talkify/master/dist/styles/modern-control-center/colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://rawgit.com/Hagsten/Talkify/master/dist/styles/text-selection-activator/colors.css">
+    <link rel="stylesheet"
+        href="https://rawgit.com/Hagsten/Talkify/master/dist/styles/text-selection-activator/main.css">
+    <link rel="stylesheet" href="https://rawgit.com/Hagsten/Talkify/master/dist/styles/local-control-center/main.css">
+    <link rel="stylesheet" href="https://rawgit.com/Hagsten/Talkify/master/dist/styles/local-control-center/colors.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/PagePrincipale.css">
 
@@ -29,8 +42,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
         integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <!-- ModalJS -->
-    <script src="https://cdn.jsdelivr.net/gh/Shlok-Jain/ModalJS@latest/index.js" defer></script>
+    <!-- TalkifyJS -->
+    <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
+
+    <script src="./scripts/main.js" defer></script>
     <script src="./scripts/PagePrincipale.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
@@ -161,12 +176,13 @@
 
                     <div class="friend">
                         <div class="parent">
-                            <img class="friend-pfp" src="./res/images/profile-placeholder.jpg" alt="friend_profile_picture">
+                            <img class="friend-pfp" src="./res/images/profile-placeholder.jpg"
+                                alt="friend_profile_picture">
                             <img class="plus" src="./res/images/plus.png" alt="friend_add">
                         </div>
                         <div class="friend-info">
                             <span>TheFlyingBat</span>
-                            <div class="score">                              
+                            <div class="score">
                                 <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
                                 <span>10</span>
                             </div>

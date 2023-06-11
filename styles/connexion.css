@@ -27,67 +27,8 @@ body {
 }
 
 .input-effect {
-    position: relative;
     width: 300px;
     margin-top: 40px;
-}
-
-.effect {
-    padding: 14px 15px;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    border-radius: 4px 4px 0 0;
-    background-color: rgba(190, 190, 190, .2);
-    transition: .2s;
-}
-
-.effect:hover,
-.effect:focus {
-    background-color: rgba(190, 190, 190, .3);
-}
-
-.effect~.focus-border {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: 0.4s;
-}
-
-.effect:focus~.focus-border {
-    left: 0;
-    width: 100%;
-    transition: 0.4s;
-}
-
-.effect~label {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    z-index: 1;
-    width: 100%;
-    color: #bbb;
-    transform: translateY(-50%);
-    transition: 0.3s;
-    letter-spacing: 0.5px;
-    pointer-events: none;
-}
-
-.effect:focus~label {
-    left: 10px;
-    top: -16px;
-    font-size: 12px;
-    transition: 0.3s;
-}
-
-.effect:focus~label,
-.effect:not(:placeholder-shown)~label {
-    left: 10px;
-    top: -16px;
-    font-size: 12px;
-    transition: 0.3s;
 }
 
 .connexion {
@@ -115,7 +56,7 @@ body {
     color: rgb(230, 230, 230);
 }
 
-.navigation p:nth-child(2) {
+.navigation p:nth-child(3) {
     font-style: italic;
     color: rgb(210, 210, 210);
     cursor: pointer;

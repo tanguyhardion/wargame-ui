@@ -56,6 +56,10 @@ $('.soldats-container img').on('click', (element) => {
 var current = 0;
 
 $('.arrow-container').on('click', (element) => {
+    arrowAnimation(element);
+});
+
+function arrowAnimation(element) {
     let side = $(element.target).attr('class').split(' ')[1];
     let image = $('.soldat img');
     const sign = side === 'left' ? '-' : '';
@@ -82,7 +86,7 @@ $('.arrow-container').on('click', (element) => {
         image.css('opacity', '1');
         image.css('filter', 'brightness(1)');
     }, 600);
-});
+}
 
 $('.next').on('click', (element) => {
     let attribute = $(element.target).parent().attr('class').split(' ')[1];
@@ -172,4 +176,12 @@ document.getElementById('initiative').addEventListener('click', (e) => {
         confirmButtonColor: '#4e6450',
         cancelButtonColor: '#808080'
     });
+});
+
+$('.btn').on('click', function () {
+    // Remove background color from all buttons
+    $('.btn').removeClass('active');
+
+    // Add background color to the clicked button
+    $(this).addClass('active');
 });
