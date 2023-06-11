@@ -21,7 +21,6 @@ main {
     padding: 10px 15px 0 15px !important;
 }
 
-
 #bde {
     background: url("../res/images/zones/bde_darkened.png") no-repeat;
     background-size: cover;
@@ -54,6 +53,7 @@ main {
 
 .columns {
     display: flex;
+    height: 100%;
 }
 
 .column {
@@ -67,10 +67,16 @@ main {
 
 .column.center {
     width: 40%;
+    justify-content: center;
 }
 
 .column.right {
     width: 40%;
+    justify-content: space-evenly;
+}
+
+.row {
+    display: flex;
 }
 
 .map {
@@ -97,8 +103,8 @@ main {
     align-items: center;
     width: 70%;
     height: fit-content;
+    min-height: 100px;
     margin-left: 50px;
-    margin-top: 30%;
     border-radius: 10px;
     background: rgb(220, 220, 220);
 }
@@ -113,8 +119,11 @@ main {
 .troupes span {
     margin-top: 15px;
     font-size: 20px;
-    font-weight: bold;
     color: black;
+}
+
+.main-label {
+    font-weight: bold;
 }
 
 .troupes img {
