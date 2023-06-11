@@ -185,3 +185,32 @@ $('.btn').on('click', function () {
     // Add background color to the clicked button
     $(this).addClass('active');
 });
+
+$(document).on('DOMContentLoaded', () => {
+    const showPopup = sessionStorage.getItem('showPopupParametrage') !== 'false';
+
+    if (showPopup) {
+        Swal.fire({
+            title: 'Paramétrage',
+            html: 'Vous devez maintenant paramétrer vos troupes ! Cliquer sur le <b>"?"</b> pour avoir des informations sur chaque amélioration. Vous disposez de <b>400 points</b>.',
+            icon: 'info',
+            showCancelButton: false,
+            showCloseButton: false,
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#4e6450',
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            showCheckbox: true,
+            inputPlaceholder: 'Ne plus afficher ce message',
+            input: 'checkbox',
+            inputValue: 0,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                const isChecked = result.value;
+                if (isChecked) {
+                    sessionStorage.setItem('showPopupParametrage', 'false');
+                }
+            }
+        });
+    }
+});

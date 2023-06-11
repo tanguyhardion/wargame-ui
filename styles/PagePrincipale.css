@@ -193,7 +193,7 @@ body {
 
 }
 
-.parent{
+.parent {
     position: relative;
 }
 
@@ -205,7 +205,7 @@ body {
     filter: brightness(.9);
 }
 
-.plus{
+.plus {
     position: absolute;
     height: 22px;
     width: 22px;
@@ -251,6 +251,7 @@ body {
 .chat-row {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .chat-row.top {
@@ -284,11 +285,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-}
-
-.chat-column.left {
-    width: 20%;
-    height: 100%;
 }
 
 .chat-column.right {
