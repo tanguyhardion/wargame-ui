@@ -291,6 +291,7 @@ body {
     width: 100%;
     gap: 20px;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .chat-field {
@@ -358,7 +359,7 @@ body {
     height: 40px;
 }
 
-.icon-button {
+.send-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -366,21 +367,21 @@ body {
     height: fit-content;
     padding: 10px 20px;
     border-radius: 10px;
-    background: rgb(220, 220, 220);
+    background: rgb(200, 200, 200);
     color: black;
     transition: .2s;
     cursor: pointer;
     gap: 5px;
 }
 
-.icon-button:hover {
+.send-button:hover {
     background: rgb(180, 180, 180);
 }
 
 .ui-draggable-handle {
     background: rgb(170, 170, 170);
     border-radius: 10px 10px 0 0;
-    width: 80%;
+    width: 40%;
     margin: 0 auto;
     cursor: grab;
 }

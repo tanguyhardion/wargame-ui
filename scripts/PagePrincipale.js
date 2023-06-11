@@ -46,3 +46,18 @@ $('.chat').on('click', function () {
 $('#close-btn').on('click', () => {
     $('#dialog').dialog('close');
 });
+
+$('.send-button').on('click', () => {
+    const message = $('.chat-field input').val();
+    if (message !== '') {
+        $('.messages').append(`
+        <div class="user-message">
+            <div class="message">
+                <span class="text">${message}</span>
+                <img src="./res/images/profile-placeholder.jpg" alt="user_logo">
+            </div>
+        </div>`);
+        $('.messages').scrollTop($('.messages').height());
+        $('.chat-field input').val('');
+    }
+});
