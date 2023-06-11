@@ -1,3 +1,6 @@
+var audio = new Audio('./res/music/Dark Descent.mp3');
+$(audio.play());
+
 function fill(element) {
     $(element).empty();
 
