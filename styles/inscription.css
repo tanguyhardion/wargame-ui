@@ -10,10 +10,6 @@ body {
     height: 85vh;
 }
 
-#logo {
-    width: calc(50vh - 100px);
-}
-
 .fields {
     display: flex;
     flex-direction: column;
@@ -141,4 +137,20 @@ body {
     .input-effect:nth-child(1) {
         margin-top: 0;
     }
+}
+
+.img {
+    margin-top: 5%;
+    height: 50%;
+    width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(235, 254, 237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image {
+    width: 100px;
 }
