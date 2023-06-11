@@ -5,4 +5,10 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    padding-top: 50px;
+}
+
+.tabs-wrapper {
+    width: 75%;
+    margin: auto;
 }

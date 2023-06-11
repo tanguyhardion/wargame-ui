@@ -1,0 +1,1 @@
+$(".tabs-wrapper").tabs();
