@@ -21,34 +21,55 @@
                 src="./res/images/interrogation.png" /></a>
         <a href="" title="Retour"> <img id="back" type="image/svg+xml"
                 src="./res/images/back.jpg" /></a>
-        <h3 class="Titre">PARAMETRES</h3>
-        <div class="container">
-            <div class="vertical-menu">
-                <a href="#" class="active">Compte</a>
-                <a href="#" id="audio">Audio</a>
-                <a href="#" id="accessibilite">Accessibilité</a>
-                <a href="#" id="langue">Langues</a>
-            </div>
+        
+                
+        <div class="wrapper">
+            
 
-            <div class="centre">
-            <div class="parent">
-                <img id="profile" src="./res/images/profile-placeholder.jpg">
-                <img id="plus" src="./res/images/ajouter.png">
-            </div>
+            <div class="column left">
+                <div class="vertical-menu">
+                    <a href="#" class="active">Compte</a>
+                    <a href="#" id="audio">Audio</a>
+                    <a href="#" id="accessibilite">Accessibilité</a>
+                    <a href="#" id="langue">Langues</a>
+                </div>
 
-            <div class="input center">
-                <input type="text" id="login" name="login" value="SuperLogin">
-                <br />
-                <input type="text" id="email" name="email" value="truc@machin.fr">
-                <br />
-                <input type="text" id="mdp" name="mdp" placeholder="Ancien mot de passe">
-                <br />
-                <input type="text" id="nvmdp" name="nvmdp" placeholder="Nouveau mot de passe">
-                <br />
-
-                <div id="appliquer" class="appliquer main-button text">Appliquer</div>
             </div>
-        </div>
+            <div class="column center">
+                <div class="title">Paramètres</div>
+
+                <div class="parent">
+                    <img id="profile" src="./res/images/profile-placeholder.jpg">
+                    <img id="plus" src="./res/images/ajouter.png">
+                </div>
+
+                <div class="fields">
+                    <div class="input-effect">
+                        <input class="effect" type="text" value=" ">
+                        <label>SuperLogin</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="input-effect">
+                        <input class="effect" type="text" value=" ">
+                        <label>truc@machin.fr</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="input-effect">
+                        <input class="effect" type="password" placeholder=" ">
+                        <label>Ancien mot de passe</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="input-effect">
+                        <input class="effect" type="password" placeholder=" ">
+                        <label>Nouveau mot de passe</label>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+
+                <div id="appliquer" class="main-button appliquer text">Appliquer</div>
+                
+            </div>
+            
         </div>
     </main>
 </body>

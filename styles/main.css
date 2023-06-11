@@ -80,16 +80,6 @@ main {
     width: 50px;
 }
 
-.Titre {
-    color: #eee;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 2rem;
-    text-decoration: none;
-    line-height: 1.5;
-    position: absolute;
-    left: 7%;
-}
-
 .title {
     display: flex;
     align-items: center;

@@ -25,12 +25,6 @@ body {
     outline: none;
 }
 
-.input-effect {
-    position: relative;
-    width: 300px;
-    margin-top: 40px;
-}
-
 .effect {
     padding: 14px 15px;
     border: 0;
