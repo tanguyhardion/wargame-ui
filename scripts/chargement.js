@@ -1,3 +1,7 @@
+const audio = new Audio('../res/music/Loading Loop.wav');
+audio.loop = true;
+audio.play();
+
 function addProgress(progress) {
     const progressBar = $('.progress');
     const currentWidth = parseFloat(progressBar.css('width'));
@@ -26,8 +30,11 @@ setInterval(() => {
 
 $('.progress').on('transitionend', () => {
     if (current === loadings.length) {
+        setInterval(() => {
+            audio.volume -= 0.03;
+        }, 50);
         setTimeout(() => {
             window.location.href = 'PagePrincipale.html';
-        }, 1000);
+        }, 2000);
     }
 });
