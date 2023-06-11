@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/parametreLangues.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KyZXEAglsJBW8iS9NuqYF1JlxCbKwfoLr0mR1piX+2CrZ+kE6XNBLjomxIktC3JC" crossorigin="anonymous">
+
+    <script src="./scripts/parametre.js" defer></script>
+    <title>La bataille des programmes</title>
+</head>
+
+<body>
+    <main>
+        <a href="./res/EG23-projetEG23_2023.pdf" title="Questions"> <img id="question" type="image/svg+xml"
+                src="./res/images/interrogation.png" /></a>
+        <a href="PagePrincipale.html" title="Retour"> <img id="back" type="image/svg+xml"
+                src="./res/images/back.jpg" /></a>
+        
+                
+        <div class="wrapper">
+            
+
+            <div class="column left">
+                <div class="vertical-menu">
+                    <a href="#" id="compte">Compte</a>
+                    <a href="#" id="audio">Audio</a>
+                    <a href="#" id="accessibilite">Accessibilité</a>
+                    <a href="#" class="active">Langues</a>
+                </div>
+
+            </div>
+            <div class="column center">
+                <div class="title">Paramètres</div>
+
+
+                <div class="select-effect">
+                    <label>Langue</label>
+                    <select class="effect">
+                        <option value="fr" selected disabled>Français</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                    
+                    <span class="focus-border"></span>
+                </div>
+                
+
+                <div id="appliquer" class="main-button appliquer text">Appliquer</div>
+                
+            </div>
+            
+        </div>
+    </main>
+</body>
+
+</html>

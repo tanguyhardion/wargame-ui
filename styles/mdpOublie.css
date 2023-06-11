@@ -21,6 +21,12 @@ body {
     letter-spacing: 1px;
 }
 
+.input-effect {
+    position: relative;
+    width: 300px;
+    margin-top: 40px;
+}
+
 :focus {
     outline: none;
 }
