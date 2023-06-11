@@ -12,10 +12,9 @@ VANTA.FOG({
     speed: 1.6
 })
 
-
 const vivus = new Vivus('logo', { duration: 150 });
 
-$('.main-button.jouer').click((e) => {
+$('.main-button.jouer').on('click', (e) => {
     e.preventDefault();
     $('.transition').addClass('active');
     vivus.play(-1, () => {
