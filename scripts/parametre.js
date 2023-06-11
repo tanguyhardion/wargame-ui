@@ -5,7 +5,9 @@
       icon: 'warning',
       showCancelButton: true,
       confirmButtonText: 'Ok',
-      cancelButtonText: 'Annuler'
+      cancelButtonText: 'Annuler', 
+      confirmButtonColor: '#4e6450',
+      cancelButtonColor: '#808080'
     }).then((result) => {
       if (result.isConfirmed) {
         window.location.href = 'parametreAudio.html';
@@ -20,7 +22,9 @@
       icon: 'warning',
       showCancelButton: true,
       confirmButtonText: 'Ok',
-      cancelButtonText: 'Annuler'
+      cancelButtonText: 'Annuler',
+      confirmButtonColor: '#4e6450',
+      cancelButtonColor: '#808080'
     }).then((result) => {
       if (result.isConfirmed) {
         window.location.href = 'parametreAccessibilite.html';
@@ -35,7 +39,9 @@
       icon: 'warning',
       showCancelButton: true,
       confirmButtonText: 'Ok',
-      cancelButtonText: 'Annuler'
+      cancelButtonText: 'Annuler',
+      confirmButtonColor: '#4e6450',
+      cancelButtonColor: '#808080'
     }).then((result) => {
       if (result.isConfirmed) {
         window.location.href = 'parametreLangues.html';
@@ -50,7 +56,9 @@
       icon: 'warning',
       showCancelButton: true,
       confirmButtonText: 'Ok',
-      cancelButtonText: 'Annuler'
+      cancelButtonText: 'Annuler',
+      confirmButtonColor: '#4e6450',
+      cancelButtonColor: '#808080'
     }).then((result) => {
       if (result.isConfirmed) {
         window.location.href = 'parametresLangues.html';
@@ -63,7 +71,8 @@
       title: 'Confirmation',
       text: 'Modifications appliquées',
       icon: 'success',
-      confirmButtonText: 'Ok'
+      confirmButtonText: 'Ok',
+      confirmButtonColor: '#4e6450',
     });
   });
   

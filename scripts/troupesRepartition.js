@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showCancelButton: false,
             showCloseButton: false,
             confirmButtonText: 'OK',
+            confirmButtonColor: '#4e6450',
             allowOutsideClick: false,
             allowEscapeKey: false,
             showCheckbox: true,
