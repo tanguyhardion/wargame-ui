@@ -12,12 +12,14 @@ document.getElementById('invite').addEventListener('click', function () {
     }).then((result) => {
         if (result.isConfirmed) {
             const pseudo = result.value;
-            Swal.fire(
-                'Pseudo enregistré !',
-                'Votre pseudo est : ' + pseudo,
-                'success'
-            ).then(() => {
-                window.location.href = 'PagePrincipale.html'; // Redirection vers une autre page HTML
+            Swal.fire({
+                title: 'Pseudo enregistré !',
+                text: 'Votre pseudo est : ' + pseudo,
+                icon: 'success',
+                confirmButtonColor: '#4e6450',
+                cancelButtonColor: '#808080'
+            }).then(() => {
+                window.location.href = 'PagePrincipale.html';
             });
         }
     });
