@@ -385,3 +385,11 @@ body {
     margin: 0 auto;
     cursor: grab;
 }
+
+#settings {
+    position: absolute;
+    top: 8%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+    width: 42px;
+}
