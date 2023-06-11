@@ -36,7 +36,9 @@ $('#dialog').dialog({
     hide: {
         effect: 'fade',
         duration: 300
-    }
+    },
+    // activate close on  escape key press
+    closeOnEscape: true,
 });
 
 $('.chat').on('click', function () {
