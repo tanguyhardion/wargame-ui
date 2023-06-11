@@ -193,12 +193,24 @@ body {
 
 }
 
+.parent{
+    position: relative;
+}
+
 .friend-pfp {
     width: 100px;
     height: 100px;
     border: 3px solid black;
     border-radius: 10px;
     filter: brightness(.9);
+}
+
+.plus{
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    right: -5px;
+    bottom: 0px;
 }
 
 .friend-status {
