@@ -55,10 +55,41 @@
     background-color: #4e6454;
     color: white;
   }
+
+  .son {
+    position: relative;
+    border-radius: 10px; 
+    font-size: calc(2vh + 1vw);
+    color: white; 
+    }
+
+
+  .detail{
+    
+    margin-top: 15%;
+    transform: scale(1.5);
+  }
+
+  .detail i {
+    margin-left: 5%;
+    transition: border 0.3s; 
+  }
   
-  .appliquer{
-    position: relative; 
-    top: 25%;
+  .detail i:hover {
+    border: 1px solid white; 
+  }
+  
+
+  .sonore {
+    
+    position: relative;
+    margin-top: 10%;
+  }
+  
+  .music {
+    position: relative;
+    margin-top: 8%;
+    
   }
   
   

@@ -38,7 +38,7 @@
       cancelButtonText: 'Annuler'
     }).then((result) => {
       if (result.isConfirmed) {
-        window.location.href = 'parametresLangues.html';
+        window.location.href = 'parametreLangues.html';
       }
     });
   });
