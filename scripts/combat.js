@@ -1,7 +1,3 @@
-var audio = new Audio('./res/music/Dark Descent.mp3');
-audio.loop = true;
-audio.play();
-
 function fill(element) {
     $(element).empty();
 
