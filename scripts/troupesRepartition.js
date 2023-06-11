@@ -11,12 +11,16 @@ $('.troupes-container').first().append('<img src="./res/images/soldats/casque_ma
 document.querySelectorAll('.troupes-container img').forEach((element) => {
     let rand = Math.floor(Math.random() * 3);
     let ia = rand === 0 ? 'Offensive' : rand === 1 ? 'Défensive' : 'Aléatoire';
-    $(element).attr('title', `Force : ${Math.floor(Math.random() * 10)}
-        \rDextérité: ${Math.floor(Math.random() * 10)}
-        \rRésistance: ${Math.floor(Math.random() * 10)}
-        \rConstitution: ${Math.floor(Math.random() * 10)}
-        \rInititative: ${Math.floor(Math.random() * 10)}
-        \rIA: ${ia}`);
+    tippy(element, {
+        content: `Force : ${Math.floor(Math.random() * 10)} <br>
+                Dextérité: ${Math.floor(Math.random() * 10)} <br>
+                Résistance: ${Math.floor(Math.random() * 10)} <br>
+                Constitution: ${Math.floor(Math.random() * 10)} <br>
+                Inititative: ${Math.floor(Math.random() * 10)} <br>
+                IA: ${ia}`,
+        allowHTML: true,
+        interactive: true
+    });
 });
 
 $('.troupes-container img').draggable({
