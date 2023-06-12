@@ -130,12 +130,21 @@ $('.icon-button.treve').on('click', () => {
     }
 });
 
+var isSimulationLaunched = false;
+
 $('#launch-simulation img').on('click', () => {
-    $('#launch-simulation img').css('filter', 'contrast(0)');
-    launchSimulation();
+    if (isSimulationLaunched) {
+        stopSimulation();
+        isSimulationLaunched = false;
+    } else {
+        $('#launch-simulation img').css('filter', 'contrast(0)');
+        launchSimulation();
+        isSimulationLaunched = true;
+    }
 });
 
 var accent = 61;
+var simulation;
 
 function launchSimulation() {
     $('.health.user .value').css('width', '100%');
@@ -143,9 +152,20 @@ function launchSimulation() {
     $('.health:not(.user) .value').css('width', '100%');
     $('.health:not(.user) .value').css('background', `rgb(120, 120, 120)`);
 
-    setInterval(() => {
+    simulation = setInterval(() => {
         for (let i = 0; i < 20; i++) {
             $('.health .value').eq(i).css('width', `${Math.floor(Math.random() * 100)}%`);
         }
-    }, Math.random() * 1000 + 500);
+    }, Math.random() * 1000 + 600);
+}
+
+function stopSimulation() {
+    clearInterval(simulation);
+    Swal.fire({
+        title: 'BDE contrôlé !',
+        text: 'Vous pouvez maintenant fermer la carte et faire vos sournois mouvements de troupes.',
+        icon: 'success',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#4e6450'
+    });
 }
