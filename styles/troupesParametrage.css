@@ -196,6 +196,10 @@ body {
     font-weight: 16px;
 }
 
+.attributes-names span i {
+    cursor: pointer;
+}
+
 .attributes-list {
     gap: 20px;
     align-items: center;

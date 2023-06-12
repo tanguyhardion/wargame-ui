@@ -21,11 +21,8 @@ Swal.fire({
     title: 'Choisissez votre programme !',
     text: 'Pour passer au programme suivant plus rapidement, vous pouvez utiliser les flèches du clavier. Pour passer à la page suivante, appuyez sur la touche Entrée ou Espace.',
     icon: 'info',
-    showCancelButton: true,
-    confirmButtonText: 'Oui',
-    cancelButtonText: 'Non',
-    confirmButtonColor: '#4e6450',
-    cancelButtonColor: '#808080'
+    confirmButtonText: 'OK',
+    confirmButtonColor: '#4e6450'
 });
 
 splide.mount();
