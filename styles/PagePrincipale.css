@@ -86,6 +86,12 @@ body {
     overflow-y: auto;
 }
 
+.menu-title {
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .history {
     height: 55%;
 }
