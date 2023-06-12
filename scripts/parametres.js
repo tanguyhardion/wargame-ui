@@ -10,7 +10,7 @@ document.getElementById('audio').addEventListener('click', function () {
         cancelButtonColor: '#808080'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'parametreAudio.html';
+            window.location.href = 'parametresAudio.html';
         }
     });
 });
@@ -27,7 +27,7 @@ document.getElementById('accessibilite').addEventListener('click', function () {
         cancelButtonColor: '#808080'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'parametreAccessibilite.html';
+            window.location.href = 'parametresAccessibilite.html';
         }
     });
 });
@@ -44,7 +44,7 @@ document.getElementById('langue').addEventListener('click', function () {
         cancelButtonColor: '#808080'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'parametreLangues.html';
+            window.location.href = 'parametresLangues.html';
         }
     });
 });

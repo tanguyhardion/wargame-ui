@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/parametreAccessibilite.css">
+    <link rel="stylesheet" href="./styles/parametresAudio.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <!-- TalkifyJS -->
     <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
     <script src="./scripts/main.js" defer></script>
-    <script src="./scripts/parametreAutres.js" defer></script>
+    <script src="./scripts/parametresAutres.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
 
@@ -31,27 +33,34 @@
 
             <div class="column left">
                 <div class="vertical-menu">
-                    <a href="parametre.html" id="compte">Compte</a>
-                    <a href="parametreAudio.html" id="audio">Audio</a>
-                    <a href="#" class="active">Accessibilité</a>
-                    <a href="parametreLangues.html" id="langue">Langues</a>
+                    <a href="parametres.html">Compte</a>
+                    <a href="#" class="active">Audio</a>
+                    <a href="parametresAccessibilite.html">Accessibilité</a>
+                    <a href="parametresLangues.html">Langues</a>
                 </div>
 
             </div>
             <div class="column center">
                 <div class="title">Paramètres</div>
 
-                <div class="toggle-button">
-                    <span>Synthèse vocale</span>
-                    <div class="toggle-wrapper">
-                        <div class="toggle checkcross">
-                            <input id="checkcross" type="checkbox" />
-                            <label class="toggle-item" for="checkcross">
-                                <div class="check"></div>
-                            </label>
-                        </div>
+                <div class="audio">
+                    <p>Effets sonores</p>
+                    <div class="detail">
+                        <i class="fa fa-volume-mute white-icon"></i>
+                        <i class="fa fa-volume-down white-icon"></i>
+                        <i class="fa fa-volume-up white-icon"></i>
                     </div>
                 </div>
+
+                <div class="audio">
+                    <p>Musique</p>
+                    <div class="detail">
+                        <i class="fa fa-volume-mute white-icon" id="mute"></i>
+                        <i class="fa fa-volume-down white-icon" id="down"></i>
+                        <i class="fa fa-volume-up white-icon" id="up"></i>
+                    </div>
+                </div>
+
 
             </div>
 

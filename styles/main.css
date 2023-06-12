@@ -86,6 +86,10 @@ main {
     border-radius: 0 0 16px 0;
 }
 
+#question {
+    filter: invert(1);
+}
+
 .title {
     display: flex;
     align-items: center;
