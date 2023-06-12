@@ -15,3 +15,13 @@ document.querySelectorAll('.audio .detail i').forEach(item => {
         }
     });
 });
+
+document.querySelector('#checkcross').checked = sessionStorage.getItem('tts') === 'false';
+
+document.querySelector('#checkcross').addEventListener('click', function () {
+    if (this.checked) {
+        sessionStorage.setItem('tts', 'false');
+    } else {
+        sessionStorage.setItem('tts', 'true');
+    }
+});

@@ -57,8 +57,13 @@
     cursor: default;
 }
 
+.toggle-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20%;
+}
 
-.appliquer {
-    position: relative;
-    top: 25%;
+.toggle-button span {
+    margin-top: 3px;
 }
