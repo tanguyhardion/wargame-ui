@@ -161,8 +161,25 @@ body {
 }
 
 .invited-friend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invited-friend img:nth-child(2) {
+    display: flex;
     width: 50px;
     height: 50px;
+}
+
+.invited-friend .parent .minus {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 1;
+    width: 20px;
+    width: 20px;
+    cursor: pointer;
 }
 
 #logo {
@@ -173,8 +190,8 @@ body {
     padding: 16px 40px;
     font-size: 1.7em;
     font-size: 30px;
-    letter-spacing: 2px;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .friends {
@@ -211,10 +228,10 @@ body {
 
 .plus {
     position: absolute;
-    height: 24px;
-    width: 24px;
     right: -5px;
     top: -5px;
+    width: 24px;
+    height: 24px;
     filter: saturate(0);
     cursor: pointer;
 }
@@ -256,8 +273,8 @@ body {
 
 .chat-row {
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
 }
 
 .chat-row.top {
@@ -270,21 +287,21 @@ body {
 
 .chat-info {
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
 }
 
 .chat-info #close-btn {
     width: 20px;
     height: 20px;
-    cursor: pointer;
     padding: 2px;
+    cursor: pointer;
 }
 
 .chat-info #chat-title {
+    margin: 0 auto;
     font-size: 20px;
     font-weight: bold;
-    margin: 0 auto;
     color: black !important;
 }
 
@@ -395,16 +412,16 @@ body {
 }
 
 .ui-draggable-handle {
-    background: rgb(170, 170, 170);
-    border-radius: 10px 10px 0 0;
     margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+    background: rgb(170, 170, 170);
     cursor: grab;
 }
 
 #settings {
     position: absolute;
-    top: 8%;
     right: 2%;
-    transform: translate(-50%, -50%);
+    top: 8%;
     width: 42px;
+    transform: translate(-50%, -50%);
 }

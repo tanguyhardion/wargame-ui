@@ -83,3 +83,18 @@ Mousetrap.bind('enter', () => {
 Mousetrap.bind('t', () => {
     $('#dialog').dialog('open');
 });
+
+$('.plus').on('click', () => {
+    $('.invited-friend').empty();
+    $('.invited-friend').append(`<div class="parent">
+    <img class="minus" title="Enlever" src="https://cdn-icons-png.flaticon.com/128/2550/2550346.png"
+                            alt="friend_remove">
+    <img class="friend-pfp" src="./res/images/profile-placeholder.jpg"
+        alt="friend_profile_picture">
+</div>`);
+    $('.minus').on('click', () => {
+        $('.invited-friend').empty();
+        console.log("hi");
+    });
+});
+

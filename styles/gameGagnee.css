@@ -49,28 +49,32 @@
     margin-top: 8px;
 }
 
-.infos{
+progress {
+    background-color: #4e6450;
+}
+
+.infos {
     position: relative;
     width: 50%;
 }
 
-.infos p{
+.infos p {
     padding: 5px;
 }
 
 .img {
-  position: relative;
-  width: 500px;
-  left: -100px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+    position: relative;
+    width: 500px;
+    left: -100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 #lost {
-  position: relative;
-  width: 300px;
-  left: -3%;
+    position: relative;
+    width: 300px;
+    left: -3%;
 }
 
 .GI {
