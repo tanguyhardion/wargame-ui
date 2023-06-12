@@ -142,9 +142,6 @@ main {
 }
 
 .icon-button {
-    position: absolute;
-    right: 11%;
-    bottom: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +149,6 @@ main {
     height: fit-content;
     padding: 15px 26px;
     border-radius: 10px;
-    background: #4e6450;
     color: white;
     transition: .2s;
     cursor: pointer;
@@ -161,7 +157,21 @@ main {
     font-size: 18px;
 }
 
-.icon-button:hover {
+.icon-button.pret {
+    position: absolute;
+    right: 11%;
+    bottom: 3%;
+    background: #4e6450;
+}
+
+.icon-button.treve {
+    position: absolute;
+    right: 22%;
+    bottom: 3%;
+    background: #707070;
+}
+
+.icon-button.pret:hover {
     background: rgb(54, 68, 55);
 }
 
@@ -171,6 +181,10 @@ main {
 }
 
 /* Map */
+
+#dialog {
+    height: 90vh !important;
+}
 
 .ui-draggable-handle {
     display: none;
@@ -192,7 +206,8 @@ main {
 
 .row.top {
     height: 5%;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .row.bottom {
@@ -202,18 +217,30 @@ main {
     background-position: center !important;
 }
 
+#launch-simulation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+#launch-simulation img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
 .window-title {
     font-size: 26px;
     color: black;
     font-weight: bold;
-    margin-left: auto;
+    margin-right: 10%;
 }
 
 #close-btn {
     width: 25px;
     height: 25px;
     cursor: pointer;
-    margin-left: auto;
 }
 
 .combat-container {
@@ -305,7 +332,7 @@ main {
 
 .health {
     border: solid white;
-    border-width: 2px 2px 2px 3px;
+    border-width: 3px 3px 3px 4px;
     width: 75px;
     height: 40px;
     border-radius: 0 16px 16px 0;
@@ -313,5 +340,11 @@ main {
 
 .health.user {
     transform: rotate(180deg);
-    border-width: 2px 2px 2px 3px;
+}
+
+.value {
+    height: 100%;
+    width: 0%;
+    border-radius: 0 13px 13px 0;
+    transition: width .3s;
 }

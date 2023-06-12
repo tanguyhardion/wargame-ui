@@ -1,3 +1,5 @@
+var current = 0;
+
 for (var i = 0; i < 15; i++) {
     $('.soldats-container').append('<img src="./res/images/soldats/casque_soldat.png" alt="helmet_logo">');
 }
@@ -12,6 +14,7 @@ $('.soldats-container img')[0].classList.add('selected');
 
 $('.soldats-container img').on('click', (element) => {
     const target = $(element.target);
+    current = target.index();
     if (!target.hasClass('selected')) {
         target.toggleClass('selected');
         target.siblings().removeClass('selected');
@@ -53,8 +56,6 @@ $('.soldats-container img').on('click', (element) => {
     }
 });
 
-var current = 0;
-
 $('.arrow-container').on('click', (element) => {
     arrowAnimation(element);
 });
@@ -65,6 +66,18 @@ function arrowAnimation(element) {
     const sign = side === 'left' ? '-' : '';
     const inverseSign = side === 'left' ? '' : '-';
     current = side === 'left' ? current - 1 : current + 1;
+    setTimeout(() => {
+        if (current >= 15 && current < 19) {
+            $('.soldat img').attr('src', './res/images/soldats/soldat_elite.png');
+            $('.health-bar span').text('35 PV');
+        } else if (current === 19) {
+            $('.soldat img').attr('src', './res/images/soldats/maitre_de_guerre.png');
+            $('.health-bar span').text('40 PV');
+        } else {
+            $('.soldat img').attr('src', './res/images/soldats/soldat.png');
+            $('.health-bar span').text('30 PV');
+        }
+    }, 500);
     if (current >= 0) {
         $('.soldats-container img')[current].classList.add('selected');
         $('.soldats-container img').each((index, element) => {

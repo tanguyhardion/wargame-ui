@@ -302,3 +302,108 @@ main {
 .effect:not(:placeholder-shown)~label {
     color: white;
 }
+
+.check::after,
+.check::before {
+    content: "";
+    position: absolute;
+}
+
+.toggle.checkcross input {
+    height: 28px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
+
+.toggle-wrapper {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+}
+
+label.toggle-item {
+    width: 4.2em;
+    background: none;
+    border: 2px solid white;
+    height: 2em;
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    transition: all 0.3s ease;
+    transform-origin: 20% center;
+    cursor: pointer;
+}
+
+label.toggle-item:before {
+    display: block;
+    transition: all 0.2s ease;
+    width: 1.5em;
+    height: 1.5em;
+    top: 2.2em;
+    left: 2.2em;
+    border-radius: 2em;
+    border: 2px solid #88cf8f;
+    transition: 0.3s ease;
+}
+
+.checkcross label:before {
+    content: none;
+}
+
+.checkcross .check {
+    border-radius: 50%;
+    width: 1.6em;
+    height: 1.6em;
+    position: absolute;
+    background: #8bc34a;
+    transition: 0.4s ease;
+    top: 1.5px;
+    transform: rotate(180deg);
+    left: 3.5px;
+}
+
+.checkcross .check:before,
+.checkcross .check:after {
+    height: 4px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+.checkcross .check:before {
+    width: 17px;
+    transform: rotate(-45deg) translate(-4px, 13px);
+}
+
+.checkcross .check:after {
+    width: 7px;
+    transform: rotate(45deg) translate(13px, 7px);
+}
+
+#checkcross:checked+label .check {
+    left: 36px;
+    transform: rotate(360deg);
+    background: #c34a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 14px;
+}
+
+#checkcross:checked+label .check:before {
+    width: 16px;
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+#checkcross:checked+label .check:after {
+    width: 16px;
+    transform: rotate(45deg) translate(5px, 5px);
+}

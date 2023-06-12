@@ -1,3 +1,7 @@
+const audio = new Audio('../res/music/Dark Descent.mp3');
+audio.loop = true;
+audio.play();
+
 function fill(element) {
     $(element).empty();
 
@@ -68,8 +72,7 @@ $(".tabs-wrapper").on("tabsactivate", function (event, ui) {
 
 $('#dialog').dialog({
     autoOpen: false,
-    width: '80%',
-    height: 700,
+    width: '90%',
     modal: true,
     open: (event, ui) => {
         $('.ui-dialog-titlebar-close', ui.dialog | ui).hide();
@@ -93,18 +96,76 @@ $('#close-btn').on('click', () => {
     $('#dialog').dialog('close');
 });
 
-$('.icon-button').one('click', () => {
-    $('.icon-button .material-symbols-outlined').html('hourglass_top');
-    $('.icon-button').css('background-color', '#707070')
-    $('.icon-button').css('color', '#0b0c10');
-    $('.icon-button').css('cursor', 'not-allowed');
+$('.icon-button.pret').one('click', () => {
+    $('.icon-button.pret .material-symbols-outlined').html('hourglass_top');
+    $('.icon-button.pret').css('background-color', '#707070')
+    $('.icon-button.pret').css('color', '#0b0c10');
+    $('.icon-button.pret').css('cursor', 'not-allowed');
 
     setInterval(() => {
         const hourglass = $('.icon-button .material-symbols-outlined').html();
         if (hourglass === 'hourglass_top') {
-            $('.icon-button .material-symbols-outlined').html('hourglass_bottom');
+            $('.icon-button.pret .material-symbols-outlined').html('hourglass_bottom');
         } else {
-            $('.icon-button .material-symbols-outlined').html('hourglass_top');
+            $('.icon-button.pret .material-symbols-outlined').html('hourglass_top');
         }
     }, 750);
 });
+
+var icon = false;
+
+$('.icon-button.treve').on('click', () => {
+    if (!icon) {
+        $('.icon-button.treve .material-symbols-outlined').html('verified_user');
+        $('.icon-button.treve').css('background', '#121212')
+        $('.troupes').css('cursor', 'not-allowed');
+        $('.troupes').css('background', '#606060');
+        icon = true;
+    } else {
+        $('.icon-button.treve .material-symbols-outlined').html('gpp_bad');
+        $('.icon-button.treve').css('background', '#707070')
+        $('.troupes').css('cursor', 'default');
+        $('.troupes').css('background', '#dcdcdc');
+        icon = false;
+    }
+});
+
+var isSimulationLaunched = false;
+
+$('#launch-simulation img').on('click', () => {
+    if (isSimulationLaunched) {
+        stopSimulation();
+        isSimulationLaunched = false;
+    } else {
+        $('#launch-simulation img').css('filter', 'contrast(0)');
+        launchSimulation();
+        isSimulationLaunched = true;
+    }
+});
+
+var accent = 61;
+var simulation;
+
+function launchSimulation() {
+    $('.health.user .value').css('width', '100%');
+    $('.health.user .value').css('background', `rgb(${accent}, 255, ${accent})`);
+    $('.health:not(.user) .value').css('width', '100%');
+    $('.health:not(.user) .value').css('background', `rgb(120, 120, 120)`);
+
+    simulation = setInterval(() => {
+        for (let i = 0; i < 20; i++) {
+            $('.health .value').eq(i).css('width', `${Math.floor(Math.random() * 100)}%`);
+        }
+    }, Math.random() * 1000 + 600);
+}
+
+function stopSimulation() {
+    clearInterval(simulation);
+    Swal.fire({
+        title: 'BDE contrôlé !',
+        text: 'Vous pouvez maintenant fermer la carte et faire vos sournois mouvements de troupes.',
+        icon: 'success',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#4e6450'
+    });
+}
