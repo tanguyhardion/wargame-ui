@@ -27,6 +27,6 @@ $('.main-button.jouer').on('click', (e) => {
     }, 50);
     $('.transition').addClass('active');
     vivus.play(-1, () => {
-        window.location.href = 'connexion.html';
+        window.location.href = 'connexionEN.html';
     });
 });
