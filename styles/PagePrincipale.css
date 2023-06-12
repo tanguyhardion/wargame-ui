@@ -167,6 +167,9 @@ body {
 .jouer {
     padding: 16px 40px;
     font-size: 1.7em;
+    font-family: fantasy;
+    font-size: 30px;
+    letter-spacing: 4px;
 }
 
 .friends {

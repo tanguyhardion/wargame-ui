@@ -56,10 +56,6 @@
     top: 40%;
 }
 
-.img{
-
-}
-
 #lost{ 
    position: absolute;
     bottom: 0%;
@@ -83,25 +79,20 @@
     width:300px;
 }
 
+
 #perso span{
     margin-top: 3px;
     left: 150%;
 
 }
 
-.perdue{
-    font-size: 2rem;
-}
+
 
 #smiley{
     position: relative;
     left: 120%;
     transform: translate(-50%, -50%);
     width:80px;
-}
-
-.infos{
-
 }
 
 .valeurs{

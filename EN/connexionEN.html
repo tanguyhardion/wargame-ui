@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/connexion.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <!-- TalkifyJS -->
+    <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/connexion.js" defer></script>
+    <title>La bataille des programmes</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <object id="logo" type="image/svg+xml" data="./res/svg/logo.svg"></object>
+            <div class="fields">
+                <div class="input-effect">
+                    <input class="effect" type="text" placeholder=" ">
+                    <label>Nom d'utilisateur</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="input-effect">
+                    <input class="effect" type="password" placeholder=" ">
+                    <label>Mot de passe</label>
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+            <a class="main-button connexion" href="PagePrincipale.html">
+                <div class="text">Connexion</div>
+            </a>
+            <div class="navigation">
+                <a href="mdpOublie.html">
+                    <p>Mot de passe oublié ? </p>
+                </a>
+                <p>Pas encore de compte ? <a href="inscription.html"><b>Inscription</b></a></p>
+                <p id="invite">Continuer en tant qu'inivté</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
