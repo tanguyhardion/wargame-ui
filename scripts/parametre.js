@@ -49,23 +49,6 @@ document.getElementById('langue').addEventListener('click', function () {
     });
 });
 
-// document.getElementById('compte').addEventListener('click', function () {
-//     Swal.fire({
-//         title: 'Attention',
-//         text: 'Quitter sans sauvegarder les modifications ?',
-//         icon: 'warning',
-//         showCancelButton: true,
-//         confirmButtonText: 'Ok',
-//         cancelButtonText: 'Annuler',
-//         confirmButtonColor: '#4e6450',
-//         cancelButtonColor: '#808080'
-//     }).then((result) => {
-//         if (result.isConfirmed) {
-//             window.location.href = 'parametresLangues.html';
-//         }
-//     });
-// });
-
 document.getElementById('appliquer').addEventListener('click', function () {
     Swal.fire({
         title: 'Confirmation',
@@ -75,3 +58,4 @@ document.getElementById('appliquer').addEventListener('click', function () {
         confirmButtonColor: '#4e6450',
     });
 });
+

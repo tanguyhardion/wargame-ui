@@ -16,7 +16,7 @@
     <!-- TalkifyJS -->
     <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
     <script src="./scripts/main.js" defer></script>
-    <script src="./scripts/parametre.js" defer></script>
+    <script src="./scripts/parametreAutres.js" defer></script>
     <title>La bataille des programmes</title>
 </head>
 
@@ -43,9 +43,8 @@
             <div class="column center">
                 <div class="title">Paramètres</div>
 
-
-                <div class="sonore">
-                    <p class="son">Effets sonores</p>
+                <div class="audio">
+                    <p>Effets sonores</p>
                     <div class="detail">
                         <i class="fa fa-volume-mute white-icon"></i>
                         <i class="fa fa-volume-down white-icon"></i>
@@ -53,12 +52,12 @@
                     </div>
                 </div>
 
-                <div class="music">
-                    <p class="son">Musique</p>
+                <div class="audio">
+                    <p>Musique</p>
                     <div class="detail">
-                        <i class="fa fa-volume-mute white-icon"></i>
-                        <i class="fa fa-volume-down white-icon"></i>
-                        <i class="fa fa-volume-up white-icon"></i>
+                        <i class="fa fa-volume-mute white-icon" id="mute"></i>
+                        <i class="fa fa-volume-down white-icon" id="down"></i>
+                        <i class="fa fa-volume-up white-icon" id="up"></i>
                     </div>
                 </div>
 

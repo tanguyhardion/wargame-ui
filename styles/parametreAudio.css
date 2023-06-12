@@ -20,7 +20,6 @@
     width: 50%;
 }
 
-
 #question {
     position: absolute;
     top: 8%;
@@ -57,38 +56,26 @@
     cursor: default;
 }
 
-.son {
-    position: relative;
-    border-radius: 10px;
-    font-size: calc(2vh + 1vw);
-    color: white;
+.audio {
+    display: flex;
+    flex-direction: column;
+    margin: 8% 0;
 }
 
+.audio p {
+    font-size: 20px;
+}
 
 .detail {
-
     margin-top: 15%;
+    width: 100%;
     transform: scale(1.5);
+    display: flex;
+    justify-content: space-around;
 }
 
 .detail i {
     margin-left: 5%;
-    transition: border 0.3s;
-}
-
-.detail i:hover {
-    border: 1px solid white;
-}
-
-
-.sonore {
-
-    position: relative;
-    margin-top: 10%;
-}
-
-.music {
-    position: relative;
-    margin-top: 8%;
-
+    padding: 10px;
+    cursor: pointer;
 }
