@@ -10,7 +10,6 @@ Swal.fire({
 }).then((result) => {
     if (result.isConfirmed) {
         introJs().start();
-        introJs().addHints();
     }
 });
 
@@ -65,7 +64,6 @@ $('.send-button').on('click', () => {
 });
 
 Mousetrap.bind('enter', () => {
-    console.log("hiiii");
     const message = $('.chat-field input').val();
     if (message !== '') {
         $('.messages').append(`
