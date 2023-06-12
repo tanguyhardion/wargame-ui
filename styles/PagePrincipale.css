@@ -145,10 +145,6 @@ body {
     cursor: pointer;
 }
 
-.chat span {
-    margin-left: 10px;
-}
-
 .column.center {
     display: flex;
     align-items: center;
@@ -267,19 +263,20 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 10px 25px;
 }
 
 .chat-info #close-btn {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
+    padding: 2px;
 }
 
 .chat-info #chat-title {
     font-size: 20px;
     font-weight: bold;
     margin: 0 auto;
+    color: black !important;
 }
 
 .chat-column {
@@ -342,6 +339,7 @@ body {
 .user-message .text {
     padding: 10px;
     background: #cbcbcb;
+    color: black !important;
 }
 
 .message .text {
@@ -360,7 +358,7 @@ body {
 .message .content span:nth-child(1) {
     margin-left: 5px;
     font-size: 14px;
-    color: #303030;
+    color: #303030 !important;
 }
 
 .message img {
@@ -390,7 +388,6 @@ body {
 .ui-draggable-handle {
     background: rgb(170, 170, 170);
     border-radius: 10px 10px 0 0;
-    width: 40%;
     margin: 0 auto;
     cursor: grab;
 }
