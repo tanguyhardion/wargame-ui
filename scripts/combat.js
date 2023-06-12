@@ -62,7 +62,33 @@ $('.troupes-container.vostroupes').droppable({
     }
 });
 
-// on tab change
 $(".tabs-wrapper").on("tabsactivate", function (event, ui) {
     fillContainers();
+});
+
+$('#dialog').dialog({
+    autoOpen: false,
+    width: '80%',
+    height: 700,
+    modal: true,
+    open: (event, ui) => {
+        $('.ui-dialog-titlebar-close', ui.dialog | ui).hide();
+    },
+    show: {
+        effect: 'fade',
+        duration: 300
+    },
+    hide: {
+        effect: 'fade',
+        duration: 300
+    },
+    closeOnEscape: true,
+});
+
+$('.map').on('click', function () {
+    $('#dialog').dialog('open');
+});
+
+$('#close-btn').on('click', () => {
+    $('#dialog').dialog('close');
 });

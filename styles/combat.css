@@ -80,7 +80,7 @@ main {
 }
 
 .map {
-    background: url("../res/images/zones/plan_utt_darkened.png") no-repeat;
+    background: url("../res/images/zones/plan_utt_map.png") no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -143,4 +143,130 @@ main {
 
 .ui-draggable-dragging {
     width: 100px;
+}
+
+.ui-draggable-handle {
+    display: none;
+}
+
+.ui-widget-overlay {
+    opacity: .25 !important;
+}
+
+.map-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row.top {
+    height: 5%;
+    justify-content: center;
+}
+
+.row.bottom {
+    height: 95%;
+    background: url("../res/images/zones/plan_utt_darkened.png") no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.window-title {
+    font-size: 26px;
+    color: black;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+#close-btn {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.combat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    position: absolute;
+}
+
+#zone-bde {
+    top: 30%;
+    left: 30%;
+}
+
+#zone-bu {
+    top: 52%;
+    left: 40%;
+}
+
+#zone-hi {
+    bottom: 20%;
+    right: 8%;
+}
+
+#zone-hs {
+    top: 8%;
+    left: 20%;
+}
+
+#zone-qa {
+    top: 27.5%;
+    right: 25%;
+}
+
+.zone-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zone-logo img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+.zone-logo span {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.zone-status {
+    display: flex;
+    align-items: center;
+}
+
+.effectif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.effectif img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+.health {
+    border: solid white;
+    border-width: 2px 2px 2px 3px;
+    width: 75px;
+    height: 40px;
+    border-radius: 0 16px 16px 0;
+}
+
+.health.user {
+    transform: rotate(180deg);
+    border-width: 2px 2px 2px 3px;
 }
