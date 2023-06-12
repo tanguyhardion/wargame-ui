@@ -209,7 +209,7 @@ body {
 
 .select {
     position: relative;
-    width: 80px;
+    width: 120px;
     height: 50px;
     border-radius: 40px;
     border: 2px solid rgba(255, 255, 255, .2);
@@ -217,7 +217,6 @@ body {
 }
 
 .select:hover {
-    width: 120px;
     border: 2px solid rgba(255, 255, 255, 1);
 }
 
@@ -241,6 +240,10 @@ body {
     opacity: 1;
 }
 
+.select:hover .prev {
+    opacity: 1;
+}
+
 .select .prev {
     position: absolute;
     top: 50%;
@@ -255,10 +258,6 @@ body {
     cursor: pointer;
     opacity: 0;
     transition: .5s;
-}
-
-.select:hover .prev {
-    opacity: 1;
 }
 
 .select div input {
