@@ -134,33 +134,64 @@ var isSimulationLaunched = false;
 
 $('#launch-simulation img').on('click', () => {
     if (isSimulationLaunched) {
+        $('#launch-simulation img').attr('src', 'https://cdn-icons-png.flaticon.com/128/527/527995.png');
         stopSimulation();
         isSimulationLaunched = false;
     } else {
-        $('#launch-simulation img').css('filter', 'contrast(0)');
+        $('#launch-simulation img').attr('src', 'https://cdn-icons-png.flaticon.com/128/4434/4434965.png');
         launchSimulation();
         isSimulationLaunched = true;
     }
 });
 
-var accent = 61;
 var simulation;
 
 function launchSimulation() {
     $('.health.user .value').css('width', '100%');
-    $('.health.user .value').css('background', `rgb(${accent}, 255, ${accent})`);
+    $('.health.user .value').css('background', 'rgb(0, 230, 0)');
     $('.health:not(.user) .value').css('width', '100%');
-    $('.health:not(.user) .value').css('background', `rgb(120, 120, 120)`);
+    $('.health:not(.user) .value').css('background', 'rgb(120, 120, 120)');
+
+    let width = 0;
+
+    $('.health.user .value').on('resize', () => {
+        let accent = 61 + (width * 1.88);
+        $('.health.user .value').css('background', `rgb(${accent}, 255, ${accent})`);
+        console.log("resize");
+    });
 
     simulation = setInterval(() => {
-        for (let i = 0; i < 20; i++) {
-            $('.health .value').eq(i).css('width', `${Math.floor(Math.random() * 100)}%`);
+        for (let i = 0; i < $('.health .value').length; i++) {
+            width = Math.floor(Math.random() * 80 + 20);
+            $('.health .value').eq(i).css('width', `${width}%`);
         }
-    }, Math.random() * 1000 + 600);
+        for (let i = 0; i < $('.zone-status .effectif span').length; i++) {
+            const $value = $('.zone-status .effectif span').eq(i);
+            $value.html("x " + Math.floor(Math.random() * 4 + 1));
+        }
+    }, Math.random() * 1000 + 500);
+
+    setInterval(() => {
+        for (let i = 0; i < $('.health.user .value').length; i++) {
+            const $value = $('.health.user .value').eq(i);
+            const width = $value.width();
+            const maxWidth = $value.parent().width();
+            const percent = (width / maxWidth) * 100;
+
+            let red = Math.round(255 - (255 * (percent / 100)));
+            let green = Math.round(255 * (percent / 100));
+            let blue = 0;
+
+            $value.css('background', `rgb(${red}, ${green}, ${blue})`);
+        }
+    }, 1000);
 }
+
+
 
 function stopSimulation() {
     clearInterval(simulation);
+    $('.health:not(.user) .value').first().css('width', '0');
     Swal.fire({
         title: 'BDE contrôlé !',
         text: 'Vous pouvez maintenant fermer la carte et faire vos sournois mouvements de troupes.',
