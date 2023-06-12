@@ -14,8 +14,12 @@ VANTA.FOG({
 
 const audio = new Audio('../res/music/Dark Ambience Loop.mp3');
 audio.loop = true;
-$(window).on('click', () => {
-    audio.play();
+$('#play-music').on('click', () => {
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
 });
 
 const vivus = new Vivus('logo', { duration: 150 });

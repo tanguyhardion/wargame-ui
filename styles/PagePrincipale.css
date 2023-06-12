@@ -211,6 +211,7 @@ body {
     right: -5px;
     top: -5px;
     filter: saturate(0);
+    cursor: pointer;
 }
 
 .friend-status {

@@ -1,65 +1,68 @@
-.container {
-position: relative;
-transform: translate(-50%, -50%);
-top: 45%;
-left: 50%;
-display: flex;
-justify-content: center;
+body {
+    font-family: 'Varela Round', sans-serif;
+}
 
-overflow: hidden;
+.container {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .tableau {
     margin: 5%;
     border-collapse: collapse;
     width: 100%;
-    }
-    
-    .tableau th,
-    .tableau td {
+}
+
+.tableau th,
+.tableau td {
     padding: 8px;
     text-align: center;
     border: 1px solid white;
     background-color: #4e6450;
-    }
-    
-    .tableau th {
+}
+
+.tableau th {
     background-color: #323232;
-    }
-    
-    .tableau tr:nth-child(even) {
+}
+
+.tableau tr:nth-child(even) {
     background-color: #2c482c;
-    }
-    
-    .tableau tr:hover {
+}
+
+.tableau tr:hover {
     background-color: #002b01;
-    }
+}
 
 .menu {
-height: 70%;
-width: 70%;
-padding: 10px;
-border-radius: 10px;
-background-color: rgb(78, 100, 80);
-overflow-y: auto;
+    height: 70%;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(78, 100, 80);
+    overflow-y: auto;
 }
 
 .menu::-webkit-scrollbar {
-width: 10px;
+    width: 10px;
 }
 
 .menu::-webkit-scrollbar-track {
-margin: 12px 0;
-background: transparent;
+    margin: 12px 0;
+    background: transparent;
 }
 
 .menu::-webkit-scrollbar-thumb {
-border-radius: 20px;
-background: #2a2a2a;
+    border-radius: 20px;
+    background: #2a2a2a;
 }
 
 .menu::-webkit-scrollbar-thumb:hover {
-background: #343434;
+    background: #343434;
 }
 
 .Titre {

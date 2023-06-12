@@ -1,6 +1,8 @@
 const audio = new Audio('../res/music/Loading Loop.wav');
-audio.loop = true;
-audio.play();
+if (sessionStorage.getItem('audio') !== 'mute') {
+    audio.loop = true;
+    audio.play();
+}
 
 function addProgress(progress) {
     const progressBar = $('.progress');
