@@ -10,14 +10,14 @@ $('.troupes-container').first().append('<img src="./res/images/soldats/casque_ma
 
 document.querySelectorAll('.troupes-container img').forEach((element) => {
     let rand = Math.floor(Math.random() * 3);
-    let ia = rand === 0 ? 'Offensive' : rand === 1 ? 'Défensive' : 'Aléatoire';
+    let ia = rand === 0 ? 'Offensive' : rand === 1 ? 'Defensive' : 'Random';
     tippy(element, {
-        content: `Force : ${Math.floor(Math.random() * 10)} <br>
-                Dextérité: ${Math.floor(Math.random() * 10)} <br>
-                Résistance: ${Math.floor(Math.random() * 10)} <br>
+        content: `Strength: ${Math.floor(Math.random() * 10)} <br>
+                Dexterity: ${Math.floor(Math.random() * 10)} <br>
+                Resistance: ${Math.floor(Math.random() * 10)} <br>
                 Constitution: ${Math.floor(Math.random() * 10)} <br>
-                Inititative: ${Math.floor(Math.random() * 10)} <br>
-                IA: ${ia}`,
+                Initiative: ${Math.floor(Math.random() * 10)} <br>
+                AI: ${ia}`,
         allowHTML: true,
         interactive: true
     });
@@ -46,11 +46,11 @@ $('.zone').droppable({
 
 $('.zone.reservistes > div').on('DOMSubtreeModified', (event, ui) => {
     const reservistes = $('.zone.reservistes .zone-container').children().filter('img').length;
-    $('.zone.reservistes > span').text(`Réservistes (${reservistes} / 5)`);
+    $('.zone.reservistes > span').text(`Reservists (${reservistes} / 5)`);
 });
 
 $('.next-button').on('click', () => {
-    window.location.href = './combat.html';
+    window.location.href = './combatEN.html';
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (showPopup) {
         Swal.fire({
-            title: 'Répartition',
-            html: 'Vous devez répartir 15 combattants sur les 5 zones de combat et choisir 5 réservistes qui n\'iront pas combattre tout de suite mais pourront être déployés plus tard. Les combattants peuvent être glissés-déposés dans la zone souhaitée.',
+            title: 'Distribution',
+            html: 'You need to allocate 15 fighters to the 5 combat zones and choose 5 reservists who will not fight right away but can be deployed later. Fighters can be dragged-dropped into the desired zone.',
             icon: 'info',
             showCancelButton: false,
             showCloseButton: false,
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             allowOutsideClick: false,
             allowEscapeKey: false,
             showCheckbox: true,
-            inputPlaceholder: 'Ne plus afficher ce message',
+            inputPlaceholder: 'Do not display this message again',
             input: 'checkbox',
             inputValue: 0,
         }).then((result) => {

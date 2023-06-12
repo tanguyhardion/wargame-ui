@@ -16,7 +16,7 @@ document.querySelectorAll('.troupes-container img').forEach((element) => {
                 Dextérité: ${Math.floor(Math.random() * 10)} <br>
                 Résistance: ${Math.floor(Math.random() * 10)} <br>
                 Constitution: ${Math.floor(Math.random() * 10)} <br>
-                Inititative: ${Math.floor(Math.random() * 10)} <br>
+                Initiative: ${Math.floor(Math.random() * 10)} <br>
                 IA: ${ia}`,
         allowHTML: true,
         interactive: true
