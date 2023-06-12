@@ -141,6 +141,32 @@ main {
     transition: .2s;
 }
 
+.icon-button {
+    position: absolute;
+    right: 11%;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 26px;
+    border-radius: 10px;
+    background: #4e6450;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+    gap: 5px;
+    font-family: 'Valera Round', sans-serif;
+    font-size: 18px;
+}
+
+.icon-button:hover {
+    background: rgb(54, 68, 55);
+}
+
+/* Map */
+
 .ui-draggable-dragging {
     width: 100px;
 }

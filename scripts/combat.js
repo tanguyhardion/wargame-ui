@@ -92,3 +92,19 @@ $('.map').on('click', function () {
 $('#close-btn').on('click', () => {
     $('#dialog').dialog('close');
 });
+
+$('.icon-button').one('click', () => {
+    $('.icon-button .material-symbols-outlined').html('hourglass_top');
+    $('.icon-button').css('background-color', '#707070')
+    $('.icon-button').css('color', '#0b0c10');
+    $('.icon-button').css('cursor', 'not-allowed');
+
+    setInterval(() => {
+        const hourglass = $('.icon-button .material-symbols-outlined').html();
+        if (hourglass === 'hourglass_top') {
+            $('.icon-button .material-symbols-outlined').html('hourglass_bottom');
+        } else {
+            $('.icon-button .material-symbols-outlined').html('hourglass_top');
+        }
+    }, 750);
+});
