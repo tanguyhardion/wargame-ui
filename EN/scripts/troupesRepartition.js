@@ -83,9 +83,40 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 $('.icon-button').on('click', () => {
+    // get all troops in all zones
+    const troops = [];
+    $('.zone-container img').each((index, element) => {
+        troops.push($(element).attr('src'));
+    });
+
+    // get all troops in reservistes zone
+    const reservistes = [];
+    $('.zone.reservistes .zone-container img').each((index, element) => {
+        reservistes.push($(element).attr('src'));
+    });
+
+    const allTroops = troops.concat(reservistes);
+
+    $('.zone-container').empty();
+
+    allTroops.forEach((element) => {
+        $('.troupes-container').first().append(`<img src="${element}" draggable="true">`);
+    });
+
+    // put 5 random reservistes in reservistes zone
+    for (let i = 0; i < 5; i++) {
+        const random = Math.floor(Math.random() * $('.troupes-container img').length);
+        const randomElement = $('.troupes-container img').get(random);
+        $(randomElement).appendTo($('.zone.reservistes .zone-container'));
+    }
+
+    $('.troupes-container img').each((index, element) => {
+        $(element).appendTo($('.zone-container').get(Math.floor(Math.random() * 5)));
+    });
+
     Swal.fire({
-        title: 'Random',
-        text: 'Troops randomly configured successfully !',
+        title: 'Aléatoire',
+        text: 'Troupes paramétrées aléatoirement avec succès !',
         icon: 'success',
         confirmButtonText: 'OK',
         confirmButtonColor: '#4e6450'
