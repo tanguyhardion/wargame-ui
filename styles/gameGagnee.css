@@ -1,16 +1,99 @@
-.entoure{
-    background-color: antiquewhite;
-
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
-    text-decoration: none;
-    line-height: 1.5;
-    position: absolute;
-    left: 3%;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: 'Varela Round', sans-serif;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
 
+.left {
+    justify-content: center;
+}
+
+.center {
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.right {
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.end-stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    display: flex;
+}
+
+.valeurs {
+    position: relative;
+    width: 50%;
+}
+
+.valeurs p {
+    padding: 5px;
+}
+
+.barres {
+    margin-top: 8px;
+}
+
+.infos{
+    position: relative;
+    width: 50%;
+}
+
+.infos p{
+    padding: 5px;
+}
+
+.img {
+  position: relative;
+  width: 500px;
+  left: -100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#lost {
+  position: relative;
+  width: 300px;
+  left: -3%;
+}
+
+.GI {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#perso {
+    width: 200px;
+}
+
+#perso span {
+    margin-top: 3px;
+}
+
+#smiley {
+    position: relative;
+    left: 245px;
+    bottom: 80px;
+    width: 40px;
+}
 
 .score {
     display: flex;
@@ -27,84 +110,8 @@
     height: 32px;
 }
 
-.wrapper {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-.left {
-    width: 20%;
-}
-
-.center {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-
-}
-
-.right {
-    position: absolute;
-    width: 15%;
-    right: 20%;
-    top: 40%;
-}
-
-#lost{ 
-   position: absolute;
-    bottom: 0%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    width:300px;
-}
-
-.lost-info{
-    position: absolute;
-    bottom: 5%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-}
-
-.GI{
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    width:300px;
-}
-
-
-#perso span{
-    margin-top: 3px;
-    left: 150%;
-
-}
-
-
-
-#smiley{
+.quitter {
     position: relative;
-    left: 120%;
-    transform: translate(-50%, -50%);
-    width:80px;
-}
-
-.valeurs{
-    position: absolute;
-    width: 15%;
-    right: 10%;
-    top: 40%;
-}
-
-.quitter{
-    position: absolute;
-    top: 85%;
-    right: 10%;
-    transform: translate(-50%, -50%);
+    height: 70px;
+    bottom: -50px;
 }
