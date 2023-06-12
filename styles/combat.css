@@ -165,11 +165,12 @@ main {
     background: rgb(54, 68, 55);
 }
 
-/* Map */
-
 .ui-draggable-dragging {
     width: 100px;
+    cursor: move;
 }
+
+/* Map */
 
 .ui-draggable-handle {
     display: none;

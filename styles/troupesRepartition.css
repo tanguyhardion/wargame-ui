@@ -124,6 +124,7 @@ body {
 
 .ui-draggable-dragging {
     width: 100px;
+    cursor: move;
 }
 
 .btn-container {
