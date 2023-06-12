@@ -42,6 +42,9 @@ span {
     position: absolute;
     margin-top: 30%;
     animation: fade-in-slow 2.5s ease-out;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    padding: 16px 40px;
 }
 
 #logo {
