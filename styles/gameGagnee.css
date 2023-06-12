@@ -115,3 +115,7 @@
     height: 70px;
     bottom: -50px;
 }
+
+canvas {
+    position: absolute;
+}
