@@ -37,7 +37,6 @@ $('#dialog').dialog({
         effect: 'fade',
         duration: 300
     },
-    // activate close on  escape key press
     closeOnEscape: true,
 });
 

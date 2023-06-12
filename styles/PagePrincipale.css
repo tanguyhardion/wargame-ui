@@ -207,10 +207,11 @@ body {
 
 .plus {
     position: absolute;
-    height: 22px;
-    width: 22px;
+    height: 24px;
+    width: 24px;
     right: -5px;
-    bottom: 0px;
+    top: -5px;
+    filter: saturate(0);
 }
 
 .friend-status {
