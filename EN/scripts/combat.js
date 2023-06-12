@@ -210,3 +210,11 @@ function stopSimulation() {
 }
 
 fillContainers();
+
+Swal.fire({
+    title: 'The battles are raging!',
+    text: 'This screen and the map are purely simulated. The fights can be started and stopped via the button at the top left of the map window. The truce can be simulated with the truce button, and the ready button is purely demonstrative.',
+    icon: 'info',
+    confirmButtonText: 'OK',
+    confirmButtonColor: '#4e6450'
+});

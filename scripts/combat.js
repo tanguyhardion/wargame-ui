@@ -210,3 +210,11 @@ function stopSimulation() {
 }
 
 fillContainers();
+
+Swal.fire({
+    title: 'Les combats font rage !',
+    text: 'Cet écran et la carte sont purement simulés. Les combats peuvent être commencés et arrêtés via le bouton en haut à gauche de la fenêtre de la carte. La trêve peut être simulée avec le bouton trêve, et le bouton prêt est purement démonstratif.',
+    icon: 'info',
+    confirmButtonText: 'OK',
+    confirmButtonColor: '#4e6450'
+});
