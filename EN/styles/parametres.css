@@ -1,0 +1,93 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left {
+    width: 25%;
+    justify-content: space-around;
+}
+
+.center {
+    width: 50%;
+}
+
+#question {
+    position: absolute;
+    top: 8%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+}
+
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10%;
+    width: 200px;
+
+}
+
+.vertical-menu a {
+    display: block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.vertical-menu a:hover:not(.active) {
+    background-color: #909090;
+}
+
+.vertical-menu .active {
+    background-color: #4e6454;
+    color: white;
+    cursor: default;
+}
+
+.parent {
+    position: relative;
+    top: 10%;
+}
+
+#profile {
+    order: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+
+#plus {
+    order: 2;
+    position: absolute;
+    bottom: -68px;
+    right: -75px;
+    width: 25px;
+}
+
+.appliquer {
+    position: relative;
+    top: 25%;
+    padding: 16px 100px;
+    font-size: 22px;
+    margin-top: 15px;
+    min-height: 58px;
+}
+
+.input-effect {
+    margin-top: 30px;
+    top: 150px;
+}

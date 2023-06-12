@@ -1,0 +1,107 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tableau {
+    margin: 5%;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableau th,
+.tableau td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: #4e6450;
+}
+
+.tableau th {
+    background-color: #323232;
+}
+
+.tableau tr:nth-child(even) {
+    background-color: #2c482c;
+}
+
+.tableau tr:hover {
+    background-color: #002b01;
+}
+
+.menu {
+    height: 70%;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(78, 100, 80);
+    overflow-y: auto;
+}
+
+.menu::-webkit-scrollbar {
+    width: 10px;
+}
+
+.menu::-webkit-scrollbar-track {
+    margin: 12px 0;
+    background: transparent;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #2a2a2a;
+}
+
+.menu::-webkit-scrollbar-thumb:hover {
+    background: #343434;
+}
+
+.Titre {
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    height: 12vh;
+    top: 10%;
+    left: 50%;
+    padding: 0 30px;
+    border-radius: 2px;
+    background: #4e6450;
+    font-size: calc(2vh + 1vw);
+    color: white;
+}
+
+.Titre::before {
+    content: "";
+    position: absolute;
+    right: -5.9vh;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 6vh solid transparent;
+    border-left: 6vh solid #4e6450;
+    border-top: 6vh solid transparent;
+}
+
+.Titre::after {
+    content: "";
+    position: absolute;
+    left: -5.9vh;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 6vh solid transparent;
+    border-right: 6vh solid #4e6450;
+    border-top: 6vh solid transparent;
+}

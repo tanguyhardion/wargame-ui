@@ -1,0 +1,433 @@
+body {
+    max-height: 100vh;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    width: 25%;
+}
+
+.center {
+    width: 50%;
+}
+
+.right {
+    align-items: flex-end;
+    justify-content: center;
+    width: 25%;
+}
+
+#wifi {
+    position: absolute;
+    right: 125px;
+    top: 37px;
+    width: 42px;
+    height: 42px;
+    filter: invert(1);
+}
+
+.profile {
+    display: flex;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+#profile-picture {
+    width: 120px;
+    height: 120px;
+    border: 4px solid black;
+    border-radius: 10px;
+    filter: brightness(.9);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 120px;
+    margin-left: 15px;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.score span {
+    margin-top: 3px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(78, 100, 80);
+    overflow-y: auto;
+}
+
+.menu-title {
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.history {
+    height: 55%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    margin: 12px 0;
+    background: transparen t;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #2a2a2a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #343434;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 20px;
+}
+
+.match-icon {
+    width: 75px;
+    height: 75px;
+}
+
+.match.victory .match-icon {
+    background: url("../res/images/swords_full.png") no-repeat;
+    background-size: 100%;
+}
+
+.match.defeat .match-icon {
+    background: url("../res/images/swords_outline.png") no-repeat;
+    background-size: 100%;
+}
+
+.match-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgb(110, 110, 110);
+    cursor: pointer;
+}
+
+.column.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    gap: 50px;
+}
+
+.invited-friend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invited-friend img:nth-child(2) {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.invited-friend .parent .minus {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 1;
+    width: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+#logo {
+    width: 300px;
+}
+
+.jouer {
+    padding: 16px 40px;
+    font-size: 1.7em;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.friends {
+    width: 300px;
+    height: 60%;
+}
+
+.friend {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 15px;
+}
+
+.friend-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+
+}
+
+.parent {
+    position: relative;
+}
+
+.friend-pfp {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 10px;
+    filter: brightness(.9);
+}
+
+.plus {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 24px;
+    height: 24px;
+    filter: saturate(0);
+    cursor: pointer;
+}
+
+.friend-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.friend-score-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.friends .score {
+    margin-left: -2px;
+}
+
+.introjs-overlay {
+    background-color: black;
+    opacity: .7;
+}
+
+/* Chat */
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: rgb(235, 235, 235);
+    font-size: 16px;
+}
+
+.chat-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.chat-row.top {
+    height: 5%;
+}
+
+.chat-row.bottom {
+    height: 95%;
+}
+
+.chat-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.chat-info #close-btn {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.chat-info #chat-title {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: black !important;
+}
+
+.chat-column {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.chat-column.right {
+    width: 80%;
+    height: 100%;
+    gap: 20px;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.chat-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.chat-field input {
+    width: 75%;
+    height: fit-content;
+    padding: 15px;
+    border: 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: none;
+}
+
+.message,
+.user-message {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    gap: 15px;
+}
+
+.user-message {
+    display: flex;
+    margin-left: auto;
+}
+
+.user-message img {
+    border-radius: 50%;
+}
+
+.message .text,
+.user-message .text {
+    padding: 10px;
+    background: #cbcbcb;
+    color: black !important;
+}
+
+.message .text {
+    border-radius: 10px 10px 10px 0;
+}
+
+.user-message .text {
+    border-radius: 10px 10px 0 10px;
+}
+
+.message .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.message .content span:nth-child(1) {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #303030 !important;
+}
+
+.message img {
+    width: 40px;
+    height: 40px;
+}
+
+.send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgb(200, 200, 200);
+    color: black;
+    transition: .2s;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.send-button:hover {
+    background: rgb(180, 180, 180);
+}
+
+.ui-draggable-handle {
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+    background: rgb(170, 170, 170);
+    cursor: grab;
+}
+
+#settings {
+    position: absolute;
+    right: 2%;
+    top: 8%;
+    width: 42px;
+    transform: translate(-50%, -50%);
+}

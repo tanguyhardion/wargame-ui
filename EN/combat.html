@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/combat.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="./styles/flat-jquery-ui.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
+    <!-- TalkifyJS -->
+    <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
+    <script src="https://unpkg.com/popper.js@1" defer></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/combat.js" defer></script>
+    <title>La bataille des programmes</title>
+</head>
+
+<body>
+    <main>
+        <div class="tabs-wrapper">
+            <ul>
+                <li><a href="#bde">BDE</a></li>
+                <li><a href="#bibliotheque">Bibliothèque</a></li>
+                <li><a href="#hallesindustrielles">Halles Industrielles</a></li>
+                <li><a href="#hallesportive">Halle Sportive</a></li>
+                <li><a href="#quartieradministratif">Quartier Administratif</a></li>
+            </ul>
+
+            <div id="bde" class="zone">
+                <div class="columns">
+                    <div class="column left">
+                        <div class="map">
+                            <img src="https://cdn-icons-png.flaticon.com/128/545/545651.png" alt="zoom_in_icon">
+                        </div>
+                    </div>
+                    <div class="column center">
+                        <div class="troupes">
+                            <span class="main-label">Sur cette zone</span>
+                            <div class="troupes-container vostroupes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="troupes">
+                            <span>Troupes redéployables</span>
+                            <div class="troupes-container redeployables">
+                            </div>
+                        </div>
+                        <div class="troupes">
+                            <span>Réservistes</span>
+                            <div class="troupes-container reservistes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bibliotheque" class="zone">
+                <div class="columns">
+                    <div class="column left">
+                        <div class="map">
+                            <img src="https://cdn-icons-png.flaticon.com/128/545/545651.png" alt="zoom_in_icon">
+                        </div>
+                    </div>
+                    <div class="column center">
+                        <div class="troupes">
+                            <span class="main-label">Sur cette zone</span>
+                            <div class="troupes-container vostroupes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="troupes">
+                            <span>Troupes redéployables</span>
+                            <div class="troupes-container redeployables">
+                            </div>
+                        </div>
+                        <div class="troupes">
+                            <span>Réservistes</span>
+                            <div class="troupes-container reservistes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hallesindustrielles" class="zone">
+                <div class="columns">
+                    <div class="column left">
+                        <div class="map">
+                            <img src="https://cdn-icons-png.flaticon.com/128/545/545651.png" alt="zoom_in_icon">
+                        </div>
+                    </div>
+                    <div class="column center">
+                        <div class="troupes">
+                            <span class="main-label">Sur cette zone</span>
+                            <div class="troupes-container vostroupes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="troupes">
+                            <span>Troupes redéployables</span>
+                            <div class="troupes-container redeployables">
+                            </div>
+                        </div>
+                        <div class="troupes">
+                            <span>Réservistes</span>
+                            <div class="troupes-container reservistes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hallesportive" class="zone">
+                <div class="columns">
+                    <div class="column left">
+                        <div class="map">
+                            <img src="https://cdn-icons-png.flaticon.com/128/545/545651.png" alt="zoom_in_icon">
+                        </div>
+                    </div>
+                    <div class="column center">
+                        <div class="troupes">
+                            <span class="main-label">Sur cette zone</span>
+                            <div class="troupes-container vostroupes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="troupes">
+                            <span>Troupes redéployables</span>
+                            <div class="troupes-container redeployables">
+                            </div>
+                        </div>
+                        <div class="troupes">
+                            <span>Réservistes</span>
+                            <div class="troupes-container reservistes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="quartieradministratif" class="zone">
+                <div class="columns">
+                    <div class="column left">
+                        <div class="map">
+                            <img src="https://cdn-icons-png.flaticon.com/128/545/545651.png" alt="zoom_in_icon">
+                        </div>
+                    </div>
+                    <div class="column center">
+                        <div class="troupes">
+                            <span class="main-label">Sur cette zone</span>
+                            <div class="troupes-container vostroupes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="troupes">
+                            <span>Troupes redéployables</span>
+                            <div class="troupes-container redeployables">
+                            </div>
+                        </div>
+                        <div class="troupes">
+                            <span>Réservistes</span>
+                            <div class="troupes-container reservistes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="icon-button win" title="Finir la simulation en gagnant">
+            <span class="material-symbols-outlined">
+                trophy
+            </span>
+        </div>
+
+        <div class="icon-button lose" title="Finir la simulation en perdant">
+            <span class="material-symbols-outlined">
+                tab_close_right
+            </span>
+        </div>
+
+        <div class="icon-button pret">
+            <span class="material-symbols-outlined">
+                check_circle_outline
+            </span>
+            <span class="icon-button-content">Prêt</span>
+        </div>
+
+        <div class="icon-button treve">
+            <span class="material-symbols-outlined">
+                gpp_bad
+            </span>
+            <span class="icon-button-content">Trêve</span>
+        </div>
+
+        <div id="dialog" class="map-wrapper">
+            <div class="row top">
+                <div id="launch-simulation">
+                    <span>Lancer la simulation </span>
+                    <img src="https://cdn-icons-png.flaticon.com/128/527/527995.png" alt="play_icon">
+                </div>
+                <span class="window-title">CARTE DU JEU</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/1828/1828778.png" alt="close_icon" id="close-btn">
+            </div>
+            <div class="row bottom">
+                <div id="zone-bde" class="combat-container">
+                    <div class="zone-logo">
+                        <img src="./res/images/zones/bde_logo.png" alt="bde_logo">
+                        <span>BDE</span>
+                    </div>
+                    <div class="zone-status">
+                        <div class="effectif">
+                            <img src="https://cdn-icons-png.flaticon.com/128/264/264803.png" alt="soldier_icon">
+                            <span>x 2</span>
+                        </div>
+                        <div class="health user">
+                            <div class="value"></div>
+                        </div>
+                        <div class="health">
+                            <div class="value"></div>
+                        </div>
+                        <div class="effectif">
+                            <img src="https://cdn-icons-png.flaticon.com/128/264/264803.png" alt="soldier_icon">
+                            <span>x 4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="zone-bu" class="combat-container">
+                    <div class="zone-logo">
+                        <img src="./res/images/zones/bu_logo.png" alt="bu">
+                        <span>Bibliothèque</span>
+                    </div>
+                    <div class="zone-status">
+                        <div class="effectif">
+                            <img src="https://cdn-icons-png.flaticon.com/128/264/264803.png" alt="soldier_icon">
+                            <span>x 2</span>
+                        </div>
+                        <div class="health user">
+                            <div class="value"></div>
+                        </div>
+                        <div class="health">
+                            <div class="value"></div>
+                        </div>
+                        <div class="effectif">
+                            <img src="https://cdn-icons-png.flaticon.com/128/264/264803.png" alt="soldier_icon">
+                            <span>x 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="zone-hi" class="combat-container">
+                <div class="zone-logo">
+                    <img src="./res/images/zones/hi_logo.png" alt="hi_logo">
+                    <span>Halles Industrielles</span>
+                </div>
+                <div class="zone-status">
+                    <div class="effectif">
+                        <img src="https://cdn-icons-png.flaticon.com/128/264/264803.png" alt="soldier_icon">
+                        <span>x 2</span>
+                    </div>
+                    <div class="health user">
+                        <div class="value"></div>
+                    </div>
+                    <div class="health">
+                        <div class="value"></div>
+                    </div>
+                    <div class="effectif">
+                        <img src="https://cdn-icons-png.flaticon.com/128/264/264803.png" alt="soldier_icon">
+                        <span>x 4</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="zone-hs" class="combat-container">
+                <div class="zone-logo">
+                    <img src="./res/images/zones/hs_logo.png" alt="hs_logo">
+                    <span>Halle Sportive</span>
+                </div>
+                <div class="zone-status">
+                    <div class="effectif">
+                        <img src="https://cdn-icons-png.flaticon.com/128/264/264803.png" alt="soldier_icon">
+                        <span>x 2</span>
+                    </div>
+                    <div class="health user">
+                        <div class="value"></div>
+                    </div>
+                    <div class="health">
+                        <div class="value"></div>
+                    </div>
+                    <div class="effectif">
+                        <img src="https://cdn-icons-png.flaticon.com/128/264/264803.png" alt="soldier_icon">
+                        <span>x 4</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="zone-qa" class="combat-container">
+                <div class="zone-logo">
+                    <img src="./res/images/zones/qa_logo.png" alt="qa_logo">
+                    <span>Quartier Administratif</span>
+                </div>
+                <div class="zone-status">
+                    <div class="effectif">
+                        <img src="https://cdn-icons-png.flaticon.com/128/264/264803.png" alt="soldier_icon">
+                        <span>x 2</span>
+                    </div>
+                    <div class="health user">
+                        <div class="value"></div>
+                    </div>
+                    <div class="health">
+                        <div class="value"></div>
+                    </div>
+                    <div class="effectif">
+                        <img src="https://cdn-icons-png.flaticon.com/128/264/264803.png" alt="soldier_icon">
+                        <span>x 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

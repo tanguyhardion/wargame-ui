@@ -1,0 +1,374 @@
+main {
+    height: 100vh;
+    background-image: url('../res/images/blue_green_background.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 10px;
+}
+
+.tabs-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    background: none !important;
+    border: none !important;
+}
+
+.ui-widget-header {
+    border-radius: 6px 6px 0 0 !important;
+    padding: 10px 15px 0 15px !important;
+}
+
+#bde {
+    background: url("../res/images/zones/bde_darkened.png") no-repeat;
+    background-size: cover;
+}
+
+#bibliotheque {
+    background: url("../res/images/zones/bu_darkened.png") no-repeat;
+    background-size: cover;
+}
+
+#hallesindustrielles {
+    background: url("../res/images/zones/hi_darkened.png") no-repeat;
+    background-size: cover;
+}
+
+#hallesportive {
+    background: url("../res/images/zones/hs_darkened.png") no-repeat;
+    background-size: cover;
+}
+
+#quartieradministratif {
+    background: url("../res/images/zones/qa_darkened.png") no-repeat;
+    background-size: cover;
+}
+
+.zone {
+    border: 2px solid black;
+    height: 80%;
+}
+
+.columns {
+    display: flex;
+    height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column.left {
+    width: 20%;
+}
+
+.column.center {
+    width: 40%;
+    justify-content: center;
+}
+
+.column.right {
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.row {
+    display: flex;
+}
+
+.map {
+    background: url("../res/images/zones/plan_utt_map.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.map img {
+    width: 30px;
+    position: absolute;
+    top: 190px;
+    left: 140px;
+    filter: invert(1);
+}
+
+.troupes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: fit-content;
+    min-height: 100px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background: rgb(220, 220, 220);
+}
+
+.troupes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.troupes span {
+    margin-top: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.main-label {
+    font-weight: bold;
+}
+
+.troupes img {
+    width: calc(20vw / 7);
+    margin: 7px;
+    cursor: pointer;
+}
+
+.troupes:has(.ui-droppable-active) {
+    border: 2px dashed black;
+}
+
+.troupes:has(.ui-droppable-hover) {
+    background: rgb(120, 120, 120);
+    transition: .2s;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 26px;
+    border-radius: 10px;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+    gap: 5px;
+    font-family: 'Valera Round', sans-serif;
+    font-size: 18px;
+}
+
+.icon-button.pret {
+    position: absolute;
+    right: 11%;
+    bottom: 3%;
+    background: #4e6450;
+}
+
+.icon-button.treve {
+    position: absolute;
+    right: 22%;
+    bottom: 3%;
+    background: #707070;
+}
+
+.icon-button.pret:hover,
+.icon-button.win:hover {
+    background: rgb(54, 68, 55);
+}
+
+.icon-button.win {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background: #4e6450;
+}
+
+.icon-button.win span,
+.icon-button.lose span {
+    font-size: 34px;
+}
+
+.icon-button.lose {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    background: #707070;
+}
+
+.icon-button.lose:hover {
+    background: #505050;
+}
+
+.ui-draggable-dragging {
+    width: 100px;
+    cursor: move;
+}
+
+/* Map */
+
+#dialog {
+    height: 90vh !important;
+}
+
+.ui-draggable-handle {
+    display: none;
+}
+
+.ui-widget-overlay {
+    opacity: .25 !important;
+}
+
+.map-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row.top {
+    height: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row.bottom {
+    height: 95%;
+    background: url("../res/images/zones/plan_utt_darkened.png") no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#launch-simulation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+#launch-simulation img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.window-title {
+    font-size: 26px;
+    color: black;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+#close-btn {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.combat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    position: absolute;
+}
+
+#zone-bde {
+    top: 30%;
+    left: 25%;
+}
+
+#zone-bu {
+    top: 52%;
+    left: 40%;
+}
+
+#zone-hi {
+    bottom: 20%;
+    right: 8%;
+}
+
+#zone-hs {
+    top: 8%;
+    left: 20%;
+}
+
+#zone-qa {
+    top: 27.5%;
+    right: 25%;
+}
+
+#zone-bde .zone-logo span {
+    color: #f1c232;
+}
+
+#zone-bu .zone-logo span {
+    color: #8e7cc3;
+}
+
+#zone-hi .zone-logo span {
+    color: #ff8a8a;
+}
+
+#zone-hs .zone-logo span {
+    color: #659bc7;
+}
+
+#zone-qa .zone-logo span {
+    color: #ff94eb;
+}
+
+.zone-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zone-logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.zone-logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.zone-status {
+    display: flex;
+    align-items: center;
+}
+
+.effectif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.effectif img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+.health {
+    border: solid white;
+    border-width: 3px 3px 3px 4px;
+    width: 75px;
+    height: 40px;
+    border-radius: 0 16px 16px 0;
+}
+
+.health.user {
+    transform: rotate(180deg);
+}
+
+.value {
+    height: 100%;
+    width: 0%;
+    border-radius: 0 13px 13px 0;
+    transition: width .3s;
+}

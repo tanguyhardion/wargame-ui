@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/gamePerdue.css">
+    <!-- TalkifyJS -->
+    <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
+    <!--FireworksJS-->
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/gamePerdue.js" defer></script>
+    <title>La bataille des programmes</title>
+</head>
+
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="row left">
+                <div class="titre">
+                    <div class="title">
+                        <span>Guerre Perdue</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row center">
+                <div class="GI">
+                    <img id="perso" src="./res/images/programmes/GI.png" alt="GI">
+                    <span>SuperLogin</span>
+
+                </div>
+
+                <div class="end-stats">
+                    <div class="stats">
+                        <div class="infos">
+                            <p>Zones perdues</p>
+                            <p>Zones contrôlées</p>
+                            <p>Offensivité</p>
+                            <p>Défensivité</p>
+                        </div>
+
+                        <div class="valeurs">
+                            <p>3</p>
+                            <p>0</p>
+                            <progress class="barres" value="50" max="100"></progress>
+                            <progress class="barres" value="20" max="100"></progress>
+                        </div>
+                    </div>
+
+                    <div class="score">
+                        <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                        <span>-17</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row right">
+
+                <div class="img">
+                    <img id="lost" src="./res/images/soldat_pas_contant.png" alt="lost_picture">
+                    
+                        <span>Tout vient à celui qui sait attendre</span>
+                    
+                </div>
+
+                <a class="quitter main-button" href="PagePrincipale.html">
+                    <div class="text">Quitter</div>
+                </a>
+
+
+            </div>
+
+    </main>
+</body>
+
+</html>

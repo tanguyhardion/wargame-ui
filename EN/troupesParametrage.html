@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/troupesParametrage.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- TalkifyJS -->
+    <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/troupesParametrage.js" defer></script>
+    <title>La bataille des programmes</title>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="column left">
+                <div class="troupes">
+                    <span>Vos troupes</span>
+                    <div class="soldats-container">
+                        <!-- content added in JS -->
+                    </div>
+                </div>
+                <div class="icon-button">
+                    <span class="material-symbols-outlined">
+                        shuffle
+                    </span>
+                    <span>Paramétrage aléatoire</span>
+                </div>
+            </div>
+
+            <div class="column center">
+                <div class="title">Paramétrage des troupes</div>
+                <div class="soldat">
+                    <div class="arrow-container left">
+                        <div class="arrow left"></div>
+                    </div>
+                    <div class="arrow-container right">
+                        <div class="arrow right"></div>
+                    </div>
+                    <div class="name">Soldat</div>
+                    <img src="./res/images/soldats/soldat.png" alt="">
+                    <div class="health-bar"><span>30 PV</span></div>
+                </div>
+            </div>
+
+            <div class="column right">
+                <div class="points">
+                    <span>Points restants</span>
+                    <div class="points-container">
+                        <span class="points-left">400</span>
+                    </div>
+                </div>
+                <div class="attributes">
+                    <div class="attributes-names">
+                        <span>Force <i id="force" class="fas fa-question-circle" title="Aide"></i></span>
+                        <span>Dextérité <i id="dexterite" class="fas fa-question-circle" title="Aide"></i></span>
+                        <span>Résistance <i id="resistance" class="fas fa-question-circle" title="Aide"></i></span>
+                        <span>Constitution <i id="constitution" class="fas fa-question-circle" title="Aide"></i></span>
+                        <span>Initiative <i id="initiative" class="fas fa-question-circle" title="Aide"></i></span>
+                    </div>
+
+                    <div class="attributes-list">
+                        <div class="select force">
+                            <span class="next"></span>
+                            <span class="prev"></span>
+                            <div>
+                                <input name="force" type="number" value="0" min="0" max="10" readonly>
+                            </div>
+                        </div>
+                        <div class="select dexterite">
+                            <span class="next"></span>
+                            <span class="prev"></span>
+                            <div>
+                                <input name="dexterite" type="number" value="0" min="0" max="10" readonly>
+                            </div>
+                        </div>
+                        <div class="select resistance">
+                            <span class="next"></span>
+                            <span class="prev"></span>
+                            <div>
+                                <input name="resistance" type="number" value="0" min="0" max="10" readonly>
+                            </div>
+                        </div>
+                        <div class="select constitution">
+                            <span class="next"></span>
+                            <span class="prev"></span>
+                            <div>
+                                <input name="constitution" type="number" value="0" min="0" max="30" readonly>
+                            </div>
+                        </div>
+                        <div class="select initiative">
+                            <span class="next"></span>
+                            <span class="prev"></span>
+                            <div>
+                                <input name="initiative" type="number" value="0" min="0" max="10" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn">Offensif</button>
+                    <button type="button" class="btn">Défensif</button>
+                    <button type="button" class="btn">Aléatoire</button>
+                </div>
+                <div class="toggle-button">
+                    <span>Réserviste</span>
+                    <div class="toggle-wrapper">
+                        <div class="toggle checkcross">
+                            <input id="checkcross" type="checkbox" />
+                            <label class="toggle-item" for="checkcross">
+                                <div class="check"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button class="next-button">
+                        <span class="text">Suivant</span>
+                        <div class="icon-container">
+                            <div class="icon icon--left">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="icon icon--right">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <svg style="display: none;">
+                        <symbol id="arrow-right" viewBox="0 0 20 10">
+                            <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+                        </symbol>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/troupesRepartition.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- TalkifyJS -->
+    <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/troupesRepartition.js" defer></script>
+    <title>La bataille des programmes</title>
+</head>
+
+<body>
+    <main>
+        <div class="row top">
+            <div class="title">Répartition des troupes</div>
+        </div>
+
+        <div class="row bottom">
+
+            <div class="column left">
+                <div class="troupes">
+                    <span>Vos troupes</span>
+                    <div class="troupes-container">
+                        <!-- content added in JS -->
+                    </div>
+                </div>
+                <div class="icon-button">
+                    <span class="material-symbols-outlined">
+                        shuffle
+                    </span>
+                    <span>Répartition aléatoire</span>
+                </div>
+            </div>
+
+            <div class="column center">
+
+            </div>
+
+            <div class="column right">
+                <div class="droppables">
+                    <div class="zone">
+                        <span>BDE</span>
+                        <div class="zone-container">
+                        </div>
+                    </div>
+                    <div class="zone">
+                        <span>Bibliothèque</span>
+                        <div class="zone-container">
+                        </div>
+                    </div>
+                    <div class="zone">
+                        <span>Halles Indutrielles</span>
+                        <div class="zone-container">
+                        </div>
+                    </div>
+                    <div class="zone">
+                        <span>Halle Sportive</span>
+                        <div class="zone-container">
+                        </div>
+                    </div>
+                    <div class="zone">
+                        <span>Quartier Administratif</span>
+                        <div class="zone-container">
+                        </div>
+                    </div>
+                    <div class="zone reservistes">
+                        <span>Réservistes (0 / 5)</span>
+                        <div class="zone-container">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-container">
+                    <button class="next-button">
+                        <span class="text">Suivant</span>
+                        <div class="icon-container">
+                            <div class="icon icon--left">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="icon icon--right">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <svg style="display: none;">
+                        <symbol id="arrow-right" viewBox="0 0 20 10">
+                            <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+                        </symbol>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -17,5 +17,37 @@ splide.on('inactive', (slide) => {
     slide.slide.classList.remove('current-program');
 });
 
+Swal.fire({
+    title: 'Choisissez votre programme !',
+    text: 'Pour passer au programme suivant plus rapidement, vous pouvez utiliser les flèches du clavier. Pour passer à la page suivante, appuyez sur la touche Entrée ou Espace.',
+    icon: 'info',
+    confirmButtonText: 'OK',
+    confirmButtonColor: '#4e6450'
+});
+
 splide.mount();
 
+function nextWindow() {
+    window.location.href = 'troupesParametrage.html';
+}
+
+$('.next-button').on('click', () => {
+    nextWindow();
+});
+
+$('.icon-button').on('click', () => {
+    const random = Math.floor(Math.random() * splide.length);
+    splide.go(`>${random}`);
+});
+
+Mousetrap.bind('right', () => {
+    splide.go('>');
+});
+
+Mousetrap.bind('left', () => {
+    splide.go('<');
+});
+
+Mousetrap.bind(['space', 'enter'], () => {
+    nextWindow();
+});

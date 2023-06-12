@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/choixProgramme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
+    <!-- TalkifyJS -->
+    <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/choixProgramme.js" defer></script>
+    <title>La bataille des programmes</title>
+</head>
+
+<body data-barba="wrapper">
+    <main data-barba="container">
+        <div class="container">
+            <div class="title">Choix du programme</div>
+            <div class="splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide"><img src="./res/images/programmes/ISI.png" alt="isi_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/RT.png" alt="rt_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/MTE.png" alt="mte_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/A2I.png" alt="a2i_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/GM.png" alt="gm_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/GI.png" alt="gi_logo"></div>
+                        <div class="splide__slide"><img src="./res/images/programmes/MM.png" alt="mm_logo"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <div class="icon-button">
+                    <span class="material-symbols-outlined">
+                        <i class="material-icons">shuffle</i>
+                    </span>
+                    <span>Aléatoire</span>
+                </div>
+
+                <button class="next-button">
+                    <span class="text">Suivant</span>
+                    <div class="icon-container">
+                        <div class="icon icon--left">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                        <div class="icon icon--right">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <svg style="display: none;">
+                    <symbol id="arrow-right" viewBox="0 0 20 10">
+                        <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+                    </symbol>
+                </svg>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

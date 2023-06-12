@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SWAL2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <!-- JQuery -->
+    <link rel="stylesheet" href="./styles/flat-jquery-ui.css">
+    <!-- IntroJS -->
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/introjs.css">
+    <!-- Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/PagePrincipale.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
+    <!-- SWAL2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
+    <!-- IntroJS -->
+    <script src="https://unpkg.com/intro.js/intro.js" defer></script>
+    <!-- Vivus -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+        integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <!-- TalkifyJS -->
+    <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
+    <!-- Mousetrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js" defer></script>
+
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/PagePrincipale.js" defer></script>
+    <title>La bataille des programmes</title>
+</head>
+
+<body>
+    <main>
+        <a href="parametres.html" title="Paramètres"> <img id="settings" type="image/svg+xml"
+                src="./res/images/parametre.png" /></a>
+        <img id="wifi" title="Connecté au wifi" src="./res/images/wifi.png" alt="wifi_status">
+
+        <div class="wrapper">
+            <div class="column left">
+                <div class="profile" data-title="Votre profil" data-intro="Ici sont toutes vos informations">
+                    <img id="profile-picture" src="./res/images/profile-placeholder.jpg" alt="profile_picture">
+                    <div class="profile-info">
+                        <span>Utilisateur78465</span>
+                        <div class="score">
+                            <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                            <span>412</span>
+                        </div>
+                        <a href="classement.html">
+                            <img class="icon" title="Classements" src="./res/images/stats.png" alt="stats_logo">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="menu history" data-title="Votre historique" data-intro="Vos anciens combats">
+                    <div class="menu-title">Historique</div>
+                    <div class="match defeat">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>JoueurProDu93</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>-17</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match victory">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>ShieldGamer</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>+24</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match victory">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>Hulk8</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>+20</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match defeat">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>SteelNinja</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>-14</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match victory">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>Warrior-41</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>+18</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match defeat">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>Demonologist</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>-12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="match defeat">
+                        <div class="match-icon"></div>
+                        <div class="match-info">
+                            <span>Tommy05</span>
+                            <div class="score">
+                                <img class="icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>-15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat" data-title="Le chat" data-intro="Pour vous vanter de vos victoires">
+                    <img class="icon" src="./res/images/chat.png" alt="chat_icon">
+                    <span><b>JoueurProDu93 :</b> Haha j'ai gagné !</span>
+                </div>
+            </div>
+
+            <div class="column center">
+                <div class="center-container" data-title="Le plus important"
+                    data-intro="Clique sur Jouer pour lancer un combat ! <br/> <br/> <span style='font-size: 14px'> Maintenant que vous êtes là, voici un conseil : à travers le jeu, différents raccourcis claviers sont disponbles. Par exemple, 't' ouvre le chat, 'enter' envoie le message tapé, et bien d'autres à venir !. </span>"
+                    data-step="10">
+                    <object id="logo" type="image/svg+xml" data="./res/svg/logo.svg"></object>
+                    <div class="invited-friend" title="Ami invité">
+
+                    </div>
+                    <a id="start-game" class="main-button jouer" href="choixProgramme.html">
+                        <div class="text">Jouer</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column right">
+                <div class="menu friends" data-title="Vos amis" data-intro="La liste de vos amis">
+                    <div class="menu-title">Amis</div>
+                    <div class="friend">
+                        <div class="parent">
+                            <img class="friend-pfp" src="./res/images/profile-placeholder.jpg"
+                                alt="friend_profile_picture">
+                            <img class="plus" title="Inviter"
+                                src="https://cdn-icons-png.flaticon.com/128/1828/1828574.png" alt="friend_add">
+                        </div>
+                        <div class="friend-info">
+                            <span>TheFlyingBat</span>
+                            <div class="score">
+                                <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>10</span>
+                            </div>
+                            <div class="friend-status">
+                                <img class="status-icon online" src="./res/images/online.png" alt="online_status">
+                                <span>En ligne</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend">
+                        <div class="parent">
+                            <img class="friend-pfp" src="./res/images/profile-placeholder.jpg"
+                                alt="friend_profile_picture">
+                            <img class="plus" src="https://cdn-icons-png.flaticon.com/128/1828/1828574.png"
+                                alt="friend_add">
+                        </div>
+                        <div class="friend-info">
+                            <span>Julien64</span>
+                            <div class="score">
+                                <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>214</span>
+                            </div>
+                            <div class="friend-status">
+                                <img class="status-icon offline" src="./res/images/offline.png" alt="online_status">
+                                <span>Hors ligne</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend">
+                        <div class="parent">
+                            <img class="friend-pfp" src="./res/images/profile-placeholder.jpg"
+                                alt="friend_profile_picture">
+                            <img class="plus" src="https://cdn-icons-png.flaticon.com/128/1828/1828574.png"
+                                alt="friend_add">
+                        </div>
+                        <div class="friend-info">
+                            <span>Caligula</span>
+                            <div class="score">
+                                <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>45</span>
+                            </div>
+                            <div class="friend-status">
+                                <img class="status-icon offline" src="./res/images/offline.png" alt="online_status">
+                                <span>Hors ligne</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend">
+                        <div class="parent">
+                            <img class="friend-pfp" src="./res/images/profile-placeholder.jpg"
+                                alt="friend_profile_picture">
+                            <img class="plus" src="https://cdn-icons-png.flaticon.com/128/1828/1828574.png"
+                                alt="friend_add">
+                        </div>
+                        <div class="friend-info">
+                            <span>Barack-2</span>
+                            <div class="score">
+                                <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>77</span>
+                            </div>
+                            <div class="friend-status">
+                                <img class="status-icon offline" src="./res/images/offline.png" alt="online_status">
+                                <span>Hors ligne</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend">
+                        <div class="parent">
+                            <img class="friend-pfp" src="./res/images/profile-placeholder.jpg"
+                                alt="friend_profile_picture">
+                            <img class="plus" src="https://cdn-icons-png.flaticon.com/128/1828/1828574.png"
+                                alt="friend_add">
+                        </div>
+                        <div class="friend-info">
+                            <span>User7456</span>
+                            <div class="score">
+                                <img class="friend-score-icon" src="./res/images/crown.png" alt="score_crown">
+                                <span>129</span>
+                            </div>
+                            <div class="friend-status">
+                                <img class="status-icon offline" src="./res/images/offline.png" alt="online_status">
+                                <span>Hors ligne</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dialog" class="chat-wrapper">
+            <div class="chat-row top">
+                <div class="chat-info">
+                    <span id="chat-title">Chat Général</span>
+                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828778.png" alt="close_icon" id="close-btn">
+                </div>
+            </div>
+            <div class="chat-row bottom">
+                <div class="chat-column right">
+                    <div class="messages">
+                        <div class="message">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4140/4140037.png" alt="user_logo">
+                            <div class="content">
+                                <span>Julien64</span>
+                                <span class="text">J'aime beaucoup cette interface</span>
+                            </div>
+                        </div>
+                        <div class="user-message">
+                            <div class="message">
+                                <span class="text">Moi aussi !</span>
+                                <img src="./res/images/profile-placeholder.jpg" alt="user_logo">
+                            </div>
+                        </div>
+                        <div class="message">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4140/4140037.png" alt="user_logo">
+                            <div class="content">
+                                <span>Julien64</span>
+                                <span class="text">HTML, CSS et JS sont les meilleurs</span>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4140/4140048.png" alt="user_logo">
+                            <div class="content">
+                                <span>Caligula</span>
+                                <span class="text">C'est vrai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-field">
+                        <input type="text" placeholder="Tapez un message..." class="mousetrap">
+                        <div class="send-button">
+                            <span>Envoyer</span>
+                            <span class="material-symbols-outlined">
+                                send
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
