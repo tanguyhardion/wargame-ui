@@ -23,6 +23,16 @@ if (checkcross) {
 
     checkcross.addEventListener('click', () => {
         sessionStorage.setItem('tts', !checkcross.checked);
+        if (!checkcross.checked) {
+            Swal.fire({
+                title: 'Text-to-speech enabled',
+                text: "You have just enabled text-to-speech. You can now select the texts you want to hear using the mouse, then click on Listen and on the icon to launch the transcription.",
+                icon: 'success',
+                showCancelButton: true,
+                confirmButtonColor: '#4e6450',
+                cancelButtonColor: '#808080'
+            });
+        }
     });
 }
 
