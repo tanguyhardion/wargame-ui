@@ -1,4 +1,4 @@
-const audio = new Audio('../res/music/Loading Loop.wav');
+const audio = new Audio('https://github.com/tanguyhardion/wargame-ui/blob/main/res/music/Loading%20Loop.wav');
 if (sessionStorage.getItem('audio') !== 'mute') {
     audio.loop = true;
     audio.play();
