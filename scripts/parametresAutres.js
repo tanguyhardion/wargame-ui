@@ -41,6 +41,7 @@ if (langswitch) {
                 cancelButtonColor: '#808080'
             }).then((result) => {
                 if (result.isConfirmed) {
+                    sessionStorage.setItem('lang', 'en');
                     window.location.href = "/en/index.html";
                 }
             });
@@ -54,6 +55,7 @@ if (langswitch) {
                 cancelButtonColor: '#808080'
             }).then((result) => {
                 if (result.isConfirmed) {
+                    sessionStorage.setItem('lang', 'fr');
                     window.location.href = "../index.html";
                 }
             });
