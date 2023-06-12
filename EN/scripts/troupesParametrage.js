@@ -175,7 +175,7 @@ document.getElementById('constitution').addEventListener('click', (e) => {
     e.preventDefault();
     Swal.fire({
         title: 'Constitution improvement',
-        text: 'Chaque point de constitution augmente de 1 point les points de vie d\'un combattant.',
+        text: 'Each point of constitution increases the fighter\'s health.',
         icon: 'info',
         confirmButtonText: 'OK',
         confirmButtonColor: '#4e6450',
@@ -187,7 +187,7 @@ document.getElementById('initiative').addEventListener('click', (e) => {
     e.preventDefault();
     Swal.fire({
         title: 'Initiative improvement',
-        text: 'Les points d\'initiative sont comparés entre les combattants à chaque bataille. Lorsque des combattants s\'affrontent, c\'est celui qui a le plus de points d\'initiative qui commence. Celui qui a le moins de points d\'initiative portera le dernier coup (s\'il est encore en vie).',
+        text: 'Initiative points are compared between fighters in each battle. When fighters clash, it is the one with the most initiative points who starts. The one with the least initiative points will deliver the final blow (if it is still alive).',
         icon: 'info',
         confirmButtonText: 'OK',
         confirmButtonColor: '#4e6450',
@@ -196,10 +196,8 @@ document.getElementById('initiative').addEventListener('click', (e) => {
 });
 
 $('.btn').on('click', function () {
-    // Remove background color from all buttons
     $('.btn').removeClass('active');
 
-    // Add background color to the clicked button
     $(this).addClass('active');
 });
 
