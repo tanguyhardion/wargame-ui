@@ -81,3 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+$('.icon-button').on('click', () => {
+    Swal.fire({
+        title: 'Aléatoire',
+        text: 'Troupes paramétrées aléatoirement avec succès !',
+        icon: 'success',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#4e6450'
+    });
+});

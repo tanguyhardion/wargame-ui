@@ -121,7 +121,7 @@ $('.prev').on('click', (element) => {
     }
 });
 
-$('.icon-button').click(() => {
+$('.icon-button').on('click', () => {
     Swal.fire({
         title: 'Aléatoire',
         text: 'Troupes paramétrées aléatoirement avec succès !',

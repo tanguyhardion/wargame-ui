@@ -81,3 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+$('.icon-button').on('click', () => {
+    Swal.fire({
+        title: 'Random',
+        text: 'Troops randomly configured successfully !',
+        icon: 'success',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#4e6450'
+    });
+});

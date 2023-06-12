@@ -121,7 +121,7 @@ $('.prev').on('click', (element) => {
     }
 });
 
-$('.icon-button').click(() => {
+$('.icon-button').on('click', () => {
     Swal.fire({
         title: 'Random',
         text: 'Troops randomly configured successfully !',
