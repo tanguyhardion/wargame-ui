@@ -131,6 +131,10 @@ $('.icon-button').click(() => {
     });
 });
 
+$('.next-button').on('click', () => {
+    window.location.href = './troupesRepartition.html';
+});
+
 document.getElementById('force').addEventListener('click', (e) => {
     e.preventDefault();
     Swal.fire({
