@@ -10,3 +10,8 @@ if (tts) {
         .withVoice({ name: 'Hortense' })
         .activate();
 }
+
+var link = document.createElement('link');
+link.rel = 'icon';
+document.head.appendChild(link);
+link.href = 'https://cdn-icons-png.flaticon.com/128/3943/3943609.png';
