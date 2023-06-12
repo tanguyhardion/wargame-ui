@@ -23,6 +23,16 @@ if (checkcross) {
 
     checkcross.addEventListener('click', () => {
         sessionStorage.setItem('tts', !checkcross.checked);
+        if (!checkcross.checked) {
+            Swal.fire({
+                title: 'Synthèse vocale activée',
+                text: "Vous venez d'activer la synthèse vocale. Vous pouvez désormais sélectionner à l'aide de la souris les textes que vous voulez entendre, puis cliquer sur Listen et sur l'icône pour lancer la transcription.",
+                icon: 'success',
+                showCancelButton: true,
+                confirmButtonColor: '#4e6450',
+                cancelButtonColor: '#808080'
+            });
+        }
     });
 }
 
