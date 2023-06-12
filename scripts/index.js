@@ -12,7 +12,7 @@ VANTA.FOG({
     speed: 1.6
 })
 
-const audio = new Audio('../res/music/Dark Ambience Loop.mp3');
+const audio = new Audio('https://github.com/tanguyhardion/wargame-ui/raw/main/res/music/Dark%20Ambience%20Loop.mp3');
 audio.loop = true;
 $('#play-music').on('click', () => {
     if (audio.paused) {
