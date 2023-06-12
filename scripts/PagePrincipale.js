@@ -10,6 +10,7 @@ Swal.fire({
 }).then((result) => {
     if (result.isConfirmed) {
         introJs().start();
+        introJs().addHints();
     }
 });
 
@@ -77,4 +78,8 @@ Mousetrap.bind('enter', () => {
         $('.messages').scrollTop($('.messages').height());
         $('.chat-field input').val('');
     }
+});
+
+Mousetrap.bind('t', () => {
+    $('#dialog').dialog('open');
 });

@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="./styles/choixProgramme.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js" defer></script>
     <!-- TalkifyJS -->
     <script src="https://rawgit.com/Hagsten/Talkify/master/dist/talkify.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js" defer></script>
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/choixProgramme.js" defer></script>
     <title>La bataille des programmes</title>
@@ -35,22 +39,35 @@
                 </div>
             </div>
 
-            <div class="icon-button">
-                <span class="material-symbols-outlined">
-                    <i class="material-icons">shuffle</i>
-                </span>
-                <span>Aléatoire</span>
-            </div>
-
-            <div class="icon-btn">
-                <a href="troupesParametrage.html">
+            <div class="actions">
+                <div class="icon-button">
                     <span class="material-symbols-outlined">
-                        <i class="material-icons">chevron_right</i>
+                        <i class="material-icons">shuffle</i>
                     </span>
-                    <span>Suivant</span>
-                </a>
-            </div>
+                    <span>Aléatoire</span>
+                </div>
 
+                <button class="next-button">
+                    <span class="text">Suivant</span>
+                    <div class="icon-container">
+                        <div class="icon icon--left">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                        <div class="icon icon--right">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <svg style="display: none;">
+                    <symbol id="arrow-right" viewBox="0 0 20 10">
+                        <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+                    </symbol>
+                </svg>
+            </div>
         </div>
     </main>
 </body>

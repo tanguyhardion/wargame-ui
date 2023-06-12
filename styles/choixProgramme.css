@@ -59,27 +59,11 @@ img:hover {
     background: rgb(180, 180, 180);
 }
 
-.icon-btn{
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-    width: fit-content;
-    height: fit-content;
-    padding: 15px 20px;
-    border-radius: 10px;
-    background: #4e6454;
-    color: white;
-    transition: .2s;
-    cursor: pointer;
-    gap: 5px;
-    margin-top: 50px;
-}
-
-.icon-button:hover {
-    background: #d2f8db;
-}
-
-.icon-btn span {
-    color: white;
-    text-decoration: none !important;
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: flex-end;
+    margin-top: 20px;
+    width: 100%;
 }
