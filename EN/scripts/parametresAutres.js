@@ -40,6 +40,12 @@ const langswitch = document.querySelector(".lang-switch");
 
 if (langswitch) {
 
+    if (sessionStorage.getItem('lang') === 'en') {
+        langswitch.value = 'en';
+    } else if (sessionStorage.getItem('lang') === 'fr') {
+        langswitch.value = 'fr';
+    }
+
     langswitch.addEventListener("change", () => {
         if (langswitch.value === 'en') {
             Swal.fire({
