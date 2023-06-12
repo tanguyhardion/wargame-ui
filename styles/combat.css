@@ -1,3 +1,8 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+
+}
+
 main {
     height: 100vh;
     background-image: url('../res/images/blue_green_background.png');
