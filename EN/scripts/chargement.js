@@ -17,10 +17,10 @@ function addProgress(progress) {
 }
 
 var loadings = [
-    'Initialisation du décor...',
-    'Préparation des personnages...',
-    'Chargement des musiques en cours...',
-    'Réalisation d\'un délicieux café...'
+    'Initialization of the scenery...',
+    'Preparation of the characters...',
+    'Loading music in progress...',
+    'Making a delicious coffee...'
 ];
 
 var current = 0;

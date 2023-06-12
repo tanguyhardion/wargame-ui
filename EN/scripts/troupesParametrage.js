@@ -22,7 +22,7 @@ $('.soldats-container img').on('click', (element) => {
     const src = target.attr('src');
     if (src.includes('casque_soldat')) {
         $('.soldat img').attr('src', './res/images/soldats/soldat.png');
-        $('.soldat .name').text('Soldat');
+        $('.soldat .name').text('Soldier');
         $('.health-bar span').text('30 PV');
         const attributes = $('.attributes input');
         attributes.each((index, element) => {
@@ -30,7 +30,7 @@ $('.soldats-container img').on('click', (element) => {
         });
     } else if (src.includes('casque_elite')) {
         $('.soldat img').attr('src', './res/images/soldats/soldat_elite.png');
-        $('.soldat .name').text('Soldat d\'élite');
+        $('.soldat .name').text('Elite soldier');
         $('.health-bar span').text('35 PV');
         const attributes = $('.attributes input');
         attributes.each((index, element) => {
@@ -43,7 +43,7 @@ $('.soldats-container img').on('click', (element) => {
     }
     else {
         $('.soldat img').attr('src', './res/images/soldats/maitre_de_guerre.png');
-        $('.soldat .name').text('Maître de guerre');
+        $('.soldat .name').text('Master of war');
         $('.health-bar span').text('40 PV');
         const attributes = $('.attributes input');
         attributes.each((index, element) => {
@@ -123,8 +123,8 @@ $('.prev').on('click', (element) => {
 
 $('.icon-button').click(() => {
     Swal.fire({
-        title: 'Aléatoire',
-        text: 'Troupes paramétrées aléatoirement avec succès !',
+        title: 'Random',
+        text: 'Troops randomly configured successfully !',
         icon: 'success',
         confirmButtonText: 'OK',
         confirmButtonColor: '#4e6450'
@@ -138,8 +138,8 @@ $('.next-button').on('click', () => {
 document.getElementById('force').addEventListener('click', (e) => {
     e.preventDefault();
     Swal.fire({
-        title: 'Amélioration Force',
-        text: 'Chaque point de force augmente la capacité d\'un combattant à infliger des dégâts de 10%.',
+        title: 'Strength improvement',
+        text: 'Each strength point increases a fighter\'s ability to deal 10% damage.',
         icon: 'info',
         confirmButtonText: 'OK',
         confirmButtonColor: '#4e6450',
@@ -150,8 +150,8 @@ document.getElementById('force').addEventListener('click', (e) => {
 document.getElementById('dexterite').addEventListener('click', (e) => {
     e.preventDefault();
     Swal.fire({
-        title: 'Amélioration Dextérité',
-        text: 'Chaque point de dextérité augmente la capacité d\'un combattant à esquiver et à mieux viser son ennemi de 3%. Cela augmente aussi la capacité d\'un combattant à réussir un soin sur un autre combattant de 6%.',
+        title: 'Dexterity improvement',
+        text: 'Each point of dexterity increases a fighter\'s ability to dodge and better target his enemy by 3%. It also increases a fighter\'s ability to successfully care for another fighter by 6%.',
         icon: 'info',
         confirmButtonText: 'OK',
         confirmButtonColor: '#4e6450',
@@ -162,8 +162,8 @@ document.getElementById('dexterite').addEventListener('click', (e) => {
 document.getElementById('resistance').addEventListener('click', (e) => {
     e.preventDefault();
     Swal.fire({
-        title: 'Amélioration Résistance',
-        text: 'Chaque point de résistance diminue les dégâts reçus par le combattant de 5%.',
+        title: 'Resistance improvement',
+        text: 'Each point of resistance reduces the damage received by the fighter by 5%.',
         icon: 'info',
         confirmButtonText: 'OK',
         confirmButtonColor: '#4e6450',
@@ -174,7 +174,7 @@ document.getElementById('resistance').addEventListener('click', (e) => {
 document.getElementById('constitution').addEventListener('click', (e) => {
     e.preventDefault();
     Swal.fire({
-        title: 'Amélioration Constitution',
+        title: 'Constitution improvement',
         text: 'Chaque point de constitution augmente de 1 point les points de vie d\'un combattant.',
         icon: 'info',
         confirmButtonText: 'OK',
@@ -186,7 +186,7 @@ document.getElementById('constitution').addEventListener('click', (e) => {
 document.getElementById('initiative').addEventListener('click', (e) => {
     e.preventDefault();
     Swal.fire({
-        title: 'Amélioration Initiative',
+        title: 'Initiative improvement',
         text: 'Les points d\'initiative sont comparés entre les combattants à chaque bataille. Lorsque des combattants s\'affrontent, c\'est celui qui a le plus de points d\'initiative qui commence. Celui qui a le moins de points d\'initiative portera le dernier coup (s\'il est encore en vie).',
         icon: 'info',
         confirmButtonText: 'OK',
@@ -208,8 +208,8 @@ $(document).on('DOMContentLoaded', () => {
 
     if (showPopup) {
         Swal.fire({
-            title: 'Paramétrage',
-            html: 'Vous devez maintenant paramétrer vos troupes ! Cliquer sur le <b>"?"</b> pour avoir des informations sur chaque amélioration. Vous disposez de <b>400 points</b>.',
+            title: 'Setting',
+            html: 'Now you need to set your troops! Click on the <b>"?"</b> for information on each improvement. You have 400 points !</b>.',
             icon: 'info',
             showCancelButton: false,
             showCloseButton: false,
@@ -218,7 +218,7 @@ $(document).on('DOMContentLoaded', () => {
             allowOutsideClick: false,
             allowEscapeKey: false,
             showCheckbox: true,
-            inputPlaceholder: 'Ne plus afficher ce message',
+            inputPlaceholder: 'Do not display this message again',
             input: 'checkbox',
             inputValue: 0,
         }).then((result) => {

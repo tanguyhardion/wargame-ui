@@ -18,8 +18,8 @@ splide.on('inactive', (slide) => {
 });
 
 Swal.fire({
-    title: 'Choisissez votre programme !',
-    text: 'Pour passer au programme suivant plus rapidement, vous pouvez utiliser les flèches du clavier. Pour passer à la page suivante, appuyez sur la touche Entrée ou Espace.',
+    title: 'Choose your program !',
+    text: 'To move to the next program faster, you can use the arrows on the keyboard. To move to the next page, press Enter or Space.',
     icon: 'info',
     confirmButtonText: 'OK',
     confirmButtonColor: '#4e6450'

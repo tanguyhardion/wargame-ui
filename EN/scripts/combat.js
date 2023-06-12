@@ -28,14 +28,14 @@ $(".tabs-wrapper").tabs();
 
 document.querySelectorAll('.troupes-container img').forEach((element) => {
     let rand = Math.floor(Math.random() * 3);
-    let ia = rand === 0 ? 'Offensive' : rand === 1 ? 'Défensive' : 'Aléatoire';
+    let ia = rand === 0 ? 'Offensive' : rand === 1 ? 'Defensive' : 'Random';
     tippy(element, {
-        content: `Force : ${Math.floor(Math.random() * 10)} <br>
-                Dextérité: ${Math.floor(Math.random() * 10)} <br>
-                Résistance: ${Math.floor(Math.random() * 10)} <br>
+        content: `Strength: ${Math.floor(Math.random() * 10)} <br>
+                Dexterity: ${Math.floor(Math.random() * 10)} <br>
+                Resistance: ${Math.floor(Math.random() * 10)} <br>
                 Constitution: ${Math.floor(Math.random() * 10)} <br>
-                Inititative: ${Math.floor(Math.random() * 10)} <br>
-                IA: ${ia}`,
+                Initiative: ${Math.floor(Math.random() * 10)} <br>
+                AI: ${ia}`,
         allowHTML: true,
         interactive: true
     });
@@ -201,8 +201,8 @@ function stopSimulation() {
     clearInterval(simulation);
     $('.health:not(.user) .value').first().css('width', '0');
     Swal.fire({
-        title: 'BDE contrôlé !',
-        text: 'Vous pouvez maintenant fermer la carte et faire vos sournois mouvements de troupes.',
+        title: 'Controlled BDE !',
+        text: 'You can now close the map and make your sneaky troop moves.',
         icon: 'success',
         confirmButtonText: 'OK',
         confirmButtonColor: '#4e6450'
