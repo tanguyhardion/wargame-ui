@@ -1,4 +1,4 @@
-const tts = localStorage.getItem('tts') !== (false || null);
+const tts = sessionStorage.getItem('tts') !== (false || null);
 
 if (tts) {
     talkify.config.remoteService.host = 'https://talkify.net';

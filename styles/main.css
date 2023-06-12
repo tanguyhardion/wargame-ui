@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+@import url('https://rawgit.com/Hagsten/Talkify/master/dist/styles/talkify-playlist.css');
+@import url('https://rawgit.com/Hagsten/Talkify/master/dist/styles/talkify-common.css');
+@import url('https://rawgit.com/Hagsten/Talkify/master/dist/styles/colors.css');
+@import url('https://rawgit.com/Hagsten/Talkify/master/dist/styles/modern-control-center/main.css');
+@import url('https://rawgit.com/Hagsten/Talkify/master/dist/styles/modern-control-center/colors.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css');
+@import url('https://rawgit.com/Hagsten/Talkify/master/dist/styles/text-selection-activator/colors.css');
+@import url('https://rawgit.com/Hagsten/Talkify/master/dist/styles/text-selection-activator/main.css');
+@import url('https://rawgit.com/Hagsten/Talkify/master/dist/styles/local-control-center/main.css');
+@import url('https://rawgit.com/Hagsten/Talkify/master/dist/styles/local-control-center/colors.css');
+
+
 @font-face {
     font-family: 'Strike Lord';
     src: url('../res/fonts/Strikelord/Strikelord.ttf') format('truetype');
