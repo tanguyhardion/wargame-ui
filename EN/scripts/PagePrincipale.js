@@ -1,16 +1,15 @@
 Swal.fire({
-    title: 'Accueil',
-    text: 'Bienvenue dans le jeu ! Souhaites-tu avoir une visite de la page d\'accueil?',
+    title: 'Home',
+    text: 'Welcome to the home page ! Would you like a tour ?',
     icon: 'info',
     showCancelButton: true,
-    confirmButtonText: 'Oui',
-    cancelButtonText: 'Non',
+    confirmButtonText: 'Yes',
+    cancelButtonText: 'No',
     confirmButtonColor: '#4e6450',
     cancelButtonColor: '#808080'
 }).then((result) => {
     if (result.isConfirmed) {
         introJs().start();
-        introJs().addHints();
     }
 });
 
@@ -65,7 +64,6 @@ $('.send-button').on('click', () => {
 });
 
 Mousetrap.bind('enter', () => {
-    console.log("hiiii");
     const message = $('.chat-field input').val();
     if (message !== '') {
         $('.messages').append(`

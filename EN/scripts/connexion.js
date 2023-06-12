@@ -1,16 +1,16 @@
 document.getElementById('invite').addEventListener('click', function () {
-    showUsernamePrompt('Veuillez choisir un pseudo :', 'question');
+    showUsernamePrompt('Choose a username :', 'question');
 });
 
 function showUsernamePrompt(message, icon) {
     Swal.fire({
-        title: 'Continuer en tant qu\'invité',
+        title: 'Continue as guest',
         text: message,
         input: 'text',
         icon: icon,
         showCancelButton: true,
         confirmButtonText: 'OK',
-        cancelButtonText: 'Annuler',
+        cancelButtonText: 'Cancel',
         confirmButtonColor: '#4e6450',
         cancelButtonColor: '#808080'
     }).then((result) => {
@@ -19,7 +19,7 @@ function showUsernamePrompt(message, icon) {
             if (isValidUsername(pseudo)) {
                 showUsernameConfirmation(pseudo);
             } else {
-                showUsernamePrompt('Veuillez choisir un pseudo valide.', 'error');
+                showUsernamePrompt('Your username can\'t be empty.', 'error');
             }
         }
     });
@@ -31,8 +31,8 @@ function isValidUsername(username) {
 
 function showUsernameConfirmation(username) {
     Swal.fire({
-        title: 'Pseudo enregistré !',
-        text: 'Votre pseudo est : ' + username,
+        title: 'Username saved !',
+        text: 'Your username is : ' + username,
         icon: 'success',
         confirmButtonColor: '#4e6450',
         cancelButtonColor: '#808080'
@@ -44,8 +44,8 @@ function showUsernameConfirmation(username) {
 document.querySelector('.connexion').addEventListener('click', (e) => {
     e.preventDefault();
     Swal.fire({
-        title: 'Mot de passe ou login incorrect',
-        text: 'Veuillez réessayer.',
+        title: 'Incorrect username or password',
+        text: 'Please try again.',
         icon: 'error',
         confirmButtonText: 'OK',
         confirmButtonColor: '#4e6450',
