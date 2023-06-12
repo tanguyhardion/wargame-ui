@@ -1,11 +1,11 @@
 document.getElementById('audio').addEventListener('click', function () {
     Swal.fire({
-        title: 'Attention',
-        text: 'Quitter sans sauvegarder les modifications ?',
+        title: 'Warning',
+        text: 'Exit without saving the changes?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonText: 'Ok',
-        cancelButtonText: 'Annuler',
+        cancelButtonText: 'Cancel',
         confirmButtonColor: '#4e6450',
         cancelButtonColor: '#808080'
     }).then((result) => {
@@ -17,12 +17,12 @@ document.getElementById('audio').addEventListener('click', function () {
 
 document.getElementById('accessibilite').addEventListener('click', function () {
     Swal.fire({
-        title: 'Attention',
-        text: 'Quitter sans sauvegarder les modifications ?',
+        title: 'Warning',
+        text: 'Exit without saving the changes?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonText: 'Ok',
-        cancelButtonText: 'Annuler',
+        cancelButtonText: 'Cancel',
         confirmButtonColor: '#4e6450',
         cancelButtonColor: '#808080'
     }).then((result) => {
@@ -34,12 +34,12 @@ document.getElementById('accessibilite').addEventListener('click', function () {
 
 document.getElementById('langue').addEventListener('click', function () {
     Swal.fire({
-        title: 'Attention',
-        text: 'Quitter sans sauvegarder les modifications ?',
+        title: 'Warning',
+        text: 'Exit without saving the changes?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonText: 'Ok',
-        cancelButtonText: 'Annuler',
+        cancelButtonText: 'Cancel',
         confirmButtonColor: '#4e6450',
         cancelButtonColor: '#808080'
     }).then((result) => {
@@ -52,7 +52,7 @@ document.getElementById('langue').addEventListener('click', function () {
 document.getElementById('appliquer').addEventListener('click', function () {
     Swal.fire({
         title: 'Confirmation',
-        text: 'Modifications appliquées',
+        text: 'Changes applied',
         icon: 'success',
         confirmButtonText: 'Ok',
         confirmButtonColor: '#4e6450',
