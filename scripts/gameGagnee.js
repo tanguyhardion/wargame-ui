@@ -47,8 +47,9 @@ const fireworks = new Fireworks.default(container, {
 fireworks.start();
 
 // Durée en millisecondes pour laquelle les feux d'artifice doivent être affichés
-const dureeFeuxArtifice = 7000; 
+const dureeFeuxArtifice = 7000;
 
 setTimeout(() => {
   fireworks.stop();
+  document.querySelector('canvas').style.zIndex = -1;
 }, dureeFeuxArtifice);

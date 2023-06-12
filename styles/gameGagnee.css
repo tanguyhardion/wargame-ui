@@ -116,8 +116,7 @@ progress {
 
 .quitter {
     position: relative;
-    height: 70px;
-    bottom: -50px;
+    font-size: 26px;
 }
 
 canvas {

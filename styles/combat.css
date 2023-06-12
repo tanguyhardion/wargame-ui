@@ -171,8 +171,32 @@ main {
     background: #707070;
 }
 
-.icon-button.pret:hover {
+.icon-button.pret:hover,
+.icon-button.win:hover {
     background: rgb(54, 68, 55);
+}
+
+.icon-button.win {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background: #4e6450;
+}
+
+.icon-button.win span,
+.icon-button.lose span {
+    font-size: 34px;
+}
+
+.icon-button.lose {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    background: #707070;
+}
+
+.icon-button.lose:hover {
+    background: #505050;
 }
 
 .ui-draggable-dragging {

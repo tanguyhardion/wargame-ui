@@ -26,8 +26,6 @@ function fillContainers() {
 
 $(".tabs-wrapper").tabs();
 
-fillContainers();
-
 document.querySelectorAll('.troupes-container img').forEach((element) => {
     let rand = Math.floor(Math.random() * 3);
     let ia = rand === 0 ? 'Offensive' : rand === 1 ? 'Défensive' : 'Aléatoire';
@@ -112,6 +110,14 @@ $('.icon-button.pret').one('click', () => {
             $('.icon-button.pret .material-symbols-outlined').html('hourglass_top');
         }
     }, 750);
+});
+
+$('.icon-button.win').on('click', () => {
+    window.location.href = './gameGagnee.html';
+});
+
+$('.icon-button.lose').on('click', () => {
+    window.location.href = './gamePerdue.html';
 });
 
 var icon = false;
@@ -202,3 +208,5 @@ function stopSimulation() {
         confirmButtonColor: '#4e6450'
     });
 }
+
+fillContainers();
