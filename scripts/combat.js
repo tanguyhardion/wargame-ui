@@ -1,5 +1,5 @@
 if (sessionStorage.getItem('audio') !== 'mute') {
-    const audio = new Audio('https://github.com/tanguyhardion/wargame-ui/blob/main/res/music/Dark%20Descent.mp3');
+    const audio = new Audio('https://github.com/tanguyhardion/wargame-ui/raw/main/res/music/Dark%20Descent.mp3');
     audio.loop = true;
     audio.play();
 }
