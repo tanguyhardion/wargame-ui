@@ -183,6 +183,22 @@ document.getElementById('constitution').addEventListener('click', (e) => {
     });
 });
 
+$('.select.constitution .prev').on('click', () => {
+    let number = parseInt($('.health-bar span').text().split(' ')[0]);
+    if (number > 30) {
+        number--;
+        $('.health-bar span').text(`${number} PV`);
+    }
+});
+
+$('.select.constitution .next').on('click', () => {
+    let number = parseInt($('.health-bar span').text().split(' ')[0]);
+    if (number < 60) {
+        number++;
+        $('.health-bar span').text(`${number} PV`);
+    }
+});
+
 document.getElementById('initiative').addEventListener('click', (e) => {
     e.preventDefault();
     Swal.fire({
