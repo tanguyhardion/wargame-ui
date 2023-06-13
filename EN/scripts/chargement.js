@@ -32,11 +32,14 @@ setInterval(() => {
 
 $('.progress').on('transitionend', () => {
     if (current === loadings.length) {
+        console.log("redirection");
         setInterval(() => {
             audio.volume -= 0.03;
         }, 50);
         setTimeout(() => {
             window.location.href = 'PagePrincipale.html';
+            console.log("redirected");
         }, 2000);
     }
+    console.log("transitionend");
 });
