@@ -58,7 +58,7 @@ if (langswitch) {
             }).then((result) => {
                 if (result.isConfirmed) {
                     sessionStorage.setItem('lang', 'en');
-                    window.location.href = "./EN/index.html";
+                    window.location.href = "EN/index.html";
                 }
             });
         } else if (langswitch.value === 'fr') {
@@ -72,7 +72,7 @@ if (langswitch) {
             }).then((result) => {
                 if (result.isConfirmed) {
                     sessionStorage.setItem('lang', 'fr');
-                    window.location.href = "./../index.html";
+                    window.location.href = "../index.html";
                 }
             });
         }
